@@ -13,50 +13,4190 @@
   },
   {
     "id": "3",
-    "regularQuestion": "Quante volte starnutisci mediamente in un intero mese?",
-    "impostorQuestion": "Quante docce fai all'incirca in un intero mese?",
+    "regularQuestion": "Quante volte starnutisci all'incirca in un intero mese?",
+    "impostorQuestion": "Quante docce fai mediamente in un mese?",
     "unit": "al mese"
   },
   {
     "id": "4",
     "regularQuestion": "Quante ore passi mediamente al cellulare ogni giorno?",
-    "impostorQuestion": "Quante ore di sonno fai in media ogni notte?",
+    "impostorQuestion": "Quante ore dormi all'incirca a notte?",
     "unit": "ore al giorno"
   },
   {
     "id": "5",
-    "regularQuestion": "Quante volte alla settimana vai a fare la cacca?",
-    "impostorQuestion": "Quante volte a settimana bevi una birra o un cocktail?",
+    "regularQuestion": "Quante volte vai a fare la cacca in una settimana?",
+    "impostorQuestion": "Quante birre o cocktail bevi all'incirca in una settimana?",
     "unit": "volte a settimana"
   },
   {
     "id": "6",
-    "regularQuestion": "Quante foto o screenshot hai salvato nella galleria del tuo smartphone?",
-    "impostorQuestion": "Quanti messaggi vocali invii o ricevi in un mese su WhatsApp?",
+    "regularQuestion": "Quante foto e video hai salvati nella galleria del tuo telefono?",
+    "impostorQuestion": "Quanti messaggi non letti o notifiche hai accumulato sul telefono?",
     "unit": ""
   },
   {
     "id": "7",
-    "regularQuestion": "Quanti soldi spendi all'incirca in una serata del weekend tra bere e mangiare?",
-    "impostorQuestion": "Quanti euro spendi all'incirca per fare un pieno di benzina all'auto?",
+    "regularQuestion": "Quanti euro spendi all'incirca per una serata tipica nel weekend?",
+    "impostorQuestion": "Quanti euro spendi di solito per fare la spesa settimanale?",
     "unit": "euro"
   },
   {
     "id": "8",
-    "regularQuestion": "Quanti minuti passi sotto la doccia in media ogni volta?",
-    "impostorQuestion": "Quanti minuti impieghi mediamente per prepararti prima di uscire la sera?",
+    "regularQuestion": "Quanti minuti passi sotto la doccia ogni volta che ti lavi?",
+    "impostorQuestion": "Quanti minuti ci metti a prepararti prima di uscire di casa?",
     "unit": "minuti"
   },
   {
     "id": "9",
-    "regularQuestion": "Quante volte al mese ordini cibo a domicilio (Just Eat, Deliveroo, Glovo)?",
+    "regularQuestion": "Quante volte al mese ordini cibo a domicilio (Deliveroo, Just Eat, Glovo)?",
     "impostorQuestion": "Quante volte al mese vai a fare la spesa al supermercato?",
     "unit": "volte al mese"
   },
   {
     "id": "10",
-    "regularQuestion": "Quante ore alla settimana passi guardando serie TV o film sul divano?",
-    "impostorQuestion": "Quante ore alla settimana dedichi allo studio o al lavoro concentrato?",
+    "regularQuestion": "Quante ore a settimana passi guardando serie TV, film o YouTube?",
+    "impostorQuestion": "Quante ore a settimana dedichi allo studio o al lavoro?",
     "unit": "ore a settimana"
+  },
+  {
+    "id": "11",
+    "regularQuestion": "Quante volte al giorno sblocchi lo schermo dello smartphone all'incirca?",
+    "impostorQuestion": "Quanti messaggi WhatsApp invii in una giornata tipo?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "12",
+    "regularQuestion": "Quante persone hai baciato sulla bocca in tutta la tua vita finora?",
+    "impostorQuestion": "A quanti concerti o festival musicali sei stato in tutta la tua vita?",
+    "unit": "persone"
+  },
+  {
+    "id": "13",
+    "regularQuestion": "Quante volte a settimana mangi una pizza (intera o a fette)?",
+    "impostorQuestion": "Quanti giorni a settimana ti alleni o fai attività fisica?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "14",
+    "regularQuestion": "Quante sigarette o tiri di pod/svapo fumi all'incirca al giorno?",
+    "impostorQuestion": "Quante canzoni ascolti mediamente in una giornata?",
+    "unit": "al giorno"
+  },
+  {
+    "id": "15",
+    "regularQuestion": "Quanti bicchieri d'acqua bevi all'incirca in una giornata?",
+    "impostorQuestion": "Quante ore di sonno fai mediamente a notte?",
+    "unit": "bicchieri al giorno"
+  },
+  {
+    "id": "16",
+    "regularQuestion": "Quante sveglie imposti sul telefono la mattina per essere sicuro di alzarti?",
+    "impostorQuestion": "Quanti caffè bevi in media ogni mattina?",
+    "unit": "sveglie"
+  },
+  {
+    "id": "17",
+    "regularQuestion": "Quanti paia di scarpe possiedi in totale nel tuo armadio?",
+    "impostorQuestion": "Quante magliette o t-shirt hai all'incirca nel guardaroba?",
+    "unit": "paia"
+  },
+  {
+    "id": "18",
+    "regularQuestion": "Quante volte all'anno prendi un aereo tra andata e ritorno?",
+    "impostorQuestion": "Quante volte all'anno vai dal parrucchiere o dal barbiere?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "19",
+    "regularQuestion": "Quanti giorni di vacanza fuori città ti sei fatto negli ultimi 12 mesi?",
+    "impostorQuestion": "Quanti libri o fumetti hai letto negli ultimi 12 mesi?",
+    "unit": "giorni"
+  },
+  {
+    "id": "20",
+    "regularQuestion": "Quanti euro hai nel portafoglio fisico in contanti in questo esatto momento?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per una cena in pizzeria?",
+    "unit": "euro"
+  },
+  {
+    "id": "21",
+    "regularQuestion": "Quante ore al giorno passi sui social network (Instagram, TikTok, ecc.)?",
+    "impostorQuestion": "Quante ore al giorno passi fuori casa in media?",
+    "unit": "ore al giorno"
+  },
+  {
+    "id": "22",
+    "regularQuestion": "Quanti amici o contatti hai fissati in alto nelle chat di WhatsApp?",
+    "impostorQuestion": "Quanti account social hai attivi (Instagram, TikTok, X, ecc.)?",
+    "unit": ""
+  },
+  {
+    "id": "23",
+    "regularQuestion": "Quanti minuti impieghi mediamente per addormentarti una volta a letto?",
+    "impostorQuestion": "Quanti minuti dura all'incirca il tuo tragitto quotidiano casa-lavoro/università?",
+    "unit": "minuti"
+  },
+  {
+    "id": "24",
+    "regularQuestion": "Quante volte ti sei ubriacato pesantemente negli ultimi 12 mesi?",
+    "impostorQuestion": "Quanti matrimoni o cerimonie hai frequentato negli ultimi 12 mesi?",
+    "unit": "volte"
+  },
+  {
+    "id": "25",
+    "regularQuestion": "Quanti anni avevi quando hai dato il tuo primo vero bacio?",
+    "impostorQuestion": "A che età hai preso la patente o il patentino?",
+    "unit": "anni"
+  },
+  {
+    "id": "26",
+    "regularQuestion": "Quante volte al mese fai un aperitivo con gli amici?",
+    "impostorQuestion": "Quante volte al mese mangi fuori al ristorante?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "27",
+    "regularQuestion": "Quante volte al giorno ti lavi le mani all'incirca?",
+    "impostorQuestion": "Quanti bicchieri d'acqua bevi in media in un giorno?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "28",
+    "regularQuestion": "Quante volte alla settimana dici una bugia anche piccola o a fin di bene?",
+    "impostorQuestion": "Quante volte a settimana cucini tu da zero?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "29",
+    "regularQuestion": "Quanti euro spendi all'incirca al mese in abbonamenti digitali (Spotify, Netflix, iCloud, ecc.)?",
+    "impostorQuestion": "Quanti euro spendi all'incirca in un mese per la colazione al bar?",
+    "unit": "euro al mese"
+  },
+  {
+    "id": "30",
+    "regularQuestion": "Quante volte in tutta la tua vita ti sei rotto o fratturato un osso?",
+    "impostorQuestion": "Quanti tatuaggi hai sul corpo?",
+    "unit": "volte"
+  },
+  {
+    "id": "31",
+    "regularQuestion": "Quanti minuti impieghi la mattina dal suono della prima sveglia a quando esci dal letto?",
+    "impostorQuestion": "Quanti minuti ci metti a fare colazione la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "32",
+    "regularQuestion": "Quante volte a settimana compri qualcosa online (Amazon, Vinted, Shein, ecc.)?",
+    "impostorQuestion": "Quante volte a settimana prendi i mezzi pubblici?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "33",
+    "regularQuestion": "Quanti paesi esteri hai visitato in tutta la tua vita finora?",
+    "impostorQuestion": "In quante città diverse hai dormito almeno una notte nell'ultimo anno?",
+    "unit": "stati esteri"
+  },
+  {
+    "id": "34",
+    "regularQuestion": "Quante storie o post pubblichi all'incirca in un mese su Instagram?",
+    "impostorQuestion": "Quante telefonate vere e proprie fai all'incirca in un mese?",
+    "unit": "al mese"
+  },
+  {
+    "id": "35",
+    "regularQuestion": "Quante multe stradali hai preso in tutta la tua vita da quando guidi?",
+    "impostorQuestion": "Quanti tamponamenti o incidenti piccoli hai fatto in auto o moto?",
+    "unit": "multe"
+  },
+  {
+    "id": "36",
+    "regularQuestion": "Quanti chili pesi all'incirca sulla bilancia?",
+    "impostorQuestion": "Quanti chilometri fai mediamente in auto o in bici in una settimana?",
+    "unit": "kg"
+  },
+  {
+    "id": "37",
+    "regularQuestion": "Quanti centimetri sei alto?",
+    "impostorQuestion": "Quanti euro spenderesti al massimo per un paio di scarpe da ginnastica?",
+    "unit": "cm"
+  },
+  {
+    "id": "38",
+    "regularQuestion": "Quante ore a settimana passi a giocare ai videogiochi (console, PC, telefono)?",
+    "impostorQuestion": "Quante ore a settimana passi ad allenarti o fare sport?",
+    "unit": "ore a settimana"
+  },
+  {
+    "id": "39",
+    "regularQuestion": "Quanti soldi spenderesti al massimo per il regalo di compleanno di un caro amico?",
+    "impostorQuestion": "Quanti euro spendi di solito per una notte in albergo in vacanza?",
+    "unit": "euro"
+  },
+  {
+    "id": "40",
+    "regularQuestion": "Quanti gruppi WhatsApp hai attivi e in cui scrivi almeno una volta a settimana?",
+    "impostorQuestion": "Quanti amici molto stretti consideri di avere veramente nella vita?",
+    "unit": "gruppi"
+  },
+  {
+    "id": "41",
+    "regularQuestion": "Quante volte a settimana mangi cibo spazzatura o dolciumi confezionati?",
+    "impostorQuestion": "Quante volte a settimana fai una passeggiata all'aria aperta?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "42",
+    "regularQuestion": "Quanti minuti consecutivi riesci a correre senza fermarti a camminare?",
+    "impostorQuestion": "Quanti minuti dura di solito la tua pausa pranzo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "43",
+    "regularQuestion": "Quante volte al mese ti capita di arrivare in ritardo a un appuntamento?",
+    "impostorQuestion": "Quante volte al mese vai al cinema?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "44",
+    "regularQuestion": "Quanti euro hai speso all'incirca per il tuo smartphone attuale?",
+    "impostorQuestion": "Quanti euro spendi all'incirca in un anno per vestiti e shopping?",
+    "unit": "euro"
+  },
+  {
+    "id": "45",
+    "regularQuestion": "Quante volte ti sei innamorato seriamente in tutta la tua vita?",
+    "impostorQuestion": "Quante relazioni sentimentali durate più di 6 mesi hai avuto?",
+    "unit": "volte"
+  },
+  {
+    "id": "46",
+    "regularQuestion": "Quanti messaggi vocali più lunghi di 1 minuto mandi in una settimana?",
+    "impostorQuestion": "Quante telefonate di lavoro o studio fai in una settimana?",
+    "unit": "vocali a settimana"
+  },
+  {
+    "id": "47",
+    "regularQuestion": "Quante volte all'anno prendi l'influenza, la febbre o un forte raffreddore?",
+    "impostorQuestion": "Quante volte all'anno vai dal dentista per un controllo o pulizia?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "48",
+    "regularQuestion": "Quante persone hai bloccato su WhatsApp o su Instagram in tutta la tua vita?",
+    "impostorQuestion": "Quanti profili social segui ma tieni silenziati?",
+    "unit": "persone"
+  },
+  {
+    "id": "49",
+    "regularQuestion": "Quante piante hai in casa o sul balcone di cui ti prendi cura?",
+    "impostorQuestion": "Quanti animali domestici hai avuto in tutta la tua vita?",
+    "unit": "piante"
+  },
+  {
+    "id": "50",
+    "regularQuestion": "Quanti euro daresti di mancia a un cameriere per un conto da 100 euro?",
+    "impostorQuestion": "Quanti euro spendi di solito per comprare una bottiglia di vino?",
+    "unit": "euro"
+  },
+  {
+    "id": "51",
+    "regularQuestion": "Quante volte al mese fai il bucato o usi la lavatrice?",
+    "impostorQuestion": "Quante volte al mese pulisci a fondo la tua stanza o la casa?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "52",
+    "regularQuestion": "Quanti minuti impieghi per finire un piatto di pasta quando hai molta fame?",
+    "impostorQuestion": "Quanti minuti ci metti a farti la barba o a truccarti la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "53",
+    "regularQuestion": "Quanti litri d'acqua bevi all'incirca in una giornata intera?",
+    "impostorQuestion": "Quanti litri di benzina consumi all'incirca in un giorno di spostamenti?",
+    "unit": "litri al giorno"
+  },
+  {
+    "id": "54",
+    "regularQuestion": "Quanti caffè al giorno consideri il tuo limite massimo prima che ti batta forte il cuore?",
+    "impostorQuestion": "Quante ore di fila riesci a guidare da solo senza doverti fermare?",
+    "unit": "caffè"
+  },
+  {
+    "id": "55",
+    "regularQuestion": "Quanti chilometri a piedi fai all'incirca in una tipica giornata?",
+    "impostorQuestion": "Quante fermate di metro o autobus fai per andare al lavoro o a lezione?",
+    "unit": "km al giorno"
+  },
+  {
+    "id": "56",
+    "regularQuestion": "Quante volte alla settimana mangi carne?",
+    "impostorQuestion": "Quante volte alla settimana mangi verdura fresca o insalata?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "57",
+    "regularQuestion": "Quanti contatti hai memorizzati nella rubrica del telefono?",
+    "impostorQuestion": "Quanti follower hai all'incirca sul tuo profilo Instagram principale?",
+    "unit": "contatti"
+  },
+  {
+    "id": "58",
+    "regularQuestion": "Quante volte al giorno controlli l'orario o guardi lo smartwatch/orologio?",
+    "impostorQuestion": "Quante volte al giorno apri il frigorifero anche senza avere fame?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "59",
+    "regularQuestion": "Quanti scatti o tentativi fai prima di trovare una foto che ti piace per i social?",
+    "impostorQuestion": "Quanti minuti ci metti di solito a scegliere un vestito prima di uscire?",
+    "unit": "foto"
+  },
+  {
+    "id": "60",
+    "regularQuestion": "Quante volte in un mese perdi o non trovi le chiavi di casa o della macchina?",
+    "impostorQuestion": "Quante volte in un mese rimani col cellulare sotto il 10% di batteria?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "61",
+    "regularQuestion": "Quanti cuscini tieni sul letto dove dormi ogni notte?",
+    "impostorQuestion": "Quante coperte usi d'inverno per dormire?",
+    "unit": "cuscini"
+  },
+  {
+    "id": "62",
+    "regularQuestion": "A che ora vai a dormire di solito nei giorni feriali (espressa in ore, es. 23 o 24)?",
+    "impostorQuestion": "A che ora pranzi di solito durante il fine settimana?",
+    "unit": "ora della notte"
+  },
+  {
+    "id": "63",
+    "regularQuestion": "A che ora ti svegli la mattina nei giorni di lavoro o università?",
+    "impostorQuestion": "Quante ore di sonno fai all'incirca a notte?",
+    "unit": "ora del mattino"
+  },
+  {
+    "id": "64",
+    "regularQuestion": "Quante ore sei riuscito a rimanere sveglio di fila senza dormire per una notte in bianco?",
+    "impostorQuestion": "Quante ore dura il viaggio in treno o in auto più lungo che hai fatto senza tappe?",
+    "unit": "ore consecutive"
+  },
+  {
+    "id": "65",
+    "regularQuestion": "Quante schede aperte hai in questo momento sul browser del tuo telefono?",
+    "impostorQuestion": "Quante email non lette hai nella tua casella di posta principale?",
+    "unit": "schede aperte"
+  },
+  {
+    "id": "66",
+    "regularQuestion": "Quanti euro costa il capo d'abbigliamento più costoso che hai nell'armadio?",
+    "impostorQuestion": "Quanti euro spendi all'incirca ogni anno per la manutenzione o bollo dell'auto?",
+    "unit": "euro"
+  },
+  {
+    "id": "67",
+    "regularQuestion": "Quanti giorni consecutivi riesci a stare senza farti lo shampoo o lavarti i capelli?",
+    "impostorQuestion": "Quanti giorni di fila riesci a stare da solo a casa senza vedere nessuno?",
+    "unit": "giorni"
+  },
+  {
+    "id": "68",
+    "regularQuestion": "Quante volte ti lavi i denti in una giornata normale?",
+    "impostorQuestion": "Quanti pasti principali consumi in un giorno compresi spuntini?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "69",
+    "regularQuestion": "Quante cicche o gomme da masticare mastichi all'incirca in una settimana?",
+    "impostorQuestion": "Quanti pacchetti di fazzoletti usi all'incirca in un mese?",
+    "unit": "a settimana"
+  },
+  {
+    "id": "70",
+    "regularQuestion": "Quante volte all'anno vai dal dentista?",
+    "impostorQuestion": "Quante volte all'anno cambi lo spazzolino da denti?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "71",
+    "regularQuestion": "Quanti chili di bagaglio a mano porteresti per una vacanza di una settimana?",
+    "impostorQuestion": "Quanti chili pesa all'incirca il tuo zaino quando vai a lezione o lavoro?",
+    "unit": "kg"
+  },
+  {
+    "id": "72",
+    "regularQuestion": "Quante volte a settimana mangi fuori casa a pranzo o a cena?",
+    "impostorQuestion": "Quante volte a settimana fai colazione al bar?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "73",
+    "regularQuestion": "Quanti euro spendi di media ogni volta che vai dal parrucchiere o barbiere?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per comprare un profumo?",
+    "unit": "euro"
+  },
+  {
+    "id": "74",
+    "regularQuestion": "Quante volte in un mese fai un acquisto impulsivo di cui poi ti penti?",
+    "impostorQuestion": "Quante volte al mese prendi un taxi o un Uber?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "75",
+    "regularQuestion": "Quanti chilometri orari hai toccato al massimo come record personale guidando in autostrada?",
+    "impostorQuestion": "Quanti battiti al minuto raggiunge il tuo cuore sotto sforzo massimo?",
+    "unit": "km/h"
+  },
+  {
+    "id": "76",
+    "regularQuestion": "Quanti euro daresti per non dover fare le pulizie di casa per un intero anno?",
+    "impostorQuestion": "Quanti euro spenderesti per un volo andata e ritorno per la vacanza dei tuoi sogni?",
+    "unit": "euro"
+  },
+  {
+    "id": "77",
+    "regularQuestion": "Quante volte nella vita sei finito al pronto soccorso per un infortunio o malore?",
+    "impostorQuestion": "Quanti punti di sutura hai ricevuto in tutta la tua vita?",
+    "unit": "volte"
+  },
+  {
+    "id": "78",
+    "regularQuestion": "Quanti litri di alcol (vino, birra o superalcolici) bevi all'incirca in un intero mese?",
+    "impostorQuestion": "Quanti litri di latte o bevanda vegetale bevi in un mese?",
+    "unit": "litri al mese"
+  },
+  {
+    "id": "79",
+    "regularQuestion": "Quanti flessioni/piegamenti sulle braccia riesci a fare di fila prima di crollare?",
+    "impostorQuestion": "Quanti addominali o crunch riesci a fare di fila senza fermarti?",
+    "unit": "piegamenti"
+  },
+  {
+    "id": "80",
+    "regularQuestion": "Quanti secondi riesci a trattenere il fiato sott'acqua o in apnea da fermo?",
+    "impostorQuestion": "Quanti secondi riesci a reggere in posizione di plank sugli avambracci?",
+    "unit": "secondi"
+  },
+  {
+    "id": "81",
+    "regularQuestion": "Quanti messaggi non letti hai in questo momento nelle tue chat o email?",
+    "impostorQuestion": "Quanti profili segui all'incirca su Instagram?",
+    "unit": "non letti"
+  },
+  {
+    "id": "82",
+    "regularQuestion": "Quanti orologi da polso o braccialetti indossi abitualmente?",
+    "impostorQuestion": "Quanti anelli o orecchini indossi di solito?",
+    "unit": ""
+  },
+  {
+    "id": "83",
+    "regularQuestion": "Quante volte al mese ti capita di dimenticare dove hai parcheggiato la macchina o la bici?",
+    "impostorQuestion": "Quante volte al mese fai benzina all'auto?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "84",
+    "regularQuestion": "Quanti canali o profili YouTube hai tra le tue iscrizioni?",
+    "impostorQuestion": "Quante canzoni hai nella tua playlist dei preferiti su Spotify?",
+    "unit": ""
+  },
+  {
+    "id": "85",
+    "regularQuestion": "Quanti euro spenderesti per un biglietto di un concerto del tuo artista preferito in assoluto?",
+    "impostorQuestion": "Quanti euro spenderesti per comprare una giacca invernale di marca?",
+    "unit": "euro"
+  },
+  {
+    "id": "86",
+    "regularQuestion": "Quante volte in una settimana mangi pasta o riso sia a pranzo che a cena?",
+    "impostorQuestion": "Quante volte alla settimana fai uno spuntino di mezzanotte?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "87",
+    "regularQuestion": "Quante ore di fila riesci a guardare una serie TV senza staccare gli occhi dallo schermo?",
+    "impostorQuestion": "Quante ore riesci a studiare o lavorare concentrato prima di prenderti una pausa?",
+    "unit": "ore"
+  },
+  {
+    "id": "88",
+    "regularQuestion": "Quanti caffè decaffeinati bevi in un mese?",
+    "impostorQuestion": "Quante tisane o tè caldi bevi in un mese?",
+    "unit": "al mese"
+  },
+  {
+    "id": "89",
+    "regularQuestion": "Quanti gradi tieni impostato il climatizzatore o il riscaldamento in camera tua?",
+    "impostorQuestion": "Qual è la temperatura ideale in gradi che vorresti all'aperto in primavera?",
+    "unit": "gradi Celsius"
+  },
+  {
+    "id": "90",
+    "regularQuestion": "Quante volte all'anno vai a fare una passeggiata in montagna o al mare fuori stagione?",
+    "impostorQuestion": "Quante volte all'anno vai a teatro o a una mostra d'arte?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "91",
+    "regularQuestion": "Quanti euro hai speso all'incirca per il tuo ultimo paio di occhiali (da sole o da vista)?",
+    "impostorQuestion": "Quanti euro hai speso per l'ultimo capo d'abbigliamento che hai comprato?",
+    "unit": "euro"
+  },
+  {
+    "id": "92",
+    "regularQuestion": "Quante volte al mese ti capita di fare tardi la notte dopo le 3 del mattino?",
+    "impostorQuestion": "Quante volte al mese ti svegli prima delle 6:30 del mattino?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "93",
+    "regularQuestion": "Quanti mesi di fila sei riuscito a mantenere una frequentazione in palestra senza mollare?",
+    "impostorQuestion": "Quanti mesi è durata la tua convivenza o esperienza fuori sede più lunga?",
+    "unit": "mesi"
+  },
+  {
+    "id": "94",
+    "regularQuestion": "Quanti chilometri di distanza da casa tua si trova il posto più lontano in cui sei mai stato?",
+    "impostorQuestion": "Quanti chilometri ha percorso in totale la tua auto attuale sul contachilometri?",
+    "unit": "km"
+  },
+  {
+    "id": "95",
+    "regularQuestion": "Quanti euro al mese consideri il minimo indispensabile per vivere dignitosamente da solo nella tua città?",
+    "impostorQuestion": "Quanti euro al mese spendi per affitto o mutuo?",
+    "unit": "euro al mese"
+  },
+  {
+    "id": "96",
+    "regularQuestion": "Quante volte alla settimana mangi il pane durante i pasti?",
+    "impostorQuestion": "Quante volte alla settimana bevi bevande gassate (Coca-Cola, Fanta, ecc.)?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "97",
+    "regularQuestion": "Quanti giorni di ferie retribuite o di pausa totale ti prendi in un anno intero?",
+    "impostorQuestion": "Quanti giorni all'anno passi al mare d'estate?",
+    "unit": "giorni all'anno"
+  },
+  {
+    "id": "98",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di non vedere qualcuno per strada per non salutarlo?",
+    "impostorQuestion": "Quante volte nella vita hai fatto finta di stare male per non andare a scuola o al lavoro?",
+    "unit": "volte"
+  },
+  {
+    "id": "99",
+    "regularQuestion": "Quanti euro spenderesti al massimo per una bottiglia di vino da bere in una cena speciale?",
+    "impostorQuestion": "Quanti euro spenderesti per un profumo di alta profumeria?",
+    "unit": "euro"
+  },
+  {
+    "id": "100",
+    "regularQuestion": "Quante volte in una settimana controlli il tuo conto corrente sull'app della banca?",
+    "impostorQuestion": "Quante volte alla settimana usi la carta di credito per pagare un caffè o piccoli importi?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "101",
+    "regularQuestion": "Quante paia di calzini possiedi all'incirca nel cassetto?",
+    "impostorQuestion": "Quante magliette o polo hai nell'armadio?",
+    "unit": "paia"
+  },
+  {
+    "id": "102",
+    "regularQuestion": "Quanti litri d'acqua bevi all'incirca in una settimana intera?",
+    "impostorQuestion": "Quante birre bevi all'incirca in un mese?",
+    "unit": "litri a settimana"
+  },
+  {
+    "id": "103",
+    "regularQuestion": "Quante volte in un mese mangi cibo fritto (patatine, cotolette, ecc.)?",
+    "impostorQuestion": "Quante volte in un mese ordini cibo d'asporto a casa?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "104",
+    "regularQuestion": "Quante ore passi a letto nel weekend prima di alzarti la mattina?",
+    "impostorQuestion": "Quante ore di sonno fai a notte durante la settimana lavorativa?",
+    "unit": "ore"
+  },
+  {
+    "id": "105",
+    "regularQuestion": "Quanti euro spendi all'incirca per fare un pieno completo di carburante alla macchina?",
+    "impostorQuestion": "Quanti euro spendi mediamente per una spesa settimanale al supermercato?",
+    "unit": "euro"
+  },
+  {
+    "id": "106",
+    "regularQuestion": "Quante volte alla settimana usi il microonde per scaldare o cucinare?",
+    "impostorQuestion": "Quante volte a settimana mangi pasta a pranzo o cena?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "107",
+    "regularQuestion": "Quante app hai installate sullo smartphone in totale?",
+    "impostorQuestion": "Quante chat o gruppi hai aperti su WhatsApp in totale?",
+    "unit": "app"
+  },
+  {
+    "id": "108",
+    "regularQuestion": "Quanti minuti impieghi per lavarti i denti ogni volta?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una doccia rapida?",
+    "unit": "minuti"
+  },
+  {
+    "id": "109",
+    "regularQuestion": "Quanti euro hai speso per l'ultimo paio di scarpe che hai comprato?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per una cena completa in un ristorante medio?",
+    "unit": "euro"
+  },
+  {
+    "id": "110",
+    "regularQuestion": "Quante volte al mese ti tagli le unghie delle mani o dei piedi?",
+    "impostorQuestion": "Quante volte al mese vai dal parrucchiere o barbiere?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "111",
+    "regularQuestion": "Quanti caffè zuccherati bevi in una settimana rispetto a quelli amari?",
+    "impostorQuestion": "Quante bibite gassate bevi all'incirca in una settimana?",
+    "unit": "a settimana"
+  },
+  {
+    "id": "112",
+    "regularQuestion": "Quanti amici inviteresti a casa tua per una cena o festa privata al massimo?",
+    "impostorQuestion": "Quante persone consideri tuoi veri amici intimi nella vita?",
+    "unit": "persone"
+  },
+  {
+    "id": "113",
+    "regularQuestion": "Quante volte al giorno guardi lo specchio per sistemarti?",
+    "impostorQuestion": "Quante volte al giorno bevi un bicchiere d'acqua?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "114",
+    "regularQuestion": "Quante volte nella vita hai cambiato casa o residenza?",
+    "impostorQuestion": "In quanti paesi esteri hai viaggiato finora?",
+    "unit": "volte"
+  },
+  {
+    "id": "115",
+    "regularQuestion": "Quanti minuti riesci a camminare a piedi prima di stancarti o voler sederti?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano per andare al lavoro o a lezione?",
+    "unit": "minuti"
+  },
+  {
+    "id": "116",
+    "regularQuestion": "Quanti profili Instagram segui al momento?",
+    "impostorQuestion": "Quanti contatti hai salvati nella rubrica telefonica?",
+    "unit": "profili"
+  },
+  {
+    "id": "117",
+    "regularQuestion": "Quanti follower hai sul tuo profilo Instagram principale?",
+    "impostorQuestion": "Quante foto hai salvato nei preferiti del rullino foto?",
+    "unit": "follower"
+  },
+  {
+    "id": "118",
+    "regularQuestion": "Quante volte al mese fai un aperitivo o bevi qualcosa dopo lavoro/studio?",
+    "impostorQuestion": "Quante volte al mese mangi una pizza?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "119",
+    "regularQuestion": "Quanti soldi spenderesti al massimo per una bottiglia di superalcolico da regalare?",
+    "impostorQuestion": "Quanti euro spendi di solito per una cena informale con amici?",
+    "unit": "euro"
+  },
+  {
+    "id": "120",
+    "regularQuestion": "Quante ore al giorno trascorri seduto su una sedia o poltrona?",
+    "impostorQuestion": "Quante ore di sonno fai a notte?",
+    "unit": "ore al giorno"
+  },
+  {
+    "id": "121",
+    "regularQuestion": "Quanti messaggi vocali ascolti a velocità 1.5x o 2x in una settimana?",
+    "impostorQuestion": "Quanti messaggi vocali invii tu in una settimana?",
+    "unit": "vocali a settimana"
+  },
+  {
+    "id": "122",
+    "regularQuestion": "Quante volte in un anno vai a fare la spesa in un negozio di abbigliamento fisico?",
+    "impostorQuestion": "Quante volte in un anno compri vestiti o scarpe online?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "123",
+    "regularQuestion": "Quanti euro lasci di solito sul conto corrente come fondo emergenza minimo?",
+    "impostorQuestion": "Quanti euro al mese spendi all'incirca per tutte le tue spese fisse?",
+    "unit": "euro"
+  },
+  {
+    "id": "124",
+    "regularQuestion": "Quante volte alla settimana dimentichi di bere abbastanza acqua e te ne accorgi la sera?",
+    "impostorQuestion": "Quanti giorni a settimana salti la colazione?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "125",
+    "regularQuestion": "Quanti chili riusciresti a sollevare in una panca piana o esercizio simile in palestra?",
+    "impostorQuestion": "Quanti chili pesi all'incirca sulla bilancia?",
+    "unit": "kg"
+  },
+  {
+    "id": "126",
+    "regularQuestion": "Quanti minuti impieghi a fare la spesa quando entri in un supermercato grande?",
+    "impostorQuestion": "Quanti minuti passi sotto la doccia la domenica?",
+    "unit": "minuti"
+  },
+  {
+    "id": "127",
+    "regularQuestion": "Quanti capi d'abbigliamento neri hai nel guardaroba rispetto agli altri colori?",
+    "impostorQuestion": "Quante paia di scarpe possiedi in totale?",
+    "unit": "capi"
+  },
+  {
+    "id": "128",
+    "regularQuestion": "Quante volte a settimana metti in carica lo smartphone?",
+    "impostorQuestion": "Quante docce fai in una settimana normale?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "129",
+    "regularQuestion": "Quante volte nella vita sei salito su un palco davanti a un pubblico?",
+    "impostorQuestion": "Quante volte ti sei fratturato o slogato qualcosa?",
+    "unit": "volte"
+  },
+  {
+    "id": "130",
+    "regularQuestion": "Quanti minuti impieghi per asciugarti i capelli col phon?",
+    "impostorQuestion": "Quanti minuti impieghi a prepararti prima di andare a dormire?",
+    "unit": "minuti"
+  },
+  {
+    "id": "131",
+    "regularQuestion": "Quante volte al mese ti lamenti del meteo o del troppo caldo/freddo?",
+    "impostorQuestion": "Quante volte al mese mangi fuori al ristorante?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "132",
+    "regularQuestion": "Quanti euro pagheresti per un caffè espresso eccezionale senza lamentarti?",
+    "impostorQuestion": "Quanti euro lasci di solito di mancia al ristorante?",
+    "unit": "euro"
+  },
+  {
+    "id": "133",
+    "regularQuestion": "Quante volte all'anno partecipi a una festa di compleanno?",
+    "impostorQuestion": "Quante volte all'anno prendi un treno o aereo per viaggiare?",
+    "unit": "feste all'anno"
+  },
+  {
+    "id": "134",
+    "regularQuestion": "Quanti chilometri fai mediamente in auto o scooter in un intero mese?",
+    "impostorQuestion": "Quanti euro spendi di carburante in un intero mese?",
+    "unit": "km al mese"
+  },
+  {
+    "id": "135",
+    "regularQuestion": "Quanti cuscini o coperte tieni sul letto d'inverno?",
+    "impostorQuestion": "Quanti caricatori per cellulare hai sparsi per casa?",
+    "unit": ""
+  },
+  {
+    "id": "136",
+    "regularQuestion": "Quante volte al giorno apri Instagram anche solo per pochi secondi?",
+    "impostorQuestion": "Quanti messaggi vocali ascolti in una tipica giornata?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "137",
+    "regularQuestion": "Quante ore continuate sei rimasto a studiare o lavorare sotto esame/scadenza?",
+    "impostorQuestion": "Quante ore di fila sei rimasto sveglio la notte per far festa?",
+    "unit": "ore consecutive"
+  },
+  {
+    "id": "138",
+    "regularQuestion": "Quante volte nella vita hai perso un treno, aereo o traghetto per ritardo?",
+    "impostorQuestion": "Quante volte ti sei fatto male al punto da mettere punti di sutura?",
+    "unit": "volte"
+  },
+  {
+    "id": "139",
+    "regularQuestion": "Quante bottiglie d'acqua compri o consumi a casa in una settimana?",
+    "impostorQuestion": "Quanti litri di latte bevi all'incirca in un mese?",
+    "unit": "a settimana"
+  },
+  {
+    "id": "140",
+    "regularQuestion": "Quanti euro hai speso per l'oggetto tecnologico più inutile che hai a casa?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per una cena di pesce?",
+    "unit": "euro"
+  },
+  {
+    "id": "141",
+    "regularQuestion": "Quante volte a settimana mangi cioccolato o dolci?",
+    "impostorQuestion": "Quante volte a settimana bevi una tazza di caffè?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "142",
+    "regularQuestion": "Quanti euro spenderesti al mese per un personal trainer o nutrizionista?",
+    "impostorQuestion": "Quanti euro spendi ogni mese per l'abbonamento in palestra?",
+    "unit": "euro al mese"
+  },
+  {
+    "id": "143",
+    "regularQuestion": "Quante ore a settimana passi in macchina o sui mezzi pubblici nel traffico?",
+    "impostorQuestion": "Quante ore a settimana dedichi allo sport o alla camminata?",
+    "unit": "ore a settimana"
+  },
+  {
+    "id": "144",
+    "regularQuestion": "Quante volte ti sei addormentato sul divano guardando la TV nell'ultimo mese?",
+    "impostorQuestion": "Quante volte nell'ultimo mese hai ordinato cibo con un'app di delivery?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "145",
+    "regularQuestion": "Quante volte al giorno dici grazie o saluti sconosciuti (negozi, portieri, ecc.)?",
+    "impostorQuestion": "Quante volte al giorno bevi un bicchiere o sorso d'acqua?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "146",
+    "regularQuestion": "Quante foto hai scattato col telefono nell'ultimo weekend?",
+    "impostorQuestion": "Quanti messaggi hai scambiato nelle chat di gruppo nell'ultimo weekend?",
+    "unit": "foto"
+  },
+  {
+    "id": "147",
+    "regularQuestion": "Quanti minuti dura la tua routine mattutina prima di uscire per lavoro o università?",
+    "impostorQuestion": "Quanti minuti impieghi per cucinare e cenare la sera?",
+    "unit": "minuti"
+  },
+  {
+    "id": "148",
+    "regularQuestion": "Quante serie TV hai finito di guardare dall'inizio alla fine quest'anno?",
+    "impostorQuestion": "Quanti libri o romanzi hai letto quest'anno?",
+    "unit": "serie TV"
+  },
+  {
+    "id": "149",
+    "regularQuestion": "Quanti euro hai speso all'incirca per il tuo ultimo taglio di capelli?",
+    "impostorQuestion": "Quanti euro spendi per una pizza margherita e una birra media?",
+    "unit": "euro"
+  },
+  {
+    "id": "150",
+    "regularQuestion": "Quante volte al giorno controlli WhatsApp o Telegram?",
+    "impostorQuestion": "Quante volte al giorno controlli l'ora sull'orologio o cellulare?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "151",
+    "regularQuestion": "Quante volte all'anno vai al cinema a vedere un film sul grande schermo?",
+    "impostorQuestion": "Quante volte all'anno prendi un aereo?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "152",
+    "regularQuestion": "Quante paia di jeans o pantaloni lunghi metti abitualmente?",
+    "impostorQuestion": "Quante felpe o maglioni indossi a rotazione d'inverno?",
+    "unit": "pantaloni"
+  },
+  {
+    "id": "153",
+    "regularQuestion": "Quanti gradi di miopia o vista ti mancano (se porti occhiali o lenti a contatto)?",
+    "impostorQuestion": "Quante volte all'anno fai una visita medica o analisi del sangue?",
+    "unit": "gradi"
+  },
+  {
+    "id": "154",
+    "regularQuestion": "Quante volte alla settimana rifai il letto in modo ordinato?",
+    "impostorQuestion": "Quante volte a settimana cucini una cena completa per te o altri?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "155",
+    "regularQuestion": "Quanti euro spenderesti per un cocktail ben fatto in un locale elegante senza sentirti derubato?",
+    "impostorQuestion": "Quanti euro spendi di solito per un aperitivo abbondante con buffet?",
+    "unit": "euro"
+  },
+  {
+    "id": "156",
+    "regularQuestion": "Quanti minuti di ritardo tolleri prima di arrabbiarti con chi ha appuntamento con te?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione la mattina con calma?",
+    "unit": "minuti"
+  },
+  {
+    "id": "157",
+    "regularQuestion": "Quante volte al mese ti ritrovi col frigo quasi vuoto da dover fare la spesa urgente?",
+    "impostorQuestion": "Quante volte al mese prendi una pizza da asporto?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "158",
+    "regularQuestion": "Quanti euro spendi mediamente quando fai la spesa grossa al supermercato?",
+    "impostorQuestion": "Quanti euro spendi di carburante quando fai il pieno?",
+    "unit": "euro"
+  },
+  {
+    "id": "159",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di non capire per evitare una discussione?",
+    "impostorQuestion": "Quante volte nella vita ti sei addormentato sui mezzi pubblici saltando la fermata?",
+    "unit": "volte"
+  },
+  {
+    "id": "160",
+    "regularQuestion": "Quanti brani musicali hai salvato nella cartella preferiti dell'app di musica?",
+    "impostorQuestion": "Quanti contatti hai memorizzato nella rubrica del telefono?",
+    "unit": "brani"
+  },
+  {
+    "id": "161",
+    "regularQuestion": "Quante volte a settimana usi cuffie o auricolari per ascoltare musica o podcast?",
+    "impostorQuestion": "Quante volte a settimana fai una passeggiata all'aperto?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "162",
+    "regularQuestion": "Quanti minuti dura in media una tua telefonata con un genitore o parente stretto?",
+    "impostorQuestion": "Quanti minuti impieghi per prepararti prima di andare a dormire?",
+    "unit": "minuti"
+  },
+  {
+    "id": "163",
+    "regularQuestion": "Quanti euro hai mai trovato per terra come banconota o moneta più fortunata?",
+    "impostorQuestion": "Quanti euro spenderesti per un biglietto del cinema con pop corn?",
+    "unit": "euro"
+  },
+  {
+    "id": "164",
+    "regularQuestion": "Quanti giorni consecutivi sei riuscito a resistere senza mangiare carboidrati o pasta?",
+    "impostorQuestion": "Quanti giorni di ferie consecutive hai fatto nella tua vacanza più lunga?",
+    "unit": "giorni"
+  },
+  {
+    "id": "165",
+    "regularQuestion": "Quante volte a settimana butti la spazzatura (differenziata, indifferenziata)?",
+    "impostorQuestion": "Quante volte a settimana usi la lavatrice?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "166",
+    "regularQuestion": "Quanti euro costava l'ultimo regalo di Natale che hai fatto a una persona speciale?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per un paio di pantaloni di marca?",
+    "unit": "euro"
+  },
+  {
+    "id": "167",
+    "regularQuestion": "Quante volte al mese ti capita di avere mal di testa o emicrania?",
+    "impostorQuestion": "Quante volte al mese prendi un antidolorifico o farmaco da banco?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "168",
+    "regularQuestion": "Quanti bicchieri di birra o calici di vino bevi in una serata tra amici quando esci?",
+    "impostorQuestion": "Quanti caffè bevi in una tipica giornata lavorativa?",
+    "unit": "bicchieri"
+  },
+  {
+    "id": "169",
+    "regularQuestion": "Quante canzoni conosci a memoria dall'inizio alla fine testo compreso?",
+    "impostorQuestion": "Quanti libri o saggi hai conservato sulla tua libreria a casa?",
+    "unit": "canzoni"
+  },
+  {
+    "id": "170",
+    "regularQuestion": "Quante volte al giorno sbadigli quando sei particolarmente assonnato o annoiato?",
+    "impostorQuestion": "Quante volte al giorno bevi un sorso d'acqua o caffè?",
+    "unit": "sbadigli al giorno"
+  },
+  {
+    "id": "171",
+    "regularQuestion": "Quanti minuti prima dell'orario stabilito arrivi di solito a un appuntamento importante?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione al bar?",
+    "unit": "minuti d'anticipo"
+  },
+  {
+    "id": "172",
+    "regularQuestion": "Quanti euro hai speso per l'ultimo concerto o evento dal vivo a cui hai partecipato?",
+    "impostorQuestion": "Quanti euro spendi per una cena speciale per due persone?",
+    "unit": "euro"
+  },
+  {
+    "id": "173",
+    "regularQuestion": "Quante volte alla settimana mangi uova (sode, all'occhio di bue, frittata)?",
+    "impostorQuestion": "Quante volte alla settimana mangi formaggio o latticini?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "174",
+    "regularQuestion": "Quante ore di fila sei riuscito a guidare da solo senza passeggeri?",
+    "impostorQuestion": "Quante ore passi al cellulare in una giornata festiva sul divano?",
+    "unit": "ore"
+  },
+  {
+    "id": "175",
+    "regularQuestion": "Quanti euro spendi all'incirca per un aperitivo con una bevuta e qualche stuzzichino?",
+    "impostorQuestion": "Quanti euro spendi per una colazione completa con brioche e succo?",
+    "unit": "euro"
+  },
+  {
+    "id": "176",
+    "regularQuestion": "Quanti giorni di fila riesci a indossare la stessa felpa prima di metterla a lavare?",
+    "impostorQuestion": "Quanti giorni a settimana indossi scarpe da ginnastica?",
+    "unit": "giorni"
+  },
+  {
+    "id": "177",
+    "regularQuestion": "Quanti contatti hai nella lista dei preferiti o chiamate rapide sul telefono?",
+    "impostorQuestion": "Quante persone senti regolarmente ogni singolo giorno?",
+    "unit": "contatti"
+  },
+  {
+    "id": "178",
+    "regularQuestion": "Quanti grammi di pasta consideri la tua porzione perfetta a pranzo per essere sazio?",
+    "impostorQuestion": "Quanti grammi di carne o hamburger mangi a cena?",
+    "unit": "grammi di pasta"
+  },
+  {
+    "id": "179",
+    "regularQuestion": "Quanti chilometri orari è la velocità ideale a cui ti piace viaggiare rilassato in autostrada?",
+    "impostorQuestion": "Quanti battiti al minuto ha il tuo cuore quando cammini a passo svelto?",
+    "unit": "km/h"
+  },
+  {
+    "id": "180",
+    "regularQuestion": "Quante volte al mese controlli la data di scadenza dei cibi in frigorifero?",
+    "impostorQuestion": "Quante volte al mese butti cibo scaduto o andato a male?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "181",
+    "regularQuestion": "Quanti euro spenderesti per una felpa con cappuccio comoda di buona qualità?",
+    "impostorQuestion": "Quanti euro spendi per una giacca o cappotto invernale economico?",
+    "unit": "euro"
+  },
+  {
+    "id": "182",
+    "regularQuestion": "Quanti minuti impieghi per preparare la valigia prima di partire per un viaggio di una settimana?",
+    "impostorQuestion": "Quanti minuti impieghi a fare la doccia e vestirti con cura per uscire la sera?",
+    "unit": "minuti"
+  },
+  {
+    "id": "183",
+    "regularQuestion": "Quante volte alla settimana mangi del riso invece della pasta?",
+    "impostorQuestion": "Quante volte alla settimana mangi legumi o zuppe?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "184",
+    "regularQuestion": "Quanti profili hai bloccato sui social per non vedere più i loro contenuti?",
+    "impostorQuestion": "Quanti gruppi WhatsApp hai silenziato per sempre?",
+    "unit": "profili"
+  },
+  {
+    "id": "185",
+    "regularQuestion": "Quanti euro consideri la soglia massima per una mancia che daresti a un rider per una consegna sotto la pioggia?",
+    "impostorQuestion": "Quanti euro costa un caffè espresso nella tua città?",
+    "unit": "euro"
+  },
+  {
+    "id": "186",
+    "regularQuestion": "Quante ore di volo consecutive hai fatto nel viaggio aereo più lungo della tua vita?",
+    "impostorQuestion": "Quante ore dura il viaggio in treno più lungo che ricordi di aver fatto?",
+    "unit": "ore di volo"
+  },
+  {
+    "id": "187",
+    "regularQuestion": "Quanti scatti tieni sul telefono di foto venute male che non hai mai voglia di cancellare?",
+    "impostorQuestion": "Quante immagini hai salvato nei tuoi album o screenshot?",
+    "unit": "foto"
+  },
+  {
+    "id": "188",
+    "regularQuestion": "Quante volte in un anno ti capita di prendere una multa o sanzione di qualsiasi tipo?",
+    "impostorQuestion": "Quante volte in un anno ti ammali con la febbre alta?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "189",
+    "regularQuestion": "Quanti minuti rimani sui social la sera a letto prima di posare il telefono e dormire?",
+    "impostorQuestion": "Quanti minuti impieghi per addormentarti dopo aver spento la luce?",
+    "unit": "minuti"
+  },
+  {
+    "id": "190",
+    "regularQuestion": "Quante volte nella vita ti sei tinto i capelli o hai cambiato look in modo radicale?",
+    "impostorQuestion": "Quanti piercing o orecchini hai fatto nella vita?",
+    "unit": "volte"
+  },
+  {
+    "id": "191",
+    "regularQuestion": "Quanti euro spenderesti per una cena di sushi all you can eat senza considerare il bere?",
+    "impostorQuestion": "Quanti euro spendi per una cena in pizzeria completa di antipasto?",
+    "unit": "euro"
+  },
+  {
+    "id": "192",
+    "regularQuestion": "Quante volte alla settimana mangi il gelato d'estate?",
+    "impostorQuestion": "Quante volte alla settimana bevi una bibita fresca con ghiaccio?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "193",
+    "regularQuestion": "Quanti piani di scale a piedi faresti volentieri prima di chiamare l'ascensore?",
+    "impostorQuestion": "A che piano abiti o lavori di solito?",
+    "unit": "piani di scale"
+  },
+  {
+    "id": "194",
+    "regularQuestion": "Quanti euro hai nel conto corrente secondario o carta ricaricabile prepagata?",
+    "impostorQuestion": "Quanti euro spendi di solito per fare la spesa alimentare per due giorni?",
+    "unit": "euro"
+  },
+  {
+    "id": "195",
+    "regularQuestion": "Quanti giorni di fila riesci a stare senza guardare nemmeno un minuto di TV o serie?",
+    "impostorQuestion": "Quanti giorni consecutivi sei riuscito a non toccare alcolici?",
+    "unit": "giorni"
+  },
+  {
+    "id": "196",
+    "regularQuestion": "Quante volte all'anno compri un farmaco in farmacia?",
+    "impostorQuestion": "Quante volte all'anno vai dal medico di base per una visita o ricetta?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "197",
+    "regularQuestion": "Quanti chilometri fai a piedi a settimana tra commissioni, passeggiate e sport?",
+    "impostorQuestion": "Quanti chilometri fai in bici o monopattino in una settimana?",
+    "unit": "km a settimana"
+  },
+  {
+    "id": "198",
+    "regularQuestion": "Quanti euro consideri ragionevole spendere per un paio di occhiali da sole alla moda?",
+    "impostorQuestion": "Quanti euro spenderesti per uno zaino o borsa da lavoro elegante?",
+    "unit": "euro"
+  },
+  {
+    "id": "199",
+    "regularQuestion": "Quante volte al mese ti ritrovi ad ascoltare la stessa identica canzone in loop?",
+    "impostorQuestion": "Quante volte al mese metti in ordine da cima a fondo la tua stanza?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "200",
+    "regularQuestion": "Quante sveglie sul telefono hai impostato anche se quasi tutte sono disattivate?",
+    "impostorQuestion": "Quante sveglie suonano la mattina prima che tu ti alzi dal letto?",
+    "unit": "sveglie salvate"
+  },
+  {
+    "id": "201",
+    "regularQuestion": "Quante paia di scarpe da ginnastica possiedi in totale?",
+    "impostorQuestion": "Quante felpe con cappuccio hai nel guardaroba?",
+    "unit": "paia"
+  },
+  {
+    "id": "202",
+    "regularQuestion": "Quanti euro spendi in media per un taglio di capelli e barba dal barbiere?",
+    "impostorQuestion": "Quanti euro spendi per una pizza margherita con birra media?",
+    "unit": "euro"
+  },
+  {
+    "id": "203",
+    "regularQuestion": "Quante ore passi al computer ogni giorno per studio o lavoro?",
+    "impostorQuestion": "Quante ore dormi in media a notte nei giorni feriali?",
+    "unit": "ore al giorno"
+  },
+  {
+    "id": "204",
+    "regularQuestion": "Quante volte alla settimana fai colazione con biscotti o fette biscottate?",
+    "impostorQuestion": "Quante volte alla settimana bevi una tazza di latte o cappuccino?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "205",
+    "regularQuestion": "Quanti minuti impieghi per fare una doccia rilassante completa di shampoo e cura personale?",
+    "impostorQuestion": "Quanti minuti ci metti a preparare e consumare il pranzo quando sei da solo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "206",
+    "regularQuestion": "Quante volte in un anno festeggi qualcosa al ristorante con familiari o parenti?",
+    "impostorQuestion": "Quante volte all'anno fai un viaggio fuori regione?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "207",
+    "regularQuestion": "Quanti gruppi WhatsApp hai silenziati per un anno o per sempre?",
+    "impostorQuestion": "Quanti contatti hai aggiunto nei preferiti del telefono?",
+    "unit": "gruppi"
+  },
+  {
+    "id": "208",
+    "regularQuestion": "Quante volte al mese mangi cibo etnico o internazionale (cinese, giapponese, messicano)?",
+    "impostorQuestion": "Quante volte al mese prendi cibo d'asporto o delivery a domicilio?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "209",
+    "regularQuestion": "Quanti chilometri orari è il limite di velocità che non superi mai per paura delle multe?",
+    "impostorQuestion": "Quanti battiti al minuto raggiunge il tuo cuore quando corri a ritmo sostenuto?",
+    "unit": "km/h"
+  },
+  {
+    "id": "210",
+    "regularQuestion": "Quante volte al giorno controlli la percentuale di batteria del telefono?",
+    "impostorQuestion": "Quante volte al giorno bevi un bicchiere d'acqua?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "211",
+    "regularQuestion": "Quanti euro hai speso all'incirca per il tuo ultimo paio di cuffie o auricolari?",
+    "impostorQuestion": "Quanti euro spenderesti per una giacca invernale di media qualità?",
+    "unit": "euro"
+  },
+  {
+    "id": "212",
+    "regularQuestion": "Quanti minuti a piedi è la distanza ideale che sei disposto a fare senza prendere l'auto o i mezzi?",
+    "impostorQuestion": "Quanti minuti dedichi all'attività fisica o stretching al giorno?",
+    "unit": "minuti di cammino"
+  },
+  {
+    "id": "213",
+    "regularQuestion": "Quante volte alla settimana mangi formaggio o latticini durante i pasti?",
+    "impostorQuestion": "Quante volte alla settimana mangi pasta o riso a pranzo?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "214",
+    "regularQuestion": "Quanti euro consideri la spesa ideale per fare la spesa settimanale per una persona?",
+    "impostorQuestion": "Quanti euro spendi di solito per fare il pieno di carburante all'auto?",
+    "unit": "euro a settimana"
+  },
+  {
+    "id": "215",
+    "regularQuestion": "Quanti giorni di ferie retribuite hai ancora accumulate e non godute?",
+    "impostorQuestion": "Quanti giorni di vacanza al mare hai fatto la scorsa estate?",
+    "unit": "giorni"
+  },
+  {
+    "id": "216",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di conoscere una canzone per non sembrare fuori luogo?",
+    "impostorQuestion": "Quante volte nella vita ti sei addormentato durante una lezione o riunione?",
+    "unit": "volte"
+  },
+  {
+    "id": "217",
+    "regularQuestion": "Quanti minuti di sveglia posponi (snooze) in media prima di deciderti ad alzarti?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "218",
+    "regularQuestion": "Quante volte in un mese usi una carta di credito o debito contactless per importi sotto i 5 euro?",
+    "impostorQuestion": "Quante volte in un mese prendi il caffè al bar pagando con carta?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "219",
+    "regularQuestion": "Quanti euro consideri il prezzo massimo giusto per una pizza margherita d'asporto?",
+    "impostorQuestion": "Quanti euro spendi per un panino veloce e bibita a pranzo fuori?",
+    "unit": "euro"
+  },
+  {
+    "id": "220",
+    "regularQuestion": "Quante volte alla settimana bevi tè, tisane o camomilla la sera?",
+    "impostorQuestion": "Quante volte alla settimana mangi frutta fresca a fine pasto?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "221",
+    "regularQuestion": "Quanti minuti dura all'incirca il tragitto da casa tua al supermercato più vicino a piedi?",
+    "impostorQuestion": "Quanti minuti impieghi per preparare la moka e aspettare che il caffè salga?",
+    "unit": "minuti"
+  },
+  {
+    "id": "222",
+    "regularQuestion": "Quante volte all'anno cambi o compri un nuovo capo di abbigliamento intimo?",
+    "impostorQuestion": "Quante volte all'anno compri scarpe nuove?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "223",
+    "regularQuestion": "Quanti gradi tieni la temperatura dell'acqua della doccia quando fa freddo d'inverno?",
+    "impostorQuestion": "Quanti gradi di temperatura ci sono nella tua camera d'inverno col riscaldamento acceso?",
+    "unit": "gradi Celsius"
+  },
+  {
+    "id": "224",
+    "regularQuestion": "Quante ore passi al telefono a parlare a voce in un intero mese?",
+    "impostorQuestion": "Quante ore di serie TV guardi all'incirca in una settimana?",
+    "unit": "ore al mese"
+  },
+  {
+    "id": "225",
+    "regularQuestion": "Quanti messaggi vocali ricevi in media in una giornata tipo?",
+    "impostorQuestion": "Quante notifiche di app ricevi sullo schermo in un'ora di punta?",
+    "unit": "vocali al giorno"
+  },
+  {
+    "id": "226",
+    "regularQuestion": "Quanti euro spenderesti per comprare un costume da bagno nuovo per l'estate?",
+    "impostorQuestion": "Quanti euro spendi di solito per un paio di occhiali da sole economici?",
+    "unit": "euro"
+  },
+  {
+    "id": "227",
+    "regularQuestion": "Quante volte nella vita hai perso il cellulare per poi ritrovarlo dopo ore di panico?",
+    "impostorQuestion": "Quante volte nella vita ti è caduto lo smartphone spaccando il vetro?",
+    "unit": "volte"
+  },
+  {
+    "id": "228",
+    "regularQuestion": "Quanti giorni di fila riesci a mangiare lo stesso piatto riscaldato prima di non poterne più?",
+    "impostorQuestion": "Quanti giorni a settimana mangi pasta a pranzo?",
+    "unit": "giorni"
+  },
+  {
+    "id": "229",
+    "regularQuestion": "Quante volte al mese ti capita di cenare dopo le 21:30 di sera?",
+    "impostorQuestion": "Quante volte al mese esci per bere qualcosa la sera durante i giorni feriali?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "230",
+    "regularQuestion": "Quanti euro consideri ragionevole pagare per un biglietto del treno ad alta velocità per una tratta media?",
+    "impostorQuestion": "Quanti euro spenderesti per una stanza d'albergo a notte in una capitale europea?",
+    "unit": "euro"
+  },
+  {
+    "id": "231",
+    "regularQuestion": "Quanti minuti di anticipo imposti sulla sveglia rispetto all'orario in cui devi iniziare a prepararti?",
+    "impostorQuestion": "Quanti minuti impieghi per vestirti e allacciarti le scarpe?",
+    "unit": "minuti"
+  },
+  {
+    "id": "232",
+    "regularQuestion": "Quante volte alla settimana fai uno spuntino pomeridiano tra pranzo e cena?",
+    "impostorQuestion": "Quante volte alla settimana fai colazione al bar?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "233",
+    "regularQuestion": "Quante magliette o t-shirt a maniche corte possiedi nel guardaroba estivo?",
+    "impostorQuestion": "Quante paia di calzini hai nel cassetto?",
+    "unit": "magliette"
+  },
+  {
+    "id": "234",
+    "regularQuestion": "Quante volte nella vita hai lasciato una recensione online (Google Maps, TripAdvisor, Amazon)?",
+    "impostorQuestion": "Quante volte hai fatto un reso di un pacco ordinato su internet?",
+    "unit": "recensioni"
+  },
+  {
+    "id": "235",
+    "regularQuestion": "Quanti euro spendi all'incirca per una ricarica telefonica o abbonamento mensile dello smartphone?",
+    "impostorQuestion": "Quanti euro spendi per un aperitivo con consumazione e cibo?",
+    "unit": "euro al mese"
+  },
+  {
+    "id": "236",
+    "regularQuestion": "Quanti chilometri dista da casa tua il tuo posto di lavoro o la tua università?",
+    "impostorQuestion": "Quanti chilometri fai a piedi in una settimana normale?",
+    "unit": "km"
+  },
+  {
+    "id": "237",
+    "regularQuestion": "Quante volte al giorno bevi un bicchiere d'acqua naturale o minerale?",
+    "impostorQuestion": "Quante volte al giorno controlli l'ora sull'orologio?",
+    "unit": "bicchieri al giorno"
+  },
+  {
+    "id": "238",
+    "regularQuestion": "Quante volte alla settimana mangi pesce fresco o surgelato?",
+    "impostorQuestion": "Quante volte alla settimana mangi legumi o ceci/lenticchie?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "239",
+    "regularQuestion": "Quanti euro daresti per farti recapitare a letto una colazione da sogno la domenica mattina?",
+    "impostorQuestion": "Quanti euro spenderesti per un brunch domenicale ricco in un bel locale?",
+    "unit": "euro"
+  },
+  {
+    "id": "240",
+    "regularQuestion": "Quante ore al giorno riesci a stare senza guardare lo schermo del telefono quando sei sveglio?",
+    "impostorQuestion": "Quante ore consecutive riesci a lavorare o studiare con una sola pausa caffè?",
+    "unit": "ore"
+  },
+  {
+    "id": "241",
+    "regularQuestion": "Quanti libri fisici conservi nella tua stanza o casa?",
+    "impostorQuestion": "Quante canzoni hai salvato nella tua playlist preferita?",
+    "unit": "libri"
+  },
+  {
+    "id": "242",
+    "regularQuestion": "Quante volte nella vita hai fatto un tampone o test per il Covid-19?",
+    "impostorQuestion": "Quante volte nella vita hai fatto le analisi del sangue?",
+    "unit": "volte"
+  },
+  {
+    "id": "243",
+    "regularQuestion": "Quanti minuti passi a scegliere cosa guardare su Netflix o Prime Video prima di iniziare un film?",
+    "impostorQuestion": "Quanti minuti impieghi per ordinare da un menù al ristorante?",
+    "unit": "minuti"
+  },
+  {
+    "id": "244",
+    "regularQuestion": "Quanti euro consideri la spesa mensile massima per il cibo da asporto e consegne a domicilio?",
+    "impostorQuestion": "Quanti euro spendi di solito per le uscite del weekend in un mese?",
+    "unit": "euro al mese"
+  },
+  {
+    "id": "245",
+    "regularQuestion": "Quante volte al giorno ti lavi i denti quando sei in vacanza rispetto alla routine normale?",
+    "impostorQuestion": "Quante volte al giorno fai uno spuntino tra i pasti?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "246",
+    "regularQuestion": "Quanti giorni a settimana indossi lo stesso paio di scarpe senza alternarle?",
+    "impostorQuestion": "Quanti giorni a settimana vai al lavoro o a lezione in presenza?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "247",
+    "regularQuestion": "Quanti minuti riesci a resistere in silenzio in una stanza con una persona che non sopporti?",
+    "impostorQuestion": "Quanti minuti dura il tuo tempo massimo di attesa prima che arrivi un autobus?",
+    "unit": "minuti"
+  },
+  {
+    "id": "248",
+    "regularQuestion": "Quanti euro hai speso per l'ultimo capo o accessorio firmato che possiedi?",
+    "impostorQuestion": "Quanti euro spenderesti per uno smartphone di fascia media?",
+    "unit": "euro"
+  },
+  {
+    "id": "249",
+    "regularQuestion": "Quante volte all'anno pulisci a fondo l'interno della tua automobile?",
+    "impostorQuestion": "Quante volte all'anno porti l'auto a lavare all'autolavaggio?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "250",
+    "regularQuestion": "Quanti contatti hai eliminato dalla rubrica nell'ultimo anno per fare pulizia?",
+    "impostorQuestion": "Quante foto hai cancellato dalla galleria del telefono nell'ultimo mese?",
+    "unit": "contatti eliminati"
+  },
+  {
+    "id": "251",
+    "regularQuestion": "Quanti chilometri orari raggiungi in bicicletta quando pedali forte in discesa?",
+    "impostorQuestion": "Quanti chilometri orari è il limite di velocità nei centri abitati?",
+    "unit": "km/h"
+  },
+  {
+    "id": "252",
+    "regularQuestion": "Quante volte alla settimana mangi una mela, banana o arancia?",
+    "impostorQuestion": "Quante volte alla settimana bevi una spremuta o succo di frutta?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "253",
+    "regularQuestion": "Quanti euro spendi mediamente per comprare un profumo quando finisci quello vecchio?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per un paio di scarpe eleganti?",
+    "unit": "euro"
+  },
+  {
+    "id": "254",
+    "regularQuestion": "Quanti minuti impieghi a fare la valigia per un weekend fuori porta di 2 giorni?",
+    "impostorQuestion": "Quanti minuti impieghi per prepararti la mattina se sei in forte ritardo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "255",
+    "regularQuestion": "Quante volte in un mese compri pane fresco dal fornaio?",
+    "impostorQuestion": "Quante volte in un mese fai colazione al bar con cornetto e cappuccino?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "256",
+    "regularQuestion": "Quanti litri d'acqua consumi all'incirca ogni giorno tra bere e cucinare?",
+    "impostorQuestion": "Quanti litri di benzina consumi all'incirca per fare 50 chilometri in auto?",
+    "unit": "litri al giorno"
+  },
+  {
+    "id": "257",
+    "regularQuestion": "Quante volte all'anno vai a fare un controllo medico di routine o dal dentista?",
+    "impostorQuestion": "Quante volte all'anno fai il cambio dell'armadio per cambio stagione?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "258",
+    "regularQuestion": "Quanti euro daresti per non dover fare la fila alle poste o negli uffici pubblici per 5 anni?",
+    "impostorQuestion": "Quanti euro spenderesti per un weekend di relax totale in una spa con pernottamento?",
+    "unit": "euro"
+  },
+  {
+    "id": "259",
+    "regularQuestion": "Quante canzoni ascolti all'incirca quando sei in viaggio da solo in treno o auto?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano in auto o sui mezzi?",
+    "unit": "canzoni"
+  },
+  {
+    "id": "260",
+    "regularQuestion": "Quante volte al giorno bevi un sorso di caffè o bibita calda?",
+    "impostorQuestion": "Quante volte al giorno ti lavi le mani con sapone?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "261",
+    "regularQuestion": "Quanti euro consideri il limite massimo da spendere per un panino gourmet al pub?",
+    "impostorQuestion": "Quanti euro spendi per una pizza margherita con birra al tavolo?",
+    "unit": "euro"
+  },
+  {
+    "id": "262",
+    "regularQuestion": "Quante ore di sonno consecutive hai fatto nel giorno in cui hai dormito di più nella vita?",
+    "impostorQuestion": "Quante ore di fila sei riuscito a guidare senza pause durante un viaggio?",
+    "unit": "ore di sonno"
+  },
+  {
+    "id": "263",
+    "regularQuestion": "Quante paia di ciabatte o pantofole da casa possiedi?",
+    "impostorQuestion": "Quanti ombrelli tieni all'ingresso di casa tua?",
+    "unit": "paia"
+  },
+  {
+    "id": "264",
+    "regularQuestion": "Quanti minuti impieghi per cucinare un piatto di pasta espresso dall'accensione del fuoco a tavola?",
+    "impostorQuestion": "Quanti minuti impieghi per mangiare e sparecchiare a pranzo da solo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "265",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di telefonare a qualcuno per evitare una persona?",
+    "impostorQuestion": "Quante volte nella vita ti sei dimenticato il pin del bancomat o una password importante?",
+    "unit": "volte"
+  },
+  {
+    "id": "266",
+    "regularQuestion": "Quanti euro lasci mediamente sul conto a fine mese dopo aver pagato tutte le spese?",
+    "impostorQuestion": "Quanti euro spendi per la spesa alimentare mensile per te stesso?",
+    "unit": "euro"
+  },
+  {
+    "id": "267",
+    "regularQuestion": "Quanti giorni a settimana fai attività fisica o cammini almeno 30 minuti a passo svelto?",
+    "impostorQuestion": "Quanti giorni a settimana mangi pasta o riso a pranzo?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "268",
+    "regularQuestion": "Quanti gradi di temperatura preferisci che ci siano nella tua doccia calda?",
+    "impostorQuestion": "Quanti gradi misura la temperatura dell'aria che consideri perfetta in vacanza al mare?",
+    "unit": "gradi Celsius"
+  },
+  {
+    "id": "269",
+    "regularQuestion": "Quanti chilometri ha percorso in totale la tua auto o moto attuale da quando ce l'hai?",
+    "impostorQuestion": "Quanti follower hai all'incirca sul tuo profilo social più seguito?",
+    "unit": "km percorsi"
+  },
+  {
+    "id": "270",
+    "regularQuestion": "Quante volte al mese ti capita di guardare l'orologio e scoprire che è molto più tardi del previsto?",
+    "impostorQuestion": "Quante volte al mese ordini una pizza o cibo a domicilio?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "271",
+    "regularQuestion": "Quanti euro spenderesti per una felpa da casa super morbida e calda?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per un paio di pantaloni casual?",
+    "unit": "euro"
+  },
+  {
+    "id": "272",
+    "regularQuestion": "Quante volte alla settimana mangi la pizza sia a pranzo che a cena in giorni diversi?",
+    "impostorQuestion": "Quante volte alla settimana fai colazione al bar?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "273",
+    "regularQuestion": "Quanti minuti passi davanti all'armadio indeciso su cosa metterti prima di una serata importante?",
+    "impostorQuestion": "Quanti minuti impieghi per fare la doccia e asciugarti i capelli?",
+    "unit": "minuti"
+  },
+  {
+    "id": "274",
+    "regularQuestion": "Quante volte all'anno prendi un treno a lunga percorrenza per lavoro o piacere?",
+    "impostorQuestion": "Quante volte all'anno vai dal parrucchiere o barbiere?",
+    "unit": "viaggi in treno all'anno"
+  },
+  {
+    "id": "275",
+    "regularQuestion": "Quanti euro consideri la quota perfetta da mettere per un regalo di compleanno di gruppo?",
+    "impostorQuestion": "Quanti euro spendi per una cena in pizzeria completa con gli amici?",
+    "unit": "euro a testa"
+  },
+  {
+    "id": "276",
+    "regularQuestion": "Quante volte al mese usi un'app di navigazione (Google Maps, Waze, Apple Maps)?",
+    "impostorQuestion": "Quante volte al mese prendi i mezzi pubblici per spostarti in città?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "277",
+    "regularQuestion": "Quante ore passi all'aria aperta in media durante un giorno del weekend?",
+    "impostorQuestion": "Quante ore di sonno fai la domenica mattina prima di alzarti?",
+    "unit": "ore al giorno"
+  },
+  {
+    "id": "278",
+    "regularQuestion": "Quanti contatti hai nella lista delle persone a cui faresti gli auguri di compleanno anche senza notifica social?",
+    "impostorQuestion": "Quante persone consideri tuoi amici stretti su cui contare?",
+    "unit": "persone"
+  },
+  {
+    "id": "279",
+    "regularQuestion": "Quante volte a settimana metti in lavastoviglie i piatti invece di lavarli a mano?",
+    "impostorQuestion": "Quante volte a settimana cucini un piatto caldo per cena?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "280",
+    "regularQuestion": "Quanti euro consideri il prezzo giusto per un ombrello compatto tascabile da tenere nello zaino?",
+    "impostorQuestion": "Quanti euro spendi per un cocktail in un bar di provincia?",
+    "unit": "euro"
+  },
+  {
+    "id": "281",
+    "regularQuestion": "Quanti minuti dura la tua doccia più veloce di sempre quando sei in ritardo clamoroso?",
+    "impostorQuestion": "Quanti minuti impieghi per lavarti i denti e sciacquarti la faccia con cura?",
+    "unit": "minuti"
+  },
+  {
+    "id": "282",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di dormire sul divano o in macchina per non dover scendere o aiutare?",
+    "impostorQuestion": "Quante volte nella vita hai dimenticato le chiavi di casa dentro rimanendo chiuso fuori?",
+    "unit": "volte"
+  },
+  {
+    "id": "283",
+    "regularQuestion": "Quanti litri d'acqua bevi durante una sessione di allenamento o corsa intensa?",
+    "impostorQuestion": "Quanti litri di latte o bevanda vegetale bevi in una settimana?",
+    "unit": "litri"
+  },
+  {
+    "id": "284",
+    "regularQuestion": "Quante volte alla settimana mangi verdura cotta (spinaci, zucchine, broccoli)?",
+    "impostorQuestion": "Quante volte alla settimana mangi legumi o zuppa calda?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "285",
+    "regularQuestion": "Quanti euro hai speso per il tuo zaino o borsa che usi tutti i giorni?",
+    "impostorQuestion": "Quanti euro spendi per un paio di scarpe da ginnastica comode?",
+    "unit": "euro"
+  },
+  {
+    "id": "286",
+    "regularQuestion": "Quanti giorni consecutivi sei riuscito a non toccare il computer o la TV in vacanza?",
+    "impostorQuestion": "Quanti giorni di vacanza totale fai all'anno?",
+    "unit": "giorni"
+  },
+  {
+    "id": "287",
+    "regularQuestion": "Quanti minuti prima del decollo arrivi di solito in aeroporto per essere tranquillo?",
+    "impostorQuestion": "Quanti minuti impieghi per fare la spesa grossa al supermercato?",
+    "unit": "minuti d'anticipo"
+  },
+  {
+    "id": "288",
+    "regularQuestion": "Quante volte al mese ti capita di guardare video brevi (Reels, TikTok, Shorts) per più di 30 minuti di fila?",
+    "impostorQuestion": "Quante volte al mese ordini cibo d'asporto a casa?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "289",
+    "regularQuestion": "Quanti euro consideri la soglia minima per cui vale la pena fare un reso di un pacco online invece di tenerlo?",
+    "impostorQuestion": "Quanti euro spendi per una cena veloce in pizzeria al taglio?",
+    "unit": "euro"
+  },
+  {
+    "id": "290",
+    "regularQuestion": "Quante volte nella vita ti sei perso guidando senza navigatore in una città sconosciuta?",
+    "impostorQuestion": "Quante volte nella vita hai dovuto chiamare il carro attrezzi o un meccanico d'urgenza?",
+    "unit": "volte"
+  },
+  {
+    "id": "291",
+    "regularQuestion": "Quanti scatti tieni nella galleria del telefono che ritraggono animali domestici (tuoi o di altri)?",
+    "impostorQuestion": "Quante foto hai salvato nei tuoi screenshot recenti?",
+    "unit": "foto"
+  },
+  {
+    "id": "292",
+    "regularQuestion": "Quante volte alla settimana mangi carne bianca (pollo, tacchino) invece di carne rossa?",
+    "impostorQuestion": "Quante volte alla settimana mangi formaggio o latticini?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "293",
+    "regularQuestion": "Quanti minuti impieghi per scegliere un film al cinema prima di comprare il biglietto?",
+    "impostorQuestion": "Quanti minuti dura il tuo tempo d'attesa medio alla cassa del supermercato?",
+    "unit": "minuti"
+  },
+  {
+    "id": "294",
+    "regularQuestion": "Quante volte all'anno partecipi a una cena di classe o ritrovo di vecchi amici?",
+    "impostorQuestion": "Quante volte all'anno prendi un aereo per fare un weekend all'estero?",
+    "unit": "cene all'anno"
+  },
+  {
+    "id": "295",
+    "regularQuestion": "Quanti euro spenderesti per una borraccia termica di ottima fattura che tiene l'acqua gelata per 24 ore?",
+    "impostorQuestion": "Quanti euro spendi per una cover e vetro protettivo per lo smartphone?",
+    "unit": "euro"
+  },
+  {
+    "id": "296",
+    "regularQuestion": "Quante volte al giorno bevi un bicchiere o tazzina di qualcosa che non sia semplice acqua (caffè, tè, succo, bibita)?",
+    "impostorQuestion": "Quante volte al giorno ti lavi le mani con cura?",
+    "unit": "bevande al giorno"
+  },
+  {
+    "id": "297",
+    "regularQuestion": "Quanti giorni di fila riesci a stare senza spendere nemmeno un euro in contanti o con carta?",
+    "impostorQuestion": "Quanti giorni a settimana fai la spesa per generi alimentari?",
+    "unit": "giorni senza spese"
+  },
+  {
+    "id": "298",
+    "regularQuestion": "Quanti chilometri orari toccheresti volentieri in pista con una macchina da corsa se ne avessi l'occasione?",
+    "impostorQuestion": "Quanti battiti al minuto raggiunge il tuo cuore sotto sforzo intenso in palestra?",
+    "unit": "km/h"
+  },
+  {
+    "id": "299",
+    "regularQuestion": "Quante volte al mese ti capita di dimenticare dove hai messo gli occhiali, le cuffie o il portafoglio?",
+    "impostorQuestion": "Quante volte al mese rimani con la batteria del telefono sotto il 5%?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "300",
+    "regularQuestion": "Quanti euro consideri ragionevole pagare per un buon taglio di capelli da uomo o piega donna?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per una cena a base di pizza, birra e dolce?",
+    "unit": "euro"
+  },
+  {
+    "id": "301",
+    "regularQuestion": "Quanti litri d'acqua bevi all'incirca in un intero mese?",
+    "impostorQuestion": "Quanti caffè bevi all'incirca in un mese?",
+    "unit": "litri al mese"
+  },
+  {
+    "id": "302",
+    "regularQuestion": "Quanti paia di pantaloni corti o bermuda possiedi per l'estate?",
+    "impostorQuestion": "Quanti costumi da bagno possiedi nel cassetto?",
+    "unit": "paia"
+  },
+  {
+    "id": "303",
+    "regularQuestion": "Quanti euro spendi di media quando vai a fare colazione al bar (caffè/cappuccino e brioche)?",
+    "impostorQuestion": "Quanti euro lasci di mancia quando paghi il conto al ristorante?",
+    "unit": "euro"
+  },
+  {
+    "id": "304",
+    "regularQuestion": "Quante volte alla settimana mangi cibo riscaldato dal giorno prima?",
+    "impostorQuestion": "Quante volte alla settimana fai uno spuntino prima di andare a dormire?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "305",
+    "regularQuestion": "Quanti minuti impieghi mediamente per pranzare quando sei da solo?",
+    "impostorQuestion": "Quanti minuti dura la tua doccia nei giorni in cui vai di fretta?",
+    "unit": "minuti"
+  },
+  {
+    "id": "306",
+    "regularQuestion": "Quante volte al mese pulisci a fondo i sanitari del bagno?",
+    "impostorQuestion": "Quante volte al mese cambi le lenzuola del letto?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "307",
+    "regularQuestion": "Quante volte nella vita hai perso un oggetto di valore sopra i 50 euro?",
+    "impostorQuestion": "Quante volte nella vita ti si è rotto lo schermo del telefono?",
+    "unit": "volte"
+  },
+  {
+    "id": "308",
+    "regularQuestion": "Quante ore passi mediamente fuori casa in un normale giorno feriale?",
+    "impostorQuestion": "Quante ore di sonno fai nei giorni del fine settimana?",
+    "unit": "ore al giorno"
+  },
+  {
+    "id": "309",
+    "regularQuestion": "Quanti euro spenderesti al massimo per una bottiglia d'olio extravergine d'oliva di qualità?",
+    "impostorQuestion": "Quanti euro spendi per una pizza margherita con birra al tavolo?",
+    "unit": "euro"
+  },
+  {
+    "id": "310",
+    "regularQuestion": "Quante volte alla settimana usi i mezzi pubblici (bus, tram, metro o treno)?",
+    "impostorQuestion": "Quante volte alla settimana fai colazione al bar?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "311",
+    "regularQuestion": "Quanti chilometri a piedi fai all'incirca in un intero mese?",
+    "impostorQuestion": "Quanti chilometri fai in auto o scooter in una settimana normale?",
+    "unit": "km al mese"
+  },
+  {
+    "id": "312",
+    "regularQuestion": "Quanti caricatori per cellulare o cavetti funzionanti hai in casa in questo momento?",
+    "impostorQuestion": "Quanti paia di occhiali da sole possiedi in totale?",
+    "unit": "caricatori"
+  },
+  {
+    "id": "313",
+    "regularQuestion": "Quanti euro ti sentiresti a tuo agio a spendere per una camicia casual di marca?",
+    "impostorQuestion": "Quanti euro spendi di solito per una cena di sushi all you can eat?",
+    "unit": "euro"
+  },
+  {
+    "id": "314",
+    "regularQuestion": "Quante volte al giorno bevi un sorso d'acqua direttamente dalla bottiglia o rubinetto?",
+    "impostorQuestion": "Quante volte al giorno controlli WhatsApp o i messaggi?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "315",
+    "regularQuestion": "Quante volte all'anno prendi un giorno di malattia o riposo assoluto perché non ti senti bene?",
+    "impostorQuestion": "Quante volte all'anno vai dal dentista per una visita?",
+    "unit": "giorni all'anno"
+  },
+  {
+    "id": "316",
+    "regularQuestion": "Quanti minuti impieghi per addormentarti la sera nei periodi in cui sei rilassato?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano verso il lavoro o università?",
+    "unit": "minuti"
+  },
+  {
+    "id": "317",
+    "regularQuestion": "Quante volte a settimana mangi pasta con sugo di pomodoro semplice?",
+    "impostorQuestion": "Quante volte a settimana bevi una bevanda gassata?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "318",
+    "regularQuestion": "Quanti contatti hai aggiunto nella rubrica del telefono nell'ultimo anno?",
+    "impostorQuestion": "Quante persone hai rimosso o bloccato sui social nell'ultimo anno?",
+    "unit": "contatti nuovi"
+  },
+  {
+    "id": "319",
+    "regularQuestion": "Quanti euro pagheresti per un ombrello robusto che resiste al forte vento senza rompersi?",
+    "impostorQuestion": "Quanti euro spendi mediamente per un aperitivo abbondante?",
+    "unit": "euro"
+  },
+  {
+    "id": "320",
+    "regularQuestion": "Quante volte in un mese ti capita di guardare la TV lineare (canali del digitale terrestre)?",
+    "impostorQuestion": "Quante volte al mese vai a fare la spesa grossa al supermercato?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "321",
+    "regularQuestion": "Quanti minuti impieghi a fare la doccia e vestirti quando non hai fretta?",
+    "impostorQuestion": "Quanti minuti impieghi per cucinare un pasto completo da zero?",
+    "unit": "minuti"
+  },
+  {
+    "id": "322",
+    "regularQuestion": "Quanti euro spendi all'incirca per una cena veloce in un fast food o paninoteca?",
+    "impostorQuestion": "Quanti euro spendi per una colazione completa per due persone?",
+    "unit": "euro"
+  },
+  {
+    "id": "323",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di apprezzare un regalo che in realtà odiavi?",
+    "impostorQuestion": "Quante volte nella vita ti sei fatto male al punto da andare al pronto soccorso?",
+    "unit": "volte"
+  },
+  {
+    "id": "324",
+    "regularQuestion": "Quanti giorni consecutivi sei riuscito a stare senza bere caffè o tè?",
+    "impostorQuestion": "Quanti giorni di vacanza consecutivi hai fatto la scorsa estate?",
+    "unit": "giorni"
+  },
+  {
+    "id": "325",
+    "regularQuestion": "Quante volte a settimana mangi affettati o salumi (prosciutto, salame, bresaola)?",
+    "impostorQuestion": "Quante volte a settimana bevi una birra o calice di vino?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "326",
+    "regularQuestion": "Quanti screenshot hai salvati nella galleria del telefono nell'ultima settimana?",
+    "impostorQuestion": "Quanti messaggi vocali invii mediamente in una settimana?",
+    "unit": "screenshot"
+  },
+  {
+    "id": "327",
+    "regularQuestion": "Quanti euro consideri la spesa mensile massima per il carburante o abbonamento trasporti?",
+    "impostorQuestion": "Quanti euro spendi al mese per mangiare fuori nei weekend?",
+    "unit": "euro al mese"
+  },
+  {
+    "id": "328",
+    "regularQuestion": "Quanti minuti di camminata faresti prima di decidere di chiamare un taxi la sera?",
+    "impostorQuestion": "Quanti minuti impieghi per preparare la cena la sera?",
+    "unit": "minuti"
+  },
+  {
+    "id": "329",
+    "regularQuestion": "Quante volte al mese mangi dolci fatti in casa (torte, biscotti, crostate)?",
+    "impostorQuestion": "Quante volte al mese ordini cibo a domicilio?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "330",
+    "regularQuestion": "Quanti chili pesa la tua valigia da stiva quando parti per una vacanza di due settimane?",
+    "impostorQuestion": "Quanti chilometri fai a piedi all'incirca in una settimana?",
+    "unit": "kg"
+  },
+  {
+    "id": "331",
+    "regularQuestion": "Quante volte all'anno compri un libro, fumetto o rivista cartacea?",
+    "impostorQuestion": "Quante volte all'anno vai al cinema a vedere un film?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "332",
+    "regularQuestion": "Quanti minuti riesci a passare in fila alla cassa prima di iniziare a sbuffare e innervosirti?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione con calma la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "333",
+    "regularQuestion": "Quanti euro spendi di solito per comprare un regalo di laurea a un conoscente?",
+    "impostorQuestion": "Quanti euro spendi per una cena completa in un buon ristorante?",
+    "unit": "euro"
+  },
+  {
+    "id": "334",
+    "regularQuestion": "Quante volte a settimana bevi una tisana, tè caldo o camomilla?",
+    "impostorQuestion": "Quante volte a settimana mangi frutta fresca a colazione o merenda?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "335",
+    "regularQuestion": "Quante ore al giorno tieni le cuffie o gli auricolari nelle orecchie?",
+    "impostorQuestion": "Quante ore al giorno trascorri davanti a uno schermo per lavoro o studio?",
+    "unit": "ore al giorno"
+  },
+  {
+    "id": "336",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di ricordare qualcuno che ti ha salutato calorosamente?",
+    "impostorQuestion": "Quante volte nella vita hai perso il portafoglio o le chiavi di casa?",
+    "unit": "volte"
+  },
+  {
+    "id": "337",
+    "regularQuestion": "Quanti euro hai speso per l'ultimo acquisto impulsivo fatto su Amazon o online?",
+    "impostorQuestion": "Quanti euro spendi di solito per fare la spesa alimentare settimanale?",
+    "unit": "euro"
+  },
+  {
+    "id": "338",
+    "regularQuestion": "Quanti minuti dura la tua telefonata più lunga in una tipica settimana?",
+    "impostorQuestion": "Quanti minuti impieghi per fare la doccia e asciugarti i capelli?",
+    "unit": "minuti"
+  },
+  {
+    "id": "339",
+    "regularQuestion": "Quante volte alla settimana mangi formaggio stagionato (parmigiano, pecorino, ecc.)?",
+    "impostorQuestion": "Quante volte alla settimana bevi una tazza di caffè al bar?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "340",
+    "regularQuestion": "Quanti cuscini usi per sostenere la testa e la schiena mentre leggi o guardi la TV a letto?",
+    "impostorQuestion": "Quanti caricatori per smartphone tieni attaccati alla presa a casa?",
+    "unit": "cuscini"
+  },
+  {
+    "id": "341",
+    "regularQuestion": "Quante volte al mese ti capita di dimenticare di rispondere a un messaggio su WhatsApp per giorni?",
+    "impostorQuestion": "Quante volte al mese ordini cibo da asporto per cena?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "342",
+    "regularQuestion": "Quanti euro spenderesti al massimo per una giacca a vento impermeabile tecnica?",
+    "impostorQuestion": "Quanti euro spendi di solito per comprare un paio di scarpe da ginnastica di marca?",
+    "unit": "euro"
+  },
+  {
+    "id": "343",
+    "regularQuestion": "Quanti minuti impieghi per lavare i piatti a mano dopo una cena per 4 persone?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano in auto o sui mezzi pubblici?",
+    "unit": "minuti"
+  },
+  {
+    "id": "344",
+    "regularQuestion": "Quante volte all'anno prendi un'aspirina, paracetamolo o antinfiammatorio?",
+    "impostorQuestion": "Quante volte all'anno vai dal parrucchiere o barbiere?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "345",
+    "regularQuestion": "Quanti euro consideri la quota perfetta da regalare in busta per un matrimonio di un conoscente?",
+    "impostorQuestion": "Quanti euro spendi in un mese per tutte le tue uscite nel weekend?",
+    "unit": "euro"
+  },
+  {
+    "id": "346",
+    "regularQuestion": "Quante volte a settimana mangi uno yogurt o bevi latte vegetale/animale?",
+    "impostorQuestion": "Quante volte a settimana mangi pasta o riso a cena?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "347",
+    "regularQuestion": "Quante ore consecutive riesci a viaggiare in treno prima di iniziare a stufarti?",
+    "impostorQuestion": "Quante ore di fila riesci a studiare o lavorare concentrato prima di una pausa?",
+    "unit": "ore"
+  },
+  {
+    "id": "348",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di non sentire il telefono squillare per non rispondere?",
+    "impostorQuestion": "Quante volte nella vita ti è capitato di rimanere chiuso fuori casa senza chiavi?",
+    "unit": "volte"
+  },
+  {
+    "id": "349",
+    "regularQuestion": "Quanti gradi di temperatura imposti solitamente sul climatizzatore d'estate in camera?",
+    "impostorQuestion": "A che ora ceni solitamente nei giorni feriali (in formato ora, es. 20 o 21)?",
+    "unit": "gradi Celsius"
+  },
+  {
+    "id": "350",
+    "regularQuestion": "Quanti euro hai speso all'incirca per il tuo ultimo orologio o braccialetto?",
+    "impostorQuestion": "Quanti euro spendi mediamente per fare la spesa settimanale al supermercato?",
+    "unit": "euro"
+  },
+  {
+    "id": "351",
+    "regularQuestion": "Quante volte al mese ti ritrovi con meno del 15% di batteria sullo smartphone a metà giornata?",
+    "impostorQuestion": "Quante volte al mese fai colazione al bar durante la settimana?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "352",
+    "regularQuestion": "Quanti minuti impieghi per fare il letto bene al mattino con coperta tirata e cuscini a posto?",
+    "impostorQuestion": "Quanti minuti impieghi per lavarti i denti e sciacquarti la faccia?",
+    "unit": "minuti"
+  },
+  {
+    "id": "353",
+    "regularQuestion": "Quanti euro spenderesti per un caricabatterie portatile (powerbank) potente e affidabile?",
+    "impostorQuestion": "Quanti euro spendi di solito per una cena in pizzeria completa di bevanda?",
+    "unit": "euro"
+  },
+  {
+    "id": "354",
+    "regularQuestion": "Quante volte alla settimana mangi legumi (fagioli, lenticchie, ceci o piselli)?",
+    "impostorQuestion": "Quante volte alla settimana fai attività fisica o palestra?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "355",
+    "regularQuestion": "Quanti messaggi vocali conservi tra i preferiti o importanti su WhatsApp?",
+    "impostorQuestion": "Quanti contatti hai memorizzati nelle chiamate rapide o preferiti del telefono?",
+    "unit": "vocali salvati"
+  },
+  {
+    "id": "356",
+    "regularQuestion": "Quante volte all'anno vai a dormire dopo le 4 del mattino per una festa o evento?",
+    "impostorQuestion": "Quante volte all'anno prendi un aereo per viaggiare?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "357",
+    "regularQuestion": "Quanti euro spendi di media quando fai rifornimento di carburante senza fare il pieno?",
+    "impostorQuestion": "Quanti euro spendi per una cena normale con gli amici durante la settimana?",
+    "unit": "euro"
+  },
+  {
+    "id": "358",
+    "regularQuestion": "Quanti minuti impieghi per scegliere cosa ordinare quando sei in una pizzeria nuova?",
+    "impostorQuestion": "Quanti minuti dura la tua doccia nei giorni in cui ti lavi anche i capelli?",
+    "unit": "minuti"
+  },
+  {
+    "id": "359",
+    "regularQuestion": "Quante volte al giorno bevi un caffè o un espresso fatto con la moka?",
+    "impostorQuestion": "Quanti pasti o spuntini consumi all'incirca in un'intera giornata?",
+    "unit": "caffè al giorno"
+  },
+  {
+    "id": "360",
+    "regularQuestion": "Quante paia di ciabatte estive o infradito possiedi per il mare o casa?",
+    "impostorQuestion": "Quanti cappellini con visiera o berretti invernali possiedi?",
+    "unit": "paia"
+  },
+  {
+    "id": "361",
+    "regularQuestion": "Quanti chilometri fai mediamente in bicicletta o monopattino in un intero mese?",
+    "impostorQuestion": "Quanti chilometri fai a piedi all'incirca in una settimana?",
+    "unit": "km al mese"
+  },
+  {
+    "id": "362",
+    "regularQuestion": "Quanti euro spenderesti per un paio di cuffie da gaming o da ascolto di alta qualità?",
+    "impostorQuestion": "Quanti euro spendi di solito per un paio di scarpe invernali o stivaletti?",
+    "unit": "euro"
+  },
+  {
+    "id": "363",
+    "regularQuestion": "Quante volte al mese pulisci lo schermo del computer o del televisore dalla polvere?",
+    "impostorQuestion": "Quante volte al mese cambi l'asciugamano che usi per la doccia?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "364",
+    "regularQuestion": "Quanti minuti dura la tua pausa caffè ideale a metà mattina?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione prima di uscire di casa?",
+    "unit": "minuti"
+  },
+  {
+    "id": "365",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di capire una spiegazione scientifica o tecnica complessa?",
+    "impostorQuestion": "Quante volte nella vita ti sei perso guidando in una città che non conoscevi?",
+    "unit": "volte"
+  },
+  {
+    "id": "366",
+    "regularQuestion": "Quanti euro consideri ragionevole pagare per un buon panino e bibita in autogrill in autostrada?",
+    "impostorQuestion": "Quanti euro spendi mediamente per un aperitivo con stuzzichini?",
+    "unit": "euro"
+  },
+  {
+    "id": "367",
+    "regularQuestion": "Quante volte alla settimana mangi cibo preparato dai tuoi genitori o parenti?",
+    "impostorQuestion": "Quante volte alla settimana cucini tu stesso un pasto caldo?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "368",
+    "regularQuestion": "Quanti gradi di inclinazione tieni lo schienale della macchina quando guidi per stare comodo?",
+    "impostorQuestion": "Quanti battiti al minuto raggiunge il tuo cuore a riposo sul divano?",
+    "unit": "gradi"
+  },
+  {
+    "id": "369",
+    "regularQuestion": "Quante volte all'anno fai pulizia di file inutili o foto duplicate sul computer o telefono?",
+    "impostorQuestion": "Quante volte all'anno porti l'automobile a fare il tagliando o revisione?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "370",
+    "regularQuestion": "Quanti euro hai speso per il tuo zaino da viaggio o trolley che usi per i weekend fuori?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per una notte in albergo in una città d'arte?",
+    "unit": "euro"
+  },
+  {
+    "id": "371",
+    "regularQuestion": "Quanti minuti prima della fine della lezione o del lavoro inizi a preparare le tue cose per andartene?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una doccia veloce la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "372",
+    "regularQuestion": "Quante volte al mese usi il navigatore GPS per raggiungere un posto in cui sei già stato almeno una volta?",
+    "impostorQuestion": "Quante volte al mese prendi un treno o mezzo pubblico?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "373",
+    "regularQuestion": "Quanti euro spenderesti per una tazza termica da caffè da portare in giro la mattina?",
+    "impostorQuestion": "Quanti euro spendi per un cocktail in un bel locale serale?",
+    "unit": "euro"
+  },
+  {
+    "id": "374",
+    "regularQuestion": "Quante volte a settimana mangi una porzione di patatine fritte o patate al forno?",
+    "impostorQuestion": "Quante volte a settimana bevi una lattina di bibita fresca?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "375",
+    "regularQuestion": "Quante canzoni hai nella cronologia dei brani ascoltati più di recente sul tuo profilo streaming?",
+    "impostorQuestion": "Quanti messaggi non letti hai accumulato nelle varie chat?",
+    "unit": "canzoni"
+  },
+  {
+    "id": "376",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di ridere a una battuta pessima di qualcuno che non potevi contraddire?",
+    "impostorQuestion": "Quante volte nella vita ti sei addormentato durante una lezione o conferenza?",
+    "unit": "volte"
+  },
+  {
+    "id": "377",
+    "regularQuestion": "Quanti euro consideri la soglia massima per una bottiglia di birra artigianale da 33 cl al pub?",
+    "impostorQuestion": "Quanti euro spendi per una colazione al bar con brioche e caffè?",
+    "unit": "euro"
+  },
+  {
+    "id": "378",
+    "regularQuestion": "Quanti minuti dura mediamente la tua doccia nei mesi caldi d'estate?",
+    "impostorQuestion": "Quanti minuti impieghi per prepararti prima di andare a dormire?",
+    "unit": "minuti"
+  },
+  {
+    "id": "379",
+    "regularQuestion": "Quante volte alla settimana mangi cibo crudo (insalate, carpacci, sushi o frutta)?",
+    "impostorQuestion": "Quante volte alla settimana cucini un piatto di pasta a pranzo?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "380",
+    "regularQuestion": "Quanti giga di traffico internet consumi all'incirca sullo smartphone in un mese?",
+    "impostorQuestion": "Quanti euro spendi mediamente per fare la spesa alimentare per 3 giorni?",
+    "unit": "giga al mese"
+  },
+  {
+    "id": "381",
+    "regularQuestion": "Quante volte all'anno prendi un taxi, Uber o noleggi un monopattino/bici in sharing?",
+    "impostorQuestion": "Quante volte all'anno vai dal dentista o medico per una visita?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "382",
+    "regularQuestion": "Quanti euro hai pagato l'ultimo paio di calzini o intimo che hai acquistato in negozio?",
+    "impostorQuestion": "Quanti euro spendi per una colazione completa per una persona al bar?",
+    "unit": "euro"
+  },
+  {
+    "id": "383",
+    "regularQuestion": "Quanti minuti riesci a stare sveglio a letto al buio senza prendere il telefono in mano prima di dormire?",
+    "impostorQuestion": "Quanti minuti impieghi per addormentarti la sera dopo aver posato lo smartphone?",
+    "unit": "minuti"
+  },
+  {
+    "id": "384",
+    "regularQuestion": "Quante volte al mese ti ritrovi con le chiavi in mano indeciso su quale porta o serratura aprire?",
+    "impostorQuestion": "Quante volte al mese ordini cibo d'asporto a cena?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "385",
+    "regularQuestion": "Quanti euro spenderesti per un mouse o tastiera ergonomica da usare tutti i giorni al computer?",
+    "impostorQuestion": "Quanti euro spendi di solito per fare la spesa settimanale?",
+    "unit": "euro"
+  },
+  {
+    "id": "386",
+    "regularQuestion": "Quante volte a settimana mangi pane tostato o bruschette con l'olio?",
+    "impostorQuestion": "Quante volte a settimana bevi una tazza di tè o tisana?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "387",
+    "regularQuestion": "Quanti amici o contatti hai inseriti nella lista amici più stretti (storie verdi) su Instagram?",
+    "impostorQuestion": "Quante persone senti regolarmente ogni singola settimana?",
+    "unit": "amici stretti"
+  },
+  {
+    "id": "388",
+    "regularQuestion": "Quante volte nella vita ti è capitato di mandare un messaggio alla persona sbagliata creando imbarazzo?",
+    "impostorQuestion": "Quante volte nella vita ti sei fatto una ferita con punti di sutura?",
+    "unit": "volte"
+  },
+  {
+    "id": "389",
+    "regularQuestion": "Quanti euro consideri il prezzo limite accettabile per un biglietto di sola andata in treno regionale per un'ora di viaggio?",
+    "impostorQuestion": "Quanti euro spendi per un aperitivo con una bevuta e noccioline/patatine?",
+    "unit": "euro"
+  },
+  {
+    "id": "390",
+    "regularQuestion": "Quanti minuti impieghi per sparecchiare e pulire la tavola dopo aver cenato da solo?",
+    "impostorQuestion": "Quanti minuti ci metti a farti la barba o a sistemarti i capelli la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "391",
+    "regularQuestion": "Quante volte alla settimana mangi cioccolato fondente o al latte dopo i pasti?",
+    "impostorQuestion": "Quante volte alla settimana bevi un caffè pomeridiano dopo pranzo?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "392",
+    "regularQuestion": "Quante volte all'anno prendi un traghetto, battello o aliscafo per mare o lago?",
+    "impostorQuestion": "Quante volte all'anno fai un viaggio fuori regione per lavoro o svago?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "393",
+    "regularQuestion": "Quanti euro hai speso per l'ultimo libro o manuale che hai comprato (anche usato)?",
+    "impostorQuestion": "Quanti euro spendi per una pizza margherita con birra e coperto?",
+    "unit": "euro"
+  },
+  {
+    "id": "394",
+    "regularQuestion": "Quanti minuti riesci a correre sul tapis roulant prima di guardare con ansia il timer?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano verso il lavoro o università?",
+    "unit": "minuti"
+  },
+  {
+    "id": "395",
+    "regularQuestion": "Quante volte al mese ti capita di dimenticare di stendere la lavatrice appena ha finito il ciclo?",
+    "impostorQuestion": "Quante volte al mese pulisci a fondo la tua stanza da letto?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "396",
+    "regularQuestion": "Quanti euro spenderesti per una cover di marca o custodia protettiva per il tuo telefono?",
+    "impostorQuestion": "Quanti euro spendi mediamente per un aperitivo con stuzzichini?",
+    "unit": "euro"
+  },
+  {
+    "id": "397",
+    "regularQuestion": "Quante volte a settimana mangi una pietanza condita con abbondante aglio o cipolla cruda?",
+    "impostorQuestion": "Quante volte a settimana bevi una birra fresca?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "398",
+    "regularQuestion": "Quanti brani musicali conosci così bene da saperne cantare anche l'assolo strumentale a voce?",
+    "impostorQuestion": "Quante canzoni hai nella playlist che ascolti più spesso in palestra o viaggio?",
+    "unit": "brani"
+  },
+  {
+    "id": "399",
+    "regularQuestion": "Quante volte nella vita ti è caduto il telefono mentre eri sdraiato a letto colpendoti la faccia?",
+    "impostorQuestion": "Quante volte nella vita hai rotto il vetro del tuo smartphone?",
+    "unit": "volte"
+  },
+  {
+    "id": "400",
+    "regularQuestion": "Quanti euro consideri la spesa ideale per fare un regalo di compleanno a un parente stretto?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per una cena completa per due persone in pizzeria?",
+    "unit": "euro"
+  },
+  {
+    "id": "401",
+    "regularQuestion": "Quante paia di pantaloni della tuta o felpa comodi possiedi per stare in casa?",
+    "impostorQuestion": "Quante magliette basic a tinta unita hai nel cassetto?",
+    "unit": "paia"
+  },
+  {
+    "id": "402",
+    "regularQuestion": "Quanti euro spendi di solito per comprare un bagnoschiuma o shampoo di buona qualità?",
+    "impostorQuestion": "Quanti euro spendi per una colazione con brioche e caffè al bancone?",
+    "unit": "euro"
+  },
+  {
+    "id": "403",
+    "regularQuestion": "Quante ore passi al volante durante il tragitto in auto più lungo che fai di solito nel weekend?",
+    "impostorQuestion": "Quante ore di sonno fai la domenica mattina prima di svegliarti?",
+    "unit": "ore"
+  },
+  {
+    "id": "404",
+    "regularQuestion": "Quante volte alla settimana mangi cibo freddo o insalata di riso/pasta d'estate?",
+    "impostorQuestion": "Quante volte alla settimana mangi pasta calda al dente?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "405",
+    "regularQuestion": "Quanti minuti impieghi per scegliere cosa mangiare quando sfogli il menù su un'app di delivery?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una doccia rapida prima di uscire la sera?",
+    "unit": "minuti"
+  },
+  {
+    "id": "406",
+    "regularQuestion": "Quante volte al mese pulisci lo specchio del bagno per togliere schizzi di dentifricio o acqua?",
+    "impostorQuestion": "Quante volte al mese cambi gli asciugamani del bagno?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "407",
+    "regularQuestion": "Quante volte nella vita ti sei dimenticato il codice della carta di debito al momento di pagare alla cassa?",
+    "impostorQuestion": "Quante volte nella vita ti è capitato di perdere le chiavi di casa rimanendo fuori?",
+    "unit": "volte"
+  },
+  {
+    "id": "408",
+    "regularQuestion": "Quante ore consecutive riesci a guardare video divertenti o reel senza staccare gli occhi?",
+    "impostorQuestion": "Quante ore al giorno trascorri sui social network?",
+    "unit": "ore"
+  },
+  {
+    "id": "409",
+    "regularQuestion": "Quanti euro spenderesti al massimo per una bottiglia di vino bianco fresco da bere tra amici?",
+    "impostorQuestion": "Quanti euro spendi di solito per una pizza e una bibita?",
+    "unit": "euro"
+  },
+  {
+    "id": "410",
+    "regularQuestion": "Quante volte alla settimana mangi frutta a guscio (noci, mandorle, nocciole o arachidi)?",
+    "impostorQuestion": "Quante volte alla settimana bevi una tazza di caffè o cappuccino al bar?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "411",
+    "regularQuestion": "Quanti chilometri fai mediamente in treno o aereo in un intero anno?",
+    "impostorQuestion": "Quanti chilometri fai all'incirca in auto in un mese di lavoro?",
+    "unit": "km all'anno"
+  },
+  {
+    "id": "412",
+    "regularQuestion": "Quanti paia di auricolari con filo tieni ancora conservati nei cassetti per emergenza?",
+    "impostorQuestion": "Quanti caricatori per cellulare hai sparsi nelle prese di casa tua?",
+    "unit": "paia"
+  },
+  {
+    "id": "413",
+    "regularQuestion": "Quanti euro spenderesti per un tagliere di salumi e formaggi misti in un locale tipico?",
+    "impostorQuestion": "Quanti euro spendi di solito per un aperitivo ricco con drink?",
+    "unit": "euro"
+  },
+  {
+    "id": "414",
+    "regularQuestion": "Quante volte al giorno bevi un bicchiere di tè freddo o succo durante l'estate?",
+    "impostorQuestion": "Quante volte al giorno bevi un bicchiere d'acqua naturale?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "415",
+    "regularQuestion": "Quante volte all'anno compri scarpe eleganti o mocassini/tacchi per un'occasione speciale?",
+    "impostorQuestion": "Quante volte all'anno partecipi a una cerimonia o matrimonio?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "416",
+    "regularQuestion": "Quanti minuti impieghi per fare il check-in e depositare il bagaglio quando sei in aeroporto?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano in auto o sui mezzi?",
+    "unit": "minuti"
+  },
+  {
+    "id": "417",
+    "regularQuestion": "Quante volte a settimana mangi una piadina, un toast o un tramezzino a pranzo o cena?",
+    "impostorQuestion": "Quante volte a settimana mangi pasta o riso?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "418",
+    "regularQuestion": "Quanti contatti hai su WhatsApp a cui non scrivi né rispondi da oltre un anno?",
+    "impostorQuestion": "Quanti contatti hai memorizzati nella rubrica del telefono?",
+    "unit": "contatti dimenticati"
+  },
+  {
+    "id": "419",
+    "regularQuestion": "Quanti euro consideri la cifra giusta per un profumo economico da usare tutti i giorni?",
+    "impostorQuestion": "Quanti euro spendi mediamente per una cena in pizzeria completa?",
+    "unit": "euro"
+  },
+  {
+    "id": "420",
+    "regularQuestion": "Quante volte al mese usi un'aspirapolvere o robot aspirapolvere per pulire i pavimenti?",
+    "impostorQuestion": "Quante volte al mese fai la spesa grossa al supermercato?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "421",
+    "regularQuestion": "Quanti minuti impieghi a farti la barba con cura o a fare la skincare viso la sera?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una doccia veloce la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "422",
+    "regularQuestion": "Quanti euro hai speso per l'ultimo capo d'abbigliamento sportivo comprato per la palestra o corsa?",
+    "impostorQuestion": "Quanti euro spendi per un paio di scarpe casual da ginnastica?",
+    "unit": "euro"
+  },
+  {
+    "id": "423",
+    "regularQuestion": "Quante volte nella vita ti sei addormentato sul treno rischiando di saltare la tua fermata?",
+    "impostorQuestion": "Quante volte nella vita ti sei fratturato o lussato un osso?",
+    "unit": "volte"
+  },
+  {
+    "id": "424",
+    "regularQuestion": "Quanti giorni consecutivi sei riuscito a fare sport o allenamento senza mai saltare un giorno?",
+    "impostorQuestion": "Quanti giorni di vacanza al mare hai fatto la scorsa estate?",
+    "unit": "giorni"
+  },
+  {
+    "id": "425",
+    "regularQuestion": "Quante volte a settimana mangi del tonno in scatola con insalata o pasta?",
+    "impostorQuestion": "Quante volte a settimana bevi una tazza di caffè pomeridiano?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "426",
+    "regularQuestion": "Quanti screenshot di mappe, orari o biglietti hai salvati nel rullino dell'ultimo mese?",
+    "impostorQuestion": "Quanti messaggi vocali invii mediamente in una settimana?",
+    "unit": "screenshot"
+  },
+  {
+    "id": "427",
+    "regularQuestion": "Quanti euro spendi mediamente per un pasto completo quando mangi in mensa o tavola calda?",
+    "impostorQuestion": "Quanti euro spendi per una colazione al bar per due persone?",
+    "unit": "euro"
+  },
+  {
+    "id": "428",
+    "regularQuestion": "Quanti minuti di cammino faresti prima di decidere di aspettare l'autobus alla fermata?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano verso il lavoro o università?",
+    "unit": "minuti"
+  },
+  {
+    "id": "429",
+    "regularQuestion": "Quante volte al mese ti capita di guardare un film intero da solo sul letto o divano?",
+    "impostorQuestion": "Quante volte al mese ordini cibo da asporto per cena?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "430",
+    "regularQuestion": "Quanti chili pesa all'incirca il trolley da cabina quando viaggi solo col bagaglio a mano?",
+    "impostorQuestion": "Quanti chilometri fai a piedi all'incirca in una settimana?",
+    "unit": "kg"
+  },
+  {
+    "id": "431",
+    "regularQuestion": "Quante volte all'anno compri una pianta, fiori o decorazioni per la casa?",
+    "impostorQuestion": "Quante volte all'anno vai dal dentista per un controllo di routine?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "432",
+    "regularQuestion": "Quanti minuti riesci a resistere in una sauna o bagno turco prima di dover uscire a respirare?",
+    "impostorQuestion": "Quanti minuti dura la tua doccia nei giorni in cui ti rilassi?",
+    "unit": "minuti"
+  },
+  {
+    "id": "433",
+    "regularQuestion": "Quanti euro consideri la cifra giusta per un ombrello grande da tenere in macchina?",
+    "impostorQuestion": "Quanti euro spendi mediamente per un aperitivo abbondante con drink?",
+    "unit": "euro"
+  },
+  {
+    "id": "434",
+    "regularQuestion": "Quante volte a settimana mangi pane fresco rispetto a fette biscottate o crackers?",
+    "impostorQuestion": "Quante volte a settimana bevi una bevanda fresca o gassata?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "435",
+    "regularQuestion": "Quanti giga di memoria libera hai in questo momento sul tuo smartphone?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per la spesa settimanale?",
+    "unit": "giga liberi"
+  },
+  {
+    "id": "436",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di avere la febbre o il mal di pancia per evitare un impegno noioso?",
+    "impostorQuestion": "Quante volte nella vita hai perso un treno o aereo per ritardo?",
+    "unit": "volte"
+  },
+  {
+    "id": "437",
+    "regularQuestion": "Quanti euro spenderesti per un mouse wireless silenzioso e preciso per lavorare?",
+    "impostorQuestion": "Quanti euro spendi per una cena in pizzeria completa di dolce?",
+    "unit": "euro"
+  },
+  {
+    "id": "438",
+    "regularQuestion": "Quanti minuti dura la tua camminata più lunga quando porti a spasso un cane o fai una passeggiata rilassante?",
+    "impostorQuestion": "Quanti minuti impieghi per cucinare un pasto completo da zero?",
+    "unit": "minuti"
+  },
+  {
+    "id": "439",
+    "regularQuestion": "Quante volte alla settimana mangi cibo piccante con peperoncino o salse speziate?",
+    "impostorQuestion": "Quante volte alla settimana bevi una birra o calice di vino?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "440",
+    "regularQuestion": "Quante paia di calzini corti o fantasmini possiedi per l'estate?",
+    "impostorQuestion": "Quante magliette a maniche corte possiedi nell'armadio?",
+    "unit": "paia"
+  },
+  {
+    "id": "441",
+    "regularQuestion": "Quanti litri d'acqua minerale frizzante bevi all'incirca in un mese rispetto a quella naturale?",
+    "impostorQuestion": "Quanti litri di latte o bevanda vegetale bevi in un mese?",
+    "unit": "litri al mese"
+  },
+  {
+    "id": "442",
+    "regularQuestion": "Quante volte al mese ti capita di guardare le recensioni prima di scegliere un ristorante nuovo?",
+    "impostorQuestion": "Quante volte al mese mangi fuori al ristorante nel weekend?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "443",
+    "regularQuestion": "Quanti euro consideri la spesa mensile perfetta per dedicarti a hobby o sport?",
+    "impostorQuestion": "Quanti euro spendi per la spesa alimentare settimanale al supermercato?",
+    "unit": "euro al mese"
+  },
+  {
+    "id": "444",
+    "regularQuestion": "Quanti minuti impieghi per fare benzina o rifornimento compreso il pagamento al self-service?",
+    "impostorQuestion": "Quanti minuti impieghi per preparare la colazione con caffè e biscotti?",
+    "unit": "minuti"
+  },
+  {
+    "id": "445",
+    "regularQuestion": "Quante volte all'anno prendi un antibiotico prescritto dal medico per curare un'infezione?",
+    "impostorQuestion": "Quante volte all'anno vai dal dentista o fai analisi del sangue?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "446",
+    "regularQuestion": "Quante volte nella vita ti sei trovato senza carta igienica in un bagno pubblico?",
+    "impostorQuestion": "Quante volte nella vita ti è caduto il telefono rompendone lo schermo?",
+    "unit": "volte"
+  },
+  {
+    "id": "447",
+    "regularQuestion": "Quanti euro spenderesti per un caricabatterie wireless da comodino?",
+    "impostorQuestion": "Quanti euro spendi mediamente per un aperitivo con drink?",
+    "unit": "euro"
+  },
+  {
+    "id": "448",
+    "regularQuestion": "Quanti chilometri fai mediamente in auto durante un tipico viaggio estivo per raggiungere la meta di vacanza?",
+    "impostorQuestion": "Quanti euro hai speso per il tuo smartphone attuale?",
+    "unit": "km di viaggio"
+  },
+  {
+    "id": "449",
+    "regularQuestion": "Quante volte alla settimana mangi maionese, ketchup o salse pronte?",
+    "impostorQuestion": "Quante volte alla settimana bevi una bevanda gassata?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "450",
+    "regularQuestion": "Quanti messaggi vocali da oltre due minuti hai registrato e inviato negli ultimi sei mesi?",
+    "impostorQuestion": "Quanti video o filmati hai salvato nella cartella preferiti del telefono?",
+    "unit": "vocali lunghi"
+  },
+  {
+    "id": "451",
+    "regularQuestion": "Quanti minuti impieghi per pulire la lettiera del gatto o sistemare la ciotola dell'animale domestico?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione con calma la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "452",
+    "regularQuestion": "Quanti euro spendi di solito per una pizza gourmet con ingredienti ricercati in un locale di tendenza?",
+    "impostorQuestion": "Quanti euro spendi per una cena completa in trattoria?",
+    "unit": "euro"
+  },
+  {
+    "id": "453",
+    "regularQuestion": "Quante volte al mese ti ritrovi col cellulare in modalità risparmio energetico?",
+    "impostorQuestion": "Quante volte al mese fai colazione al bar durante la settimana?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "454",
+    "regularQuestion": "Quanti capi d'abbigliamento invernali pesanti (cappotti, piumini, giacche a vento) possiedi nell'armadio?",
+    "impostorQuestion": "Quanti paia di scarpe possiedi in totale?",
+    "unit": "giacconi"
+  },
+  {
+    "id": "455",
+    "regularQuestion": "Quanti minuti dura il tuo tragitto mattutino casa-lavoro/università nei giorni con traffico normale?",
+    "impostorQuestion": "Quanti minuti impieghi per preparare e mangiare la cena quando sei solo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "456",
+    "regularQuestion": "Quante volte all'anno partecipi a una partita di calcetto, padel, basket o tennis tra amici?",
+    "impostorQuestion": "Quante volte all'anno prendi un treno o aereo per viaggiare?",
+    "unit": "partite all'anno"
+  },
+  {
+    "id": "457",
+    "regularQuestion": "Quanti euro consideri ragionevole pagare per un buon panino kebab completo di salse e patatine?",
+    "impostorQuestion": "Quanti euro spendi per un caffè e brioche al bar?",
+    "unit": "euro"
+  },
+  {
+    "id": "458",
+    "regularQuestion": "Quante volte alla settimana mangi cibo avanzato dal pranzo per cena?",
+    "impostorQuestion": "Quante volte alla settimana bevi una tisana calda prima di dormire?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "459",
+    "regularQuestion": "Quanti canali Telegram o newsletter informative segui regolarmente?",
+    "impostorQuestion": "Quanti account social hai attivi e funzionanti?",
+    "unit": "canali seguiti"
+  },
+  {
+    "id": "460",
+    "regularQuestion": "Quante volte nella vita ti è capitato di sbagliare fermata dell'autobus o metro perché distratto dal telefono?",
+    "impostorQuestion": "Quante volte nella vita hai perso un treno o aereo per ritardo?",
+    "unit": "volte"
+  },
+  {
+    "id": "461",
+    "regularQuestion": "Quanti euro spenderesti per un supporto smartphone per l'auto solido e magnetico?",
+    "impostorQuestion": "Quanti euro spendi mediamente per un aperitivo con consumazione?",
+    "unit": "euro"
+  },
+  {
+    "id": "462",
+    "regularQuestion": "Quanti minuti impieghi a preparare il borsone per la palestra o per lo sport?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una doccia veloce la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "463",
+    "regularQuestion": "Quante volte al mese ti concedi un piatto da asporto da mangiare sul divano guardando una serie?",
+    "impostorQuestion": "Quante volte al mese mangi fuori al ristorante nel weekend?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "464",
+    "regularQuestion": "Quanti gradi misura la temperatura ambiente ideale che imposti in casa durante l'inverno?",
+    "impostorQuestion": "A che ora pranzi solitamente nei giorni festivi (formato ora, es. 13 o 14)?",
+    "unit": "gradi Celsius"
+  },
+  {
+    "id": "465",
+    "regularQuestion": "Quanti chilometri fai all'incirca durante una classica gita fuori porta domenicale in auto?",
+    "impostorQuestion": "Quanti euro spendi mediamente per una spesa grossa al supermercato?",
+    "unit": "km di gita"
+  },
+  {
+    "id": "466",
+    "regularQuestion": "Quanti euro consideri la quota massima per un regalo a un collega di lavoro per un traguardo o compleanno?",
+    "impostorQuestion": "Quanti euro spendi per una cena in pizzeria con birra e coperto?",
+    "unit": "euro"
+  },
+  {
+    "id": "467",
+    "regularQuestion": "Quante volte a settimana mangi una piadina o focaccia calda?",
+    "impostorQuestion": "Quante volte a settimana mangi frutta fresca a colazione o spuntino?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "468",
+    "regularQuestion": "Quante foto hai scattato al tuo cibo prima di mangiarlo negli ultimi sei mesi?",
+    "impostorQuestion": "Quante foto hai pubblicato sulle storie di Instagram nell'ultimo mese?",
+    "unit": "foto al cibo"
+  },
+  {
+    "id": "469",
+    "regularQuestion": "Quanti minuti impieghi per stendere un intero bucato di panni appena uscito dalla lavatrice?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione con calma la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "470",
+    "regularQuestion": "Quante volte all'anno prendi un farmaco per il mal di gola o tosse?",
+    "impostorQuestion": "Quante volte all'anno vai dal parrucchiere o barbiere?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "471",
+    "regularQuestion": "Quanti euro hai speso all'incirca per il tuo ultimo mouse o accessorio per computer?",
+    "impostorQuestion": "Quanti euro spendi per un paio di pantaloni casual o jeans?",
+    "unit": "euro"
+  },
+  {
+    "id": "472",
+    "regularQuestion": "Quante volte nella vita ti è successo di macchiarti la maglietta chiara col sugo di pomodoro appena seduto a tavola?",
+    "impostorQuestion": "Quante volte nella vita ti sei fratturato o lussato un osso?",
+    "unit": "volte"
+  },
+  {
+    "id": "473",
+    "regularQuestion": "Quanti minuti dura il tuo allenamento medio in palestra o a casa?",
+    "impostorQuestion": "Quanti minuti impieghi per cucinare e cenare con calma la sera?",
+    "unit": "minuti di allenamento"
+  },
+  {
+    "id": "474",
+    "regularQuestion": "Quanti euro spenderesti per una sedia da ufficio ergonomica su cui sederti ogni giorno?",
+    "impostorQuestion": "Quanti euro spendi per un cappotto invernale di ottima marca?",
+    "unit": "euro"
+  },
+  {
+    "id": "475",
+    "regularQuestion": "Quante volte al mese ti ritrovi a pulire i vetri delle finestre di casa?",
+    "impostorQuestion": "Quante volte al mese cambi le lenzuola del tuo letto?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "476",
+    "regularQuestion": "Quante paia di calzini spaiati hai all'incirca accumulato nel cassetto senza ritrovarne la coppia?",
+    "impostorQuestion": "Quanti caricatori o cavi per telefono hai sparsi per casa?",
+    "unit": "calzini spaiati"
+  },
+  {
+    "id": "477",
+    "regularQuestion": "Quanti minuti riesci a guardare una partita di calcio o evento sportivo senza guardare il cellulare?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano in auto o sui mezzi?",
+    "unit": "minuti"
+  },
+  {
+    "id": "478",
+    "regularQuestion": "Quante volte alla settimana bevi succo d'arancia o spremuta fresca?",
+    "impostorQuestion": "Quante volte alla settimana mangi formaggio o latticini?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "479",
+    "regularQuestion": "Quanti euro spendi all'incirca per comprare snack o spuntini quando sei in stazione o aeroporto?",
+    "impostorQuestion": "Quanti euro spendi per un aperitivo con una bevuta al bancone?",
+    "unit": "euro"
+  },
+  {
+    "id": "480",
+    "regularQuestion": "Quante volte all'anno fai una passeggiata in bicicletta all'aperto?",
+    "impostorQuestion": "Quante volte all'anno prendi un aereo per fare un viaggio?",
+    "unit": "uscite all'anno"
+  },
+  {
+    "id": "481",
+    "regularQuestion": "Quanti euro consideri la quota perfetta da spendere per una bottiglia di prosecco o spumante da stappare a una festa?",
+    "impostorQuestion": "Quanti euro spendi per una pizza margherita con birra e coperto?",
+    "unit": "euro"
+  },
+  {
+    "id": "482",
+    "regularQuestion": "Quanti minuti impieghi per preparare e bere una tazza di caffè o tè quando fai una pausa pomeridiana?",
+    "impostorQuestion": "Quanti minuti impieghi per lavarti i denti e sciacquarti la faccia con cura?",
+    "unit": "minuti"
+  },
+  {
+    "id": "483",
+    "regularQuestion": "Quante volte al mese ti ritrovi ad accumulare piatti sporchi nel lavandino per più di un giorno?",
+    "impostorQuestion": "Quante volte al mese ordini cibo d'asporto a casa per cena?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "484",
+    "regularQuestion": "Quante app bancarie o di pagamento digitale hai installate sullo smartphone?",
+    "impostorQuestion": "Quanti account social network utilizzi abitualmente?",
+    "unit": "app bancarie"
+  },
+  {
+    "id": "485",
+    "regularQuestion": "Quanti chilometri orari è la velocità media con cui ti muovi quando cammini per strada da solo a passo svelto?",
+    "impostorQuestion": "Quanti litri di sangue scorrono mediamente nel corpo umano?",
+    "unit": "km/h"
+  },
+  {
+    "id": "486",
+    "regularQuestion": "Quanti euro hai speso all'incirca per il tuo ultimo pigiama o completo per dormire?",
+    "impostorQuestion": "Quanti euro spendi per una cena in pizzeria completa di dolce e birra?",
+    "unit": "euro"
+  },
+  {
+    "id": "487",
+    "regularQuestion": "Quanti minuti impieghi a farti una maschera viso o trattamento di bellezza a casa?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una doccia rilassante completa?",
+    "unit": "minuti"
+  },
+  {
+    "id": "488",
+    "regularQuestion": "Quante volte alla settimana mangi cibo riscaldato nel forno tradizionale invece che al microonde o padella?",
+    "impostorQuestion": "Quante volte alla settimana bevi una tisana calda prima di dormire?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "489",
+    "regularQuestion": "Quanti euro consideri ragionevole pagare per una lavanderia a gettoni quando lavi piumoni o coperte grandi?",
+    "impostorQuestion": "Quanti euro spendi per una colazione completa al bar per due persone?",
+    "unit": "euro"
+  },
+  {
+    "id": "490",
+    "regularQuestion": "Quante volte all'anno prendi un giorno di ferie o permesso senza andare da nessuna parte, solo per riposarti sul divano?",
+    "impostorQuestion": "Quante volte all'anno fai un viaggio fuori regione per svago?",
+    "unit": "giorni all'anno"
+  },
+  {
+    "id": "491",
+    "regularQuestion": "Quanti messaggi vocali hai ascoltato nell'ultima settimana mentre guidavi o camminavi?",
+    "impostorQuestion": "Quanti messaggi vocali hai inviato tu nell'ultima settimana?",
+    "unit": "vocali ascoltati"
+  },
+  {
+    "id": "492",
+    "regularQuestion": "Quanti euro spenderesti per comprare un buon paio di forbici da cucina affilate o coltello da chef?",
+    "impostorQuestion": "Quanti euro spendi di solito per un aperitivo abbondante con drink?",
+    "unit": "euro"
+  },
+  {
+    "id": "493",
+    "regularQuestion": "Quanti minuti impieghi per togliere il ghiaccio dal parabrezza dell'auto nelle fredde mattine d'inverno?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione la mattina prima di uscire?",
+    "unit": "minuti"
+  },
+  {
+    "id": "494",
+    "regularQuestion": "Quante volte al mese ti ritrovi ad acquistare qualcosa che avevi visto sponsorizzato sui social?",
+    "impostorQuestion": "Quante volte al mese ordini cibo d'asporto a casa?",
+    "unit": "acquisti al mese"
+  },
+  {
+    "id": "495",
+    "regularQuestion": "Quanti euro consideri la quota perfetta da donare per una causa benefica o raccolta fondi a cui tieni?",
+    "impostorQuestion": "Quanti euro spendi per una cena speciale in pizzeria con gli amici?",
+    "unit": "euro donati"
+  },
+  {
+    "id": "496",
+    "regularQuestion": "Quante volte alla settimana ti capita di dimenticare di bere acqua finché non senti la gola secca?",
+    "impostorQuestion": "Quante volte alla settimana salti la colazione la mattina?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "497",
+    "regularQuestion": "Quanti minuti dura il tuo pisolino pomeridiano ideale quando ti concedi una pausa?",
+    "impostorQuestion": "Quanti minuti impieghi per cucinare e mangiare la cena quando sei solo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "498",
+    "regularQuestion": "Quante volte all'anno cambi la spugnetta per lavare i piatti in cucina?",
+    "impostorQuestion": "Quante volte all'anno vai dal parrucchiere o barbiere?",
+    "unit": "volte all'anno"
+  },
+  {
+    "id": "499",
+    "regularQuestion": "Quanti euro hai speso all'incirca per l'ultima lampada da scrivania o comodino comprata?",
+    "impostorQuestion": "Quanti euro spendi per una cena in trattoria completa di antipasto?",
+    "unit": "euro"
+  },
+  {
+    "id": "500",
+    "regularQuestion": "Quante volte nella vita ti è successo di inviare uno screenshot della chat alla stessa persona di cui stavi parlando nello screenshot?",
+    "impostorQuestion": "Quante volte nella vita hai rotto il vetro del tuo smartphone per una caduta?",
+    "unit": "volte"
+  },
+  {
+    "id": "501",
+    "regularQuestion": "Quante volte al giorno apri il frigorifero senza un reale motivo, solo per guardare dentro?",
+    "impostorQuestion": "Quante volte al giorno ti lavi le mani col sapone?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "502",
+    "regularQuestion": "Quanti vestiti hai accumulato in questo momento sulla 'sedia dei vestiti' in camera?",
+    "impostorQuestion": "Quante magliette o felpe indossi a rotazione in una tipica settimana?",
+    "unit": "capi"
+  },
+  {
+    "id": "503",
+    "regularQuestion": "Quanti minuti passi sul water col telefono in mano ogni volta che vai in bagno con calma?",
+    "impostorQuestion": "Quanti minuti impieghi mediamente per fare la doccia e asciugarti?",
+    "unit": "minuti"
+  },
+  {
+    "id": "504",
+    "regularQuestion": "Quante volte premi il tasto 'posponi' (snooze) della sveglia prima di scendere davvero dal letto?",
+    "impostorQuestion": "Quante tazzine di caffè bevi all'incirca in una mattinata?",
+    "unit": "volte"
+  },
+  {
+    "id": "505",
+    "regularQuestion": "Quanti sorsi d'acqua bevi di notte quando ti svegli con la bocca asciutta?",
+    "impostorQuestion": "Quante volte ti svegli durante la notte in media?",
+    "unit": "sorsi"
+  },
+  {
+    "id": "506",
+    "regularQuestion": "Quante volte alla settimana mangi direttamente dalla padella o dalla confezione per non sporcare piatti?",
+    "impostorQuestion": "Quante volte a settimana ordini cibo a domicilio?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "507",
+    "regularQuestion": "Quanti euro spendi di solito per uno spuntino veloce al bar o distributore automatico?",
+    "impostorQuestion": "Quanti euro lasci di mancia quando paghi il conto?",
+    "unit": "euro"
+  },
+  {
+    "id": "508",
+    "regularQuestion": "Quante volte al giorno ti tocchi o ti sistemi i capelli?",
+    "impostorQuestion": "Quante volte al giorno controlli l'orologio o lo smartphone?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "509",
+    "regularQuestion": "Quanti minuti rimani fermo a fissare il vuoto la mattina appena ti alzi prima di connettere?",
+    "impostorQuestion": "Quanti minuti impieghi per bere il caffè e svegliarti del tutto?",
+    "unit": "minuti"
+  },
+  {
+    "id": "510",
+    "regularQuestion": "Quante volte a settimana indossi gli stessi pantaloni prima di metterli a lavare?",
+    "impostorQuestion": "Quanti giorni a settimana esci la sera con gli amici?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "511",
+    "regularQuestion": "Quante paia di calzini sporchi hai sparsi per la stanza in questo momento invece che nel cesto?",
+    "impostorQuestion": "Quante paia di scarpe tieni all'ingresso pronte da usare?",
+    "unit": "paia"
+  },
+  {
+    "id": "512",
+    "regularQuestion": "Quante volte al giorno controlli di avere chiavi e telefono in tasca prima di uscire da una porta?",
+    "impostorQuestion": "Quante volte al giorno bevi un bicchiere d'acqua?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "513",
+    "regularQuestion": "Quante bottiglie o bicchieri vuoti hai accumulato sulla scrivania o sul comodino?",
+    "impostorQuestion": "Quanti caricatori hai attaccati alla presa in camera?",
+    "unit": ""
+  },
+  {
+    "id": "514",
+    "regularQuestion": "Quanti minuti passi a scrollare TikTok o Reels prima di riuscire a posare il telefono la sera?",
+    "impostorQuestion": "Quanti minuti ci metti per addormentarti dopo aver chiuso gli occhi?",
+    "unit": "minuti"
+  },
+  {
+    "id": "515",
+    "regularQuestion": "Quante volte al mese ti dimentichi di portare giù la spazzatura e il bidone trabocca?",
+    "impostorQuestion": "Quante volte al mese pulisci a fondo la tua stanza?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "516",
+    "regularQuestion": "Quante volte alla settimana mangi una piadina o un toast al volo perché non hai voglia di cucinare?",
+    "impostorQuestion": "Quante volte a settimana mangi pasta o riso a cena?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "517",
+    "regularQuestion": "Quanti cucchiaini di zucchero o dolcificante metti nel caffè o nel tè?",
+    "impostorQuestion": "Quanti caffè bevi in una normale giornata?",
+    "unit": "cucchiaini"
+  },
+  {
+    "id": "518",
+    "regularQuestion": "Quante volte al giorno dici la parola 'boh' o 'niente' in una conversazione?",
+    "impostorQuestion": "Quante telefonate ricevi o fai in una giornata?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "519",
+    "regularQuestion": "Quante volte alla settimana lasci il caricabatterie attaccato alla presa a vuoto senza telefono?",
+    "impostorQuestion": "Quante volte a settimana metti il telefono in carica?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "520",
+    "regularQuestion": "Quanti minuti impieghi per prepararti se devi solo scendere a buttare la spazzatura o prendere il pane?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una doccia veloce?",
+    "unit": "minuti"
+  },
+  {
+    "id": "521",
+    "regularQuestion": "Quante volte al mese ti ritrovi col rotolo di carta igienica finito e devi cercarne un altro al buio?",
+    "impostorQuestion": "Quante volte al mese cambi le lenzuola del letto?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "522",
+    "regularQuestion": "Quanti pacchetti di fazzoletti aperti hai sparsi tra giacche, zaini e borse?",
+    "impostorQuestion": "Quanti accendini o penne hai in casa che funzionano ancora?",
+    "unit": "pacchetti"
+  },
+  {
+    "id": "523",
+    "regularQuestion": "Quanti minuti resisti a letto la domenica sveglio a fissare il soffitto prima di scendere?",
+    "impostorQuestion": "Quanti minuti dura la tua colazione domenicale con calma?",
+    "unit": "minuti"
+  },
+  {
+    "id": "524",
+    "regularQuestion": "Quante volte alla settimana mangi biscotti inzuppati nel latte o nel tè a merenda o sera?",
+    "impostorQuestion": "Quante volte alla settimana mangi frutta fresca?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "525",
+    "regularQuestion": "Quanti euro hai speso l'ultima volta che sei andato al supermercato solo per 'due cose al volo'?",
+    "impostorQuestion": "Quanti euro spendi per una pizza con bibita al taglio?",
+    "unit": "euro"
+  },
+  {
+    "id": "526",
+    "regularQuestion": "Quante volte al giorno guardi lo schermo del cellulare per controllare l'ora e poi la dimentichi subito?",
+    "impostorQuestion": "Quante volte al giorno sblocchi il telefono per vedere i messaggi?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "527",
+    "regularQuestion": "Quante magliette hai nell'armadio che non metti da almeno un anno ma ti rifiuti di buttare?",
+    "impostorQuestion": "Quante paia di calzini hai nel cassetto?",
+    "unit": "magliette"
+  },
+  {
+    "id": "528",
+    "regularQuestion": "Quanti secondi ci metti a raccogliere un pezzo di cibo caduto per terra invocando la regola dei 5 secondi?",
+    "impostorQuestion": "Quanti secondi impieghi per allacciarti le scarpe al mattino?",
+    "unit": "secondi"
+  },
+  {
+    "id": "529",
+    "regularQuestion": "Quante volte al mese lasci i piatti nel lavello dicendo 'li lavo dopo' e poi restano lì per ore?",
+    "impostorQuestion": "Quante volte al mese ordini cibo d'asporto a cena?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "530",
+    "regularQuestion": "Quanti sbadigli fai prima delle 10 del mattino in una giornata feriale?",
+    "impostorQuestion": "Quanti caffè bevi prima di pranzo?",
+    "unit": "sbadigli"
+  },
+  {
+    "id": "531",
+    "regularQuestion": "Quante volte alla settimana bevi direttamente dal cartone del latte o dalla bottiglia invece che dal bicchiere?",
+    "impostorQuestion": "Quante volte a settimana fai colazione seduto a tavola?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "532",
+    "regularQuestion": "Quanti minuti passi sotto il getto della doccia immobile a goderti l'acqua calda senza insaponarti?",
+    "impostorQuestion": "Quanti minuti impieghi per lavarti e asciugarti i denti?",
+    "unit": "minuti"
+  },
+  {
+    "id": "533",
+    "regularQuestion": "Quanti euro hai in monete sfuse sul comodino, nelle tasche o nel cruscotto dell'auto?",
+    "impostorQuestion": "Quanti euro spendi per un caffè e cornetto al bar?",
+    "unit": "euro"
+  },
+  {
+    "id": "534",
+    "regularQuestion": "Quante volte al giorno controlli di aver chiuso la porta di casa o la macchina a chiave?",
+    "impostorQuestion": "Quante volte al giorno ti soffi il naso?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "535",
+    "regularQuestion": "Quante volte a settimana mangi qualcosa sul divano davanti alla TV con la ciotola in mano?",
+    "impostorQuestion": "Quante volte a settimana cucini una cena completa?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "536",
+    "regularQuestion": "Quanti minuti impieghi per scegliere quale paio di scarpe mettere prima di uscire?",
+    "impostorQuestion": "Quanti minuti impieghi per metterti giacca e scarpe all'ingresso?",
+    "unit": "minuti"
+  },
+  {
+    "id": "537",
+    "regularQuestion": "Quanti scontrini stropicciati hai accumulato in tasca, nel portafoglio o nello zaino?",
+    "impostorQuestion": "Quante tessere o carte fedeltà hai nel portafoglio?",
+    "unit": "scontrini"
+  },
+  {
+    "id": "538",
+    "regularQuestion": "Quante volte al mese ti bruci la lingua con il caffè o con una fetta di pizza bollente?",
+    "impostorQuestion": "Quante volte al mese prendi una pizza d'asporto?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "539",
+    "regularQuestion": "Quanti messaggi vocali interrompi e riascolti per vedere come suona la tua voce prima di inviarli?",
+    "impostorQuestion": "Quanti messaggi vocali mandi in una tipica giornata?",
+    "unit": "vocali riascoltati"
+  },
+  {
+    "id": "540",
+    "regularQuestion": "Quante volte alla settimana rimani in pigiama o tuta fino al primo pomeriggio quando sei a casa?",
+    "impostorQuestion": "Quante volte a settimana fai una passeggiata all'aria aperta?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "541",
+    "regularQuestion": "Quanti minuti impieghi per scaldare il latte o l'acqua per il tè e consumarlo?",
+    "impostorQuestion": "Quanti minuti dura la tua pausa caffè a metà mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "542",
+    "regularQuestion": "Quante volte al giorno ti gratti la testa o ti tocchi la barba/viso mentre pensi?",
+    "impostorQuestion": "Quante volte al giorno ti soffi il naso o starnutisci?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "543",
+    "regularQuestion": "Quante paia di ciabatte o pantofole spaiate o mezze rotte conservi a casa?",
+    "impostorQuestion": "Quanti ombrelli tieni all'ingresso?",
+    "unit": "paia"
+  },
+  {
+    "id": "544",
+    "regularQuestion": "Quanti euro spendi di solito per comprare le patatine o uno snack dolce all'alimentari?",
+    "impostorQuestion": "Quanti euro costa un caffè espresso al bancone?",
+    "unit": "euro"
+  },
+  {
+    "id": "545",
+    "regularQuestion": "Quante volte al mese ti accorgi di avere il calzino bucato sull'alluce solo dopo essere uscito di casa?",
+    "impostorQuestion": "Quante volte al mese compri capi d'abbigliamento?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "546",
+    "regularQuestion": "Quanti minuti riesci a guardare la TV o il computer prima di allungare la mano per prendere il cellulare?",
+    "impostorQuestion": "Quanti minuti dura la tua doccia nei giorni di fretta?",
+    "unit": "minuti"
+  },
+  {
+    "id": "547",
+    "regularQuestion": "Quante volte alla settimana fai scarpetta col pane nel piatto fino a lasciarlo lucido?",
+    "impostorQuestion": "Quante volte a settimana mangi pasta al sugo?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "548",
+    "regularQuestion": "Quanti accendini o penne hai in camera che non scrivono o non fanno scintilla ma non butti via?",
+    "impostorQuestion": "Quanti cavetti USB hai sparsi nei cassetti?",
+    "unit": ""
+  },
+  {
+    "id": "549",
+    "regularQuestion": "Quante volte al giorno sospiri rumorosamente per la stanchezza o lo scazzo?",
+    "impostorQuestion": "Quanti caffè bevi in tutta la giornata?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "550",
+    "regularQuestion": "Quanti minuti impieghi per trovare le chiavi di casa dentro la borsa, zaino o nelle tasche della giacca?",
+    "impostorQuestion": "Quanti minuti impieghi per allacciarti le scarpe e uscire di casa?",
+    "unit": "minuti"
+  },
+  {
+    "id": "551",
+    "regularQuestion": "Quante volte al mese ti capita di versare un po' d'acqua o caffè sul tavolo o sui vestiti?",
+    "impostorQuestion": "Quante volte al mese mangi una pizza con gli amici?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "552",
+    "regularQuestion": "Quanti biscotti o patatine riesci a mangiare di fila 'uno dietro l'altro' senza accorgertene?",
+    "impostorQuestion": "Quanti bocconi fai per finire un trancio di pizza?",
+    "unit": "biscotti o patatine"
+  },
+  {
+    "id": "553",
+    "regularQuestion": "Quante volte a settimana ti svegli col braccio formicolante perché ci hai dormito sopra?",
+    "impostorQuestion": "Quante volte a settimana ti svegli prima che suoni la sveglia?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "554",
+    "regularQuestion": "Quanti minuti passi al telefono con un call center prima di attaccare per disperazione?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una telefonata veloce a un amico?",
+    "unit": "minuti"
+  },
+  {
+    "id": "555",
+    "regularQuestion": "Quanti euro costa il pane che compri ogni volta che passi dal panettiere?",
+    "impostorQuestion": "Quanti euro spendi per una brioche farcita al bar?",
+    "unit": "euro"
+  },
+  {
+    "id": "556",
+    "regularQuestion": "Quante volte al giorno ti allunghi o fai 'croccare' le dita, la schiena o il collo?",
+    "impostorQuestion": "Quante volte al giorno sbadigli?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "557",
+    "regularQuestion": "Quanti vasetti vuoti di marmellata, crema o Nutella conservi 'perché possono servire'?",
+    "impostorQuestion": "Quante tazze da colazione possiedi nella credenza?",
+    "unit": "vasetti"
+  },
+  {
+    "id": "558",
+    "regularQuestion": "Quanti minuti impieghi per ricaricare la caffettiera moka con polvere e acqua e metterla sul fuoco?",
+    "impostorQuestion": "Quanti minuti ci metti per lavarti i denti al mattino?",
+    "unit": "minuti"
+  },
+  {
+    "id": "559",
+    "regularQuestion": "Quante volte al mese ti ritrovi ad aprire una confezione di biscotti o pasta dal lato sbagliato strappandola male?",
+    "impostorQuestion": "Quante volte al mese fai la spesa alimentare?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "560",
+    "regularQuestion": "Quanti capi d'abbigliamento metti a lavare solo perché li hai indossati mezz'ora e ti sembrano 'usati'?",
+    "impostorQuestion": "Quanti vestiti metti nella cesta della biancheria in una settimana?",
+    "unit": "capi a settimana"
+  },
+  {
+    "id": "561",
+    "regularQuestion": "Quante volte al giorno guardi fuori dalla finestra per vedere com'è il meteo?",
+    "impostorQuestion": "Quante volte al giorno bevi un bicchiere d'acqua?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "562",
+    "regularQuestion": "Quanti minuti impieghi per decidere che video o podcast mettere di sottofondo prima di iniziare a mangiare?",
+    "impostorQuestion": "Quanti minuti impieghi per consumare il pranzo quando sei da solo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "563",
+    "regularQuestion": "Quante volte a settimana metti le scarpe senza slacciarle prima, forzando il tallone col dito?",
+    "impostorQuestion": "Quante volte a settimana indossi scarpe da ginnastica?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "564",
+    "regularQuestion": "Quanti euro hai speso l'ultima volta che hai preso una cazzata al supermercato mentre eri in coda alla cassa?",
+    "impostorQuestion": "Quanti euro spendi per un pacchetto di gomme o caramelle?",
+    "unit": "euro"
+  },
+  {
+    "id": "565",
+    "regularQuestion": "Quante volte nella vita hai sbattuto il mignolo del piede contro lo spigolo di un mobile o divano?",
+    "impostorQuestion": "Quante volte ti sei fatto male al punto da mettere ghiaccio?",
+    "unit": "volte"
+  },
+  {
+    "id": "566",
+    "regularQuestion": "Quanti minuti dura il tempo che passi sul divano a scrollare appena rientri a casa prima di toglierti le scarpe?",
+    "impostorQuestion": "Quanti minuti impieghi per prepararti prima di andare a dormire?",
+    "unit": "minuti"
+  },
+  {
+    "id": "567",
+    "regularQuestion": "Quante volte al mese finisci il bagnoschiuma e aggiungi acqua nella bottiglia per farlo durare altri 3 giorni?",
+    "impostorQuestion": "Quante volte al mese pulisci a fondo il bagno?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "568",
+    "regularQuestion": "Quante mollette per panni hai sulla corda dello stendibiancheria o nel cestino?",
+    "impostorQuestion": "Quante grucce o ometti hai nell'armadio per i vestiti?",
+    "unit": "mollette"
+  },
+  {
+    "id": "569",
+    "regularQuestion": "Quante volte al giorno controlli che il cellulare sia in modalità silenziosa o vibrazione?",
+    "impostorQuestion": "Quante volte al giorno rispondi a una chiamata?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "570",
+    "regularQuestion": "Quanti minuti impieghi per scartare una caramella o cioccolatino cercando di non fare rumore?",
+    "impostorQuestion": "Quanti minuti impieghi per bere un caffè espresso caldo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "571",
+    "regularQuestion": "Quante volte alla settimana mangi direttamente il formaggio a fette tagliandolo col coltello davanti al frigo?",
+    "impostorQuestion": "Quante volte alla settimana fai uno spuntino fuori orario?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "572",
+    "regularQuestion": "Quanti rotoli di carta igienica consumi mediamente in un mese a casa tua?",
+    "impostorQuestion": "Quanti pacchetti di fazzoletti usi all'incirca in un mese?",
+    "unit": "rotoli al mese"
+  },
+  {
+    "id": "573",
+    "regularQuestion": "Quanti euro spendi per una pizza al trancio con bibita consumata al volo per strada?",
+    "impostorQuestion": "Quanti euro spendi per una birra media al pub?",
+    "unit": "euro"
+  },
+  {
+    "id": "574",
+    "regularQuestion": "Quante volte al giorno ti scappa un 'uffa' o sbuffo mentre fai una faccenda domestica?",
+    "impostorQuestion": "Quante volte al giorno guardi che ore sono?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "575",
+    "regularQuestion": "Quanti minuti ci metti a farti passare il nervoso quando trovi il traffico completamente bloccato?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano in auto?",
+    "unit": "minuti"
+  },
+  {
+    "id": "576",
+    "regularQuestion": "Quante volte al mese ti capita di infilare la mano nel pacco di patatine e trovare solo briciole sul fondo?",
+    "impostorQuestion": "Quante volte al mese mangi cibo spazzatura o snack dolci?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "577",
+    "regularQuestion": "Quanti caricatori per cellulare funzionanti hai vicino al letto?",
+    "impostorQuestion": "Quanti telecomandi hai sul tavolino del salotto?",
+    "unit": "caricatori"
+  },
+  {
+    "id": "578",
+    "regularQuestion": "Quante volte a settimana ti lavi i denti prima di colazione invece che dopo?",
+    "impostorQuestion": "Quante volte a settimana fai colazione al bar?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "579",
+    "regularQuestion": "Quanti minuti impieghi per decidere che vestiti metterti prima di andare a una cena informale tra amici?",
+    "impostorQuestion": "Quanti minuti impieghi per fare la doccia e asciugarti?",
+    "unit": "minuti"
+  },
+  {
+    "id": "580",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di guardare con attenzione un quadro o monumento per sembrare colto?",
+    "impostorQuestion": "Quante volte nella vita hai perso il treno per 30 secondi di ritardo?",
+    "unit": "volte"
+  },
+  {
+    "id": "581",
+    "regularQuestion": "Quanti euro hai speso l'ultima volta che hai preso qualcosa dal distributore automatico?",
+    "impostorQuestion": "Quanti euro costa un caffè espresso al bar vicino a te?",
+    "unit": "euro"
+  },
+  {
+    "id": "582",
+    "regularQuestion": "Quanti sorsi fai prima di posare la tazza di caffè o tè bollente per lasciarla raffreddare?",
+    "impostorQuestion": "Quanti biscotti mangi a colazione?",
+    "unit": "sorsi"
+  },
+  {
+    "id": "583",
+    "regularQuestion": "Quante volte alla settimana butti via la buccia o il torsolo della frutta direttamente nel lavandino rimandando la pulizia?",
+    "impostorQuestion": "Quante volte alla settimana mangi frutta a tavola?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "584",
+    "regularQuestion": "Quanti minuti passi la mattina a letto a guardare lo schermo senza alzare la testa dal cuscino?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "585",
+    "regularQuestion": "Quanti sacchetti della spesa di plastica o tela hai piegati dentro un altro sacchetto più grande?",
+    "impostorQuestion": "Quante magliette hai nell'armadio?",
+    "unit": "sacchetti"
+  },
+  {
+    "id": "586",
+    "regularQuestion": "Quante volte al mese ti capita di guardare la pentola dell'acqua aspettando che bolla e sembra non bollire mai?",
+    "impostorQuestion": "Quante volte al mese cucini la pasta per te o altri?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "587",
+    "regularQuestion": "Quanti gradi tieni il volume della televisione quando guardi un film la sera (es. scala da 1 a 50)?",
+    "impostorQuestion": "Quanti minuti dura un episodio di una serie TV che guardi di solito?",
+    "unit": "livello volume"
+  },
+  {
+    "id": "588",
+    "regularQuestion": "Quante volte al giorno dici 'grazie' in modo automatico senza pensarci?",
+    "impostorQuestion": "Quante volte al giorno bevi un bicchiere d'acqua?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "589",
+    "regularQuestion": "Quanti minuti ci metti a salire le scale di casa a piedi quando sei carico di sacchetti della spesa?",
+    "impostorQuestion": "Quanti minuti impieghi per sistemare la spesa nei mobili?",
+    "unit": "minuti"
+  },
+  {
+    "id": "590",
+    "regularQuestion": "Quante volte alla settimana mangi il bordo della pizza avanzato da qualcun altro a tavola?",
+    "impostorQuestion": "Quante volte a settimana mangi pizza?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "591",
+    "regularQuestion": "Quanti euro spenderesti per un paio di pantofole morbide e calde per l'inverno?",
+    "impostorQuestion": "Quanti euro spendi per una pizza margherita con birra?",
+    "unit": "euro"
+  },
+  {
+    "id": "592",
+    "regularQuestion": "Quante volte al mese ti ritrovi con la batteria delle cuffiette wireless completamente a terra mentre stai per uscire?",
+    "impostorQuestion": "Quante volte al mese prendi i mezzi pubblici?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "593",
+    "regularQuestion": "Quanti minuti passi a cercare un calzino uguale a quello che hai già in mano prima di arrenderti e metterne uno spaiato?",
+    "impostorQuestion": "Quanti minuti impieghi per lavarti e vestirti al mattino?",
+    "unit": "minuti"
+  },
+  {
+    "id": "594",
+    "regularQuestion": "Quanti sorsi d'acqua bevi prima di addormentarti la sera per non svegliarti con la sete?",
+    "impostorQuestion": "Quanti cuscini tieni sul letto per dormire?",
+    "unit": "sorsi"
+  },
+  {
+    "id": "595",
+    "regularQuestion": "Quante volte nella vita hai finto di non vedere qualcuno che camminava verso di te tirando fuori il telefono?",
+    "impostorQuestion": "Quante volte nella vita ti sei perso guidando senza navigatore?",
+    "unit": "volte"
+  },
+  {
+    "id": "596",
+    "regularQuestion": "Quanti euro hai speso per l'ultima confezione di snack o patatine che hai preso al supermercato?",
+    "impostorQuestion": "Quanti euro spendi per un caffè al bar con brioche?",
+    "unit": "euro"
+  },
+  {
+    "id": "597",
+    "regularQuestion": "Quanti minuti dura la tua doccia nei giorni in cui hai freddo e vuoi solo scaldarti col vapore?",
+    "impostorQuestion": "Quanti minuti impieghi per mangiare e sparecchiare a pranzo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "598",
+    "regularQuestion": "Quante volte a settimana ti capita di avere un capello o pelucco addosso e passarti la mano per toglierlo?",
+    "impostorQuestion": "Quante volte a settimana ti lavi i capelli?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "599",
+    "regularQuestion": "Quante posate sporche tieni nel lavello prima di decidere di lavarle tutte insieme?",
+    "impostorQuestion": "Quanti piatti metti in lavastoviglie o lavi al giorno?",
+    "unit": "posate"
+  },
+  {
+    "id": "600",
+    "regularQuestion": "Quante volte al mese ti capita di dire 'oggi vado a dormire presto' e poi finire a letto dopo mezzanotte?",
+    "impostorQuestion": "Quante volte al mese esci a bere la sera?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "601",
+    "regularQuestion": "Quanti secondi rimani a guardare il microonde mentre gira aspettando che manchi 1 secondo per aprirlo prima che suoni?",
+    "impostorQuestion": "Quanti secondi impieghi per allacciarti le scarpe?",
+    "unit": "secondi"
+  },
+  {
+    "id": "602",
+    "regularQuestion": "Quanti capi d'abbigliamento provi prima di decidere cosa mettere per uscire la sera?",
+    "impostorQuestion": "Quante magliette hai nella tua rotazione settimanale?",
+    "unit": "capi provati"
+  },
+  {
+    "id": "603",
+    "regularQuestion": "Quante volte al giorno ti guardi riflesso nelle vetrine dei negozi mentre cammini per strada?",
+    "impostorQuestion": "Quante volte al giorno controlli l'ora sull'orologio?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "604",
+    "regularQuestion": "Quanti minuti dura il tuo tragitto quotidiano a piedi da casa alla fermata o alla macchina?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "605",
+    "regularQuestion": "Quante volte a settimana mangi la crosta del pane col formaggio o col salume tagliato al volo?",
+    "impostorQuestion": "Quante volte a settimana mangi pane a tavola?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "606",
+    "regularQuestion": "Quanti euro hai speso l'ultima volta per comprare una bottiglietta d'acqua a un bar o macchinetta?",
+    "impostorQuestion": "Quanti euro costa un caffè espresso al banco?",
+    "unit": "euro"
+  },
+  {
+    "id": "607",
+    "regularQuestion": "Quante volte al mese ti ritrovi col dentifricio quasi finito a strizzare il tubetto piegandolo in due?",
+    "impostorQuestion": "Quante volte al mese cambi lo spazzolino da denti?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "608",
+    "regularQuestion": "Quanti minuti impieghi per piegare e mettere a posto i vestiti asciutti dello stendino?",
+    "impostorQuestion": "Quanti minuti dura la tua doccia nei giorni feriali?",
+    "unit": "minuti"
+  },
+  {
+    "id": "609",
+    "regularQuestion": "Quante volte alla settimana ti capita di avere un crampo al piede o alla gamba mentre ti stiri a letto?",
+    "impostorQuestion": "Quante volte alla settimana fai attività fisica o palestra?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "610",
+    "regularQuestion": "Quanti sorsi di caffè fai per finire una tazzina al bar?",
+    "impostorQuestion": "Quanti caffè bevi in una normale giornata?",
+    "unit": "sorsi"
+  },
+  {
+    "id": "611",
+    "regularQuestion": "Quanti euro consideri ragionevole pagare per una bottiglia di ketchup o maionese di marca al supermercato?",
+    "impostorQuestion": "Quanti euro spendi per una birra media al bancone?",
+    "unit": "euro"
+  },
+  {
+    "id": "612",
+    "regularQuestion": "Quante volte al giorno bevi un sorso d'acqua direttamente dal rubinetto del bagno o della cucina?",
+    "impostorQuestion": "Quante volte al giorno ti soffi il naso?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "613",
+    "regularQuestion": "Quanti minuti impieghi per fare colazione quando sei in ritardo clamoroso?",
+    "impostorQuestion": "Quanti minuti ci metti a vestirti e allacciarti le scarpe?",
+    "unit": "minuti"
+  },
+  {
+    "id": "614",
+    "regularQuestion": "Quante volte al mese ti dimentichi di mettere la sveglia e ti svegli di soprassalto?",
+    "impostorQuestion": "Quante volte al mese fai tardi a un appuntamento?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "615",
+    "regularQuestion": "Quanti panni lasci sullo stendino asciutti prendendoli direttamente da lì man mano che ti servono?",
+    "impostorQuestion": "Quanti vestiti hai accumulato sulla sedia della camera?",
+    "unit": "capi"
+  },
+  {
+    "id": "616",
+    "regularQuestion": "Quanti euro spenderesti per un cuscino ortopedico memory foam per dormire meglio?",
+    "impostorQuestion": "Quanti euro spendi per una cena in trattoria completa?",
+    "unit": "euro"
+  },
+  {
+    "id": "617",
+    "regularQuestion": "Quante volte a settimana ti ritrovi a mangiare qualcosa mentre sei in piedi davanti al lavello?",
+    "impostorQuestion": "Quante volte a settimana pranzi da solo a casa?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "618",
+    "regularQuestion": "Quanti minuti dura la tua doccia nei giorni in cui non hai minimamente voglia di lavarti ma devi farlo?",
+    "impostorQuestion": "Quanti minuti impieghi per prepararti prima di andare a letto?",
+    "unit": "minuti"
+  },
+  {
+    "id": "619",
+    "regularQuestion": "Quante volte al mese ti cade una penna o qualcosa sotto il divano e devi chinarti a cercarla con la torcia?",
+    "impostorQuestion": "Quante volte al mese pulisci sotto i mobili o il letto?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "620",
+    "regularQuestion": "Quanti biscotti mangi in una singola tazza di latte la mattina prima di sentirti sazio?",
+    "impostorQuestion": "Quante fette biscottate mangi a colazione?",
+    "unit": "biscotti"
+  },
+  {
+    "id": "621",
+    "regularQuestion": "Quanti euro hai speso per l'ultimo pacco di pasta che hai comprato al supermercato?",
+    "impostorQuestion": "Quanti euro costa un caffè espresso al bar vicino a casa?",
+    "unit": "euro"
+  },
+  {
+    "id": "622",
+    "regularQuestion": "Quante volte al giorno ti sistemi i vestiti (tirare giù la maglia, sistemare la cintura, aggiustare i pantaloni)?",
+    "impostorQuestion": "Quante volte al giorno guardi lo schermo del telefono?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "623",
+    "regularQuestion": "Quanti minuti impieghi per asciugare i piatti a mano se non hai la lavastoviglie?",
+    "impostorQuestion": "Quanti minuti impieghi per preparare e sparecchiare la tavola a pranzo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "624",
+    "regularQuestion": "Quante volte a settimana metti una felpa senza la maglietta sotto solo per stare in casa comodo?",
+    "impostorQuestion": "Quante volte a settimana resti in tuta tutto il giorno?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "625",
+    "regularQuestion": "Quanti secondi riesci a resistere sotto la doccia gelata quando finisce l'acqua calda?",
+    "impostorQuestion": "Quanti secondi impieghi per toglierti le scarpe e i calzini la sera?",
+    "unit": "secondi"
+  },
+  {
+    "id": "626",
+    "regularQuestion": "Quante volte al mese ti ritrovi con la moka che gorgoglia e devi correre in cucina prima che fuoriesca il caffè?",
+    "impostorQuestion": "Quante volte al mese prepari la moka a casa?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "627",
+    "regularQuestion": "Quanti euro spendi di solito quando compri una confezione di merendine o snack dolci?",
+    "impostorQuestion": "Quanti euro costa una bibita in lattina al distributore?",
+    "unit": "euro"
+  },
+  {
+    "id": "628",
+    "regularQuestion": "Quanti minuti impieghi per allacciarti le scarpe e infilare la giacca quando sei pronto sulla porta?",
+    "impostorQuestion": "Quanti minuti ci metti a farti la barba la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "629",
+    "regularQuestion": "Quante volte alla settimana mangi il gelato direttamente dalla vaschetta col cucchiaio?",
+    "impostorQuestion": "Quante volte alla settimana mangi un dessert dopo cena?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "630",
+    "regularQuestion": "Quanti telecomandi hai in casa che hanno le batterie mezze scariche e devi schiacciare forte per farli andare?",
+    "impostorQuestion": "Quanti caricatori per telefono hai sparsi per casa?",
+    "unit": "telecomandi"
+  },
+  {
+    "id": "631",
+    "regularQuestion": "Quante volte al giorno ti capita di entrare in una stanza e dimenticare completamente cosa ci eri andato a fare?",
+    "impostorQuestion": "Quante volte al giorno bevi un bicchiere d'acqua?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "632",
+    "regularQuestion": "Quanti minuti passi a cercare un paio di forbici in casa quando ti servono urgentemente?",
+    "impostorQuestion": "Quanti minuti impieghi per rifare il letto al mattino?",
+    "unit": "minuti"
+  },
+  {
+    "id": "633",
+    "regularQuestion": "Quante volte al mese lasci la porta del balcone o finestra aperta e ti entra una zanzara o mosca gigante?",
+    "impostorQuestion": "Quante volte al mese pulisci la tua stanza a fondo?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "634",
+    "regularQuestion": "Quanti euro hai speso l'ultima volta per un pezzo di formaggio o parmigiano al banco del supermercato?",
+    "impostorQuestion": "Quanti euro spendi per una pizza margherita con birra?",
+    "unit": "euro"
+  },
+  {
+    "id": "635",
+    "regularQuestion": "Quante volte a settimana mangi pasta in bianco con solo burro e parmigiano perché non hai salse?",
+    "impostorQuestion": "Quante volte a settimana mangi pasta a pranzo?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "636",
+    "regularQuestion": "Quanti minuti impieghi per spazzolarti o pettinarti i capelli al mattino prima di uscire?",
+    "impostorQuestion": "Quanti minuti impieghi per lavarti i denti col dentifricio?",
+    "unit": "minuti"
+  },
+  {
+    "id": "637",
+    "regularQuestion": "Quante volte nella vita hai fatto finta di guardare con attenzione l'etichetta del vino prima di dire 'buono'?",
+    "impostorQuestion": "Quante volte nella vita hai perso le chiavi di casa rimanendo fuori?",
+    "unit": "volte"
+  },
+  {
+    "id": "638",
+    "regularQuestion": "Quanti pacchi di pasta aperti a metà hai nella dispensa in questo momento?",
+    "impostorQuestion": "Quanti barattoli di spezie o salse hai in cucina?",
+    "unit": "pacchi aperti"
+  },
+  {
+    "id": "639",
+    "regularQuestion": "Quanti euro spenderesti per una padella antiaderente di buona qualità che non fa attaccare nulla?",
+    "impostorQuestion": "Quanti euro spendi per una cena completa in pizzeria per due persone?",
+    "unit": "euro"
+  },
+  {
+    "id": "640",
+    "regularQuestion": "Quante volte al giorno ti soffi il naso o ti passi un fazzoletto sugli occhi?",
+    "impostorQuestion": "Quante volte al giorno starnutisci?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "641",
+    "regularQuestion": "Quanti minuti impieghi per scegliere che canzone mettere prima di partire in macchina da solo?",
+    "impostorQuestion": "Quanti minuti impieghi per allacciarti le scarpe e uscire di casa?",
+    "unit": "minuti"
+  },
+  {
+    "id": "642",
+    "regularQuestion": "Quante volte al mese ti capita di far cadere il sapone o la boccetta di shampoo nella doccia col botto?",
+    "impostorQuestion": "Quante volte al mese cambi il telo doccia?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "643",
+    "regularQuestion": "Quanti pezzi di pane mangi prima che arrivi il piatto principale quando sei seduto al ristorante?",
+    "impostorQuestion": "Quanti grissini o cracker mangi come spuntino?",
+    "unit": "pezzi di pane"
+  },
+  {
+    "id": "644",
+    "regularQuestion": "Quante volte alla settimana cammini a piedi scalzi o solo coi calzini per casa?",
+    "impostorQuestion": "Quanti giorni a settimana indossi le pantofole?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "645",
+    "regularQuestion": "Quanti euro hai speso l'ultima volta che hai comprato una scatola di cerotti o disinfettante in farmacia?",
+    "impostorQuestion": "Quanti euro spendi per un panino veloce e bibita a pranzo?",
+    "unit": "euro"
+  },
+  {
+    "id": "646",
+    "regularQuestion": "Quanti minuti riesci a resistere sul divano senza cambiare posizione quando inizi ad avere sonno?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano in auto?",
+    "unit": "minuti"
+  },
+  {
+    "id": "647",
+    "regularQuestion": "Quante volte al mese ti ritrovi con la bottiglia dell'olio che gocciola sul ripiano della cucina sporcando tutto?",
+    "impostorQuestion": "Quante volte al mese pulisci a fondo i fornelli della cucina?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "648",
+    "regularQuestion": "Quanti cucchiaini di sale grosso butti nell'acqua della pasta quando inizia a bollire?",
+    "impostorQuestion": "Quanti caffè bevi in una normale giornata?",
+    "unit": "cucchiaini di sale"
+  },
+  {
+    "id": "649",
+    "regularQuestion": "Quante volte al giorno bevi un sorso di qualcosa mentre hai ancora il cibo in bocca per mandarlo giù?",
+    "impostorQuestion": "Quante volte al giorno mastichi una gomma o caramella?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "650",
+    "regularQuestion": "Quanti minuti impieghi per decidere che serie o film guardare prima di finire a guardare sempre la stessa cosa?",
+    "impostorQuestion": "Quanti minuti impieghi per cenare quando sei da solo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "651",
+    "regularQuestion": "Quanti pacchetti di gomme da masticare mezze vuote hai sparsi nelle tasche o negli zaini?",
+    "impostorQuestion": "Quanti accendini o penne hai in casa che funzionano ancora?",
+    "unit": "pacchetti"
+  },
+  {
+    "id": "652",
+    "regularQuestion": "Quante volte alla settimana ti capita di avere un capello o ciglia nell'occhio e dover andare allo specchio?",
+    "impostorQuestion": "Quante volte alla settimana ti lavi i capelli?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "653",
+    "regularQuestion": "Quanti euro spendi di solito per comprare un pacco di caffè per la moka o capsule?",
+    "impostorQuestion": "Quanti euro spendi per una colazione completa al bar per due?",
+    "unit": "euro"
+  },
+  {
+    "id": "654",
+    "regularQuestion": "Quanti minuti impieghi per togliere tutte le briciole dal tavolo dopo aver mangiato pane o fette biscottate?",
+    "impostorQuestion": "Quanti minuti ci metti a lavarti i denti e sciacquarti il viso?",
+    "unit": "minuti"
+  },
+  {
+    "id": "655",
+    "regularQuestion": "Quante volte al mese ti ritrovi a cercare disperatamente una presa libera per caricare il telefono?",
+    "impostorQuestion": "Quante volte al mese rimani con la batteria del telefono sotto il 5%?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "656",
+    "regularQuestion": "Quanti bicchieri d'acqua bevi di fila quando rientri a casa d'estate assetato dopo una camminata sotto il sole?",
+    "impostorQuestion": "Quanti caffè bevi in tutta la giornata?",
+    "unit": "bicchieri d'acqua"
+  },
+  {
+    "id": "657",
+    "regularQuestion": "Quanti euro consideri la quota giusta per una pizza margherita d'asporto presa sotto casa?",
+    "impostorQuestion": "Quanti euro spendi per un trancio di pizza e una lattina al bar?",
+    "unit": "euro"
+  },
+  {
+    "id": "658",
+    "regularQuestion": "Quante volte al giorno ti capita di sbloccare il cellulare, guardare la schermata home senza fare nulla e ribloccarlo?",
+    "impostorQuestion": "Quante volte al giorno controlli l'ora sull'orologio?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "659",
+    "regularQuestion": "Quanti minuti impieghi per trovare un posto libero dove parcheggiare la macchina vicino a casa la sera?",
+    "impostorQuestion": "Quanti minuti dura il tuo tragitto quotidiano in auto?",
+    "unit": "minuti"
+  },
+  {
+    "id": "660",
+    "regularQuestion": "Quante volte alla settimana mangi cibo freddo dal frigo senza scaldarlo perché hai troppa fame per aspettare?",
+    "impostorQuestion": "Quante volte alla settimana ordini cibo da asporto a cena?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "661",
+    "regularQuestion": "Quanti rotoli di carta assorbente da cucina (scottex) consumi all'incirca in un mese?",
+    "impostorQuestion": "Quanti rotoli di carta igienica consumi in un mese a casa?",
+    "unit": "rotoli al mese"
+  },
+  {
+    "id": "662",
+    "regularQuestion": "Quanti euro hai speso l'ultima volta che hai preso un gelato artigianale da passeggio con due gusti?",
+    "impostorQuestion": "Quanti euro costa un caffè espresso al bancone con una brioche?",
+    "unit": "euro"
+  },
+  {
+    "id": "663",
+    "regularQuestion": "Quante volte al mese ti capita di versare troppa pasta nella pentola rispetto a quanto avevi fame?",
+    "impostorQuestion": "Quante volte al mese cucini un piatto di pasta a pranzo?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "664",
+    "regularQuestion": "Quanti minuti impieghi per toglierti i vestiti e metterti il pigiama la sera prima di infilarti a letto?",
+    "impostorQuestion": "Quanti minuti impieghi per lavarti i denti e sciacquarti il viso?",
+    "unit": "minuti"
+  },
+  {
+    "id": "665",
+    "regularQuestion": "Quante volte a settimana metti la sveglia con un orario strano tipo 7:13 o 7:42 invece di cifre tonde?",
+    "impostorQuestion": "Quante volte a settimana usi la sveglia per alzarti?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "666",
+    "regularQuestion": "Quanti secondi rimani immobile a fissare lo schermo quando ti rendi conto che hai appena chiuso per sbaglio una scheda importante?",
+    "impostorQuestion": "Quanti secondi impieghi per sbloccare il telefono e leggere una notifica?",
+    "unit": "secondi"
+  },
+  {
+    "id": "667",
+    "regularQuestion": "Quante volte nella vita ti sei svegliato convinto che fosse sabato o domenica mentre invece era un giorno feriale?",
+    "impostorQuestion": "Quante volte nella vita ti è capitato di fare ritardo a scuola o lavoro?",
+    "unit": "volte"
+  },
+  {
+    "id": "668",
+    "regularQuestion": "Quanti euro spendi all'incirca per comprare il detersivo per i piatti o per la lavatrice quando finisce?",
+    "impostorQuestion": "Quanti euro spendi per una colazione completa al bar per una persona?",
+    "unit": "euro"
+  },
+  {
+    "id": "669",
+    "regularQuestion": "Quanti minuti impieghi per grattugiare il formaggio sulla pasta a tavola?",
+    "impostorQuestion": "Quanti minuti impieghi per preparare la moka e far salire il caffè?",
+    "unit": "minuti"
+  },
+  {
+    "id": "670",
+    "regularQuestion": "Quante volte al giorno ti capita di sentire il telefono vibrare nella tasca anche se non è arrivata nessuna notifica (vibrazione fantasma)?",
+    "impostorQuestion": "Quante telefonate ricevi o fai in una giornata?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "671",
+    "regularQuestion": "Quante bottiglie d'acqua mezze piene hai sparsi per casa che nessuno finisce mai?",
+    "impostorQuestion": "Quanti bicchieri usi in una tipica giornata a casa?",
+    "unit": "bottiglie"
+  },
+  {
+    "id": "672",
+    "regularQuestion": "Quanti euro consideri ragionevole pagare per una bottiglia di birra da 66 cl al supermercato?",
+    "impostorQuestion": "Quanti euro spendi per una colazione al bar con cornetto?",
+    "unit": "euro"
+  },
+  {
+    "id": "673",
+    "regularQuestion": "Quante volte a settimana mangi della frutta sbucciata con le mani (mandarini, banane) invece che sbucciata col coltello?",
+    "impostorQuestion": "Quante volte a settimana mangi frutta fresca a colazione o merenda?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "674",
+    "regularQuestion": "Quanti minuti dura il tuo tragitto quotidiano in macchina o scooter quando trovi la strada completamente libera?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una doccia veloce la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "675",
+    "regularQuestion": "Quante volte al mese ti capita di bere il caffè freddo perché te lo sei dimenticato sulla tazza mentre facevi altro?",
+    "impostorQuestion": "Quante volte al mese prendi un caffè al bar nel pomeriggio?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "676",
+    "regularQuestion": "Quante paia di calzini neri identici possiedi per evitare di doverli abbinare dopo il bucato?",
+    "impostorQuestion": "Quante magliette a tinta unita hai nell'armadio?",
+    "unit": "paia"
+  },
+  {
+    "id": "677",
+    "regularQuestion": "Quanti minuti impieghi per ricaricare lo spazzolino elettrico o cambiare le testine quando è ora?",
+    "impostorQuestion": "Quanti minuti impieghi per lavarti i denti la sera prima di dormire?",
+    "unit": "minuti"
+  },
+  {
+    "id": "678",
+    "regularQuestion": "Quanti euro hai speso l'ultima volta che hai preso un pacco di biscotti da colazione di marca?",
+    "impostorQuestion": "Quanti euro costa un caffè espresso al bancone con una brioche?",
+    "unit": "euro"
+  },
+  {
+    "id": "679",
+    "regularQuestion": "Quante volte al giorno ti scappa un sorriso guardando un meme o un video scemo sul cellulare?",
+    "impostorQuestion": "Quante volte al giorno apri WhatsApp per mandare un messaggio?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "680",
+    "regularQuestion": "Quante volte alla settimana ti capita di avere un po' di briciole sul letto perché ci hai mangiato sopra?",
+    "impostorQuestion": "Quante volte alla settimana fai uno spuntino prima di dormire?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "681",
+    "regularQuestion": "Quanti minuti impieghi per togliere il piumone e rifare il letto con lenzuola pulite?",
+    "impostorQuestion": "Quanti minuti impieghi per fare la doccia e asciugarti con cura?",
+    "unit": "minuti"
+  },
+  {
+    "id": "682",
+    "regularQuestion": "Quanti euro spenderesti per un portachiavi comodo e compatto per non far tintinnare le chiavi?",
+    "impostorQuestion": "Quanti euro spendi mediamente per un aperitivo con una consumazione?",
+    "unit": "euro"
+  },
+  {
+    "id": "683",
+    "regularQuestion": "Quante volte al mese ti capita di guardare la scadenza di un alimento e mangiarlo comunque perché è scaduto da solo 2 giorni?",
+    "impostorQuestion": "Quante volte al mese cucini un piatto caldo per cena?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "684",
+    "regularQuestion": "Quanti sorsi fai quando bevi una lattina di bibita fredda appena aperta?",
+    "impostorQuestion": "Quanti biscotti mangi a colazione?",
+    "unit": "sorsi"
+  },
+  {
+    "id": "685",
+    "regularQuestion": "Quante volte nella vita ti è successo di inciampare sulle tue stesse scarpe o sui tuoi stessi piedi mentre cammini?",
+    "impostorQuestion": "Quante volte nella vita ti sei fatto una ferita con punti di sutura?",
+    "unit": "volte"
+  },
+  {
+    "id": "686",
+    "regularQuestion": "Quanti minuti impieghi per scongelare qualcosa a bagnomaria o nel microonde prima di cucinarlo?",
+    "impostorQuestion": "Quanti minuti impieghi per cucinare e cenare da solo?",
+    "unit": "minuti"
+  },
+  {
+    "id": "687",
+    "regularQuestion": "Quante volte alla settimana mangi cibo avanzato dal pranzo per fare merenda nel pomeriggio?",
+    "impostorQuestion": "Quante volte alla settimana fai uno spuntino pomeridiano?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "688",
+    "regularQuestion": "Quanti euro spendi di solito quando prendi un trancio di focaccia o pizza rustica dal fornaio?",
+    "impostorQuestion": "Quanti euro spendi per una colazione completa al bar per una persona?",
+    "unit": "euro"
+  },
+  {
+    "id": "689",
+    "regularQuestion": "Quanti minuti dura il tempo che passi a girarti e rigirarti nel letto prima di trovare la posizione perfetta per dormire?",
+    "impostorQuestion": "Quanti minuti impieghi per fare colazione la mattina?",
+    "unit": "minuti"
+  },
+  {
+    "id": "690",
+    "regularQuestion": "Quante volte al giorno bevi un bicchiere d'acqua fredda appena presa dal frigo durante i mesi estivi?",
+    "impostorQuestion": "Quante volte al giorno ti soffi il naso?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "691",
+    "regularQuestion": "Quante mollette per stendere i panni hai rotto schiacciandole troppo forte negli ultimi mesi?",
+    "impostorQuestion": "Quanti caricatori per smartphone hai in casa?",
+    "unit": "mollette rotte"
+  },
+  {
+    "id": "692",
+    "regularQuestion": "Quante volte al mese ti capita di salire in macchina e accorgerti che sei in riserva sparata?",
+    "impostorQuestion": "Quante volte al mese fai rifornimento di carburante?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "693",
+    "regularQuestion": "Quanti euro consideri la quota massima per un taglio di pizza farcito consumato in piedi?",
+    "impostorQuestion": "Quanti euro spendi per un caffè e cornetto al bar?",
+    "unit": "euro"
+  },
+  {
+    "id": "694",
+    "regularQuestion": "Quanti minuti impieghi per riscaldare una pizza del giorno prima in padella o nel forno per farla tornare croccante?",
+    "impostorQuestion": "Quanti minuti impieghi per fare una doccia veloce?",
+    "unit": "minuti"
+  },
+  {
+    "id": "695",
+    "regularQuestion": "Quante volte a settimana ti capita di avere freddo ai piedi mentre sei a letto e doverti mettere i calzini per dormire?",
+    "impostorQuestion": "Quante volte a settimana ti svegli durante la notte?",
+    "unit": "giorni a settimana"
+  },
+  {
+    "id": "696",
+    "regularQuestion": "Quanti sorsi di birra o bibita fai prima di posare il bicchiere quando hai davvero molta sete?",
+    "impostorQuestion": "Quanti caffè bevi in una tipica giornata feriale?",
+    "unit": "sorsi"
+  },
+  {
+    "id": "697",
+    "regularQuestion": "Quante volte al giorno ti ritrovi a cercare gli occhiali da sole o da vista e scoprire che li avevi in testa o sul naso?",
+    "impostorQuestion": "Quante volte al giorno guardi che ore sono?",
+    "unit": "volte al giorno"
+  },
+  {
+    "id": "698",
+    "regularQuestion": "Quanti minuti impieghi per pulire il fornello dopo aver fatto schizzare il sugo di pomodoro o l'olio bollente?",
+    "impostorQuestion": "Quanti minuti impieghi per preparare e sparecchiare la tavola?",
+    "unit": "minuti"
+  },
+  {
+    "id": "699",
+    "regularQuestion": "Quanti euro hai speso l'ultima volta che hai comprato una bibita fredda da una macchinetta automatica?",
+    "impostorQuestion": "Quanti euro costa un caffè espresso al bancone del bar?",
+    "unit": "euro"
+  },
+  {
+    "id": "700",
+    "regularQuestion": "Quante volte nella vita ti è successo di salutare calorosamente per strada una persona convinto fosse un tuo amico per poi scoprire che era un perfetto sconosciuto?",
+    "impostorQuestion": "Quante volte nella vita ti sei fatto una ferita con punti di sutura?",
+    "unit": "volte"
   }
 ]
