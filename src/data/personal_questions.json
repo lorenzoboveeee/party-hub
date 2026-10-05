@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "regularQuestion": "Quante volte fai la pipì all'incirca in una settimana intera?",
+    "impostorQuestion": "Quante volte ti lavi i denti all'incirca in una settimana intera?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "2",
+    "regularQuestion": "Quanti caffè bevi in media in una settimana?",
+    "impostorQuestion": "Quante volte mangi la pasta in una settimana?",
+    "unit": "a settimana"
+  },
+  {
+    "id": "3",
+    "regularQuestion": "Quante volte starnutisci mediamente in un intero mese?",
+    "impostorQuestion": "Quante docce fai all'incirca in un intero mese?",
+    "unit": "al mese"
+  },
+  {
+    "id": "4",
+    "regularQuestion": "Quante ore passi mediamente al cellulare ogni giorno?",
+    "impostorQuestion": "Quante ore di sonno fai in media ogni notte?",
+    "unit": "ore al giorno"
+  },
+  {
+    "id": "5",
+    "regularQuestion": "Quante volte alla settimana vai a fare la cacca?",
+    "impostorQuestion": "Quante volte a settimana bevi una birra o un cocktail?",
+    "unit": "volte a settimana"
+  },
+  {
+    "id": "6",
+    "regularQuestion": "Quante foto o screenshot hai salvato nella galleria del tuo smartphone?",
+    "impostorQuestion": "Quanti messaggi vocali invii o ricevi in un mese su WhatsApp?",
+    "unit": ""
+  },
+  {
+    "id": "7",
+    "regularQuestion": "Quanti soldi spendi all'incirca in una serata del weekend tra bere e mangiare?",
+    "impostorQuestion": "Quanti euro spendi all'incirca per fare un pieno di benzina all'auto?",
+    "unit": "euro"
+  },
+  {
+    "id": "8",
+    "regularQuestion": "Quanti minuti passi sotto la doccia in media ogni volta?",
+    "impostorQuestion": "Quanti minuti impieghi mediamente per prepararti prima di uscire la sera?",
+    "unit": "minuti"
+  },
+  {
+    "id": "9",
+    "regularQuestion": "Quante volte al mese ordini cibo a domicilio (Just Eat, Deliveroo, Glovo)?",
+    "impostorQuestion": "Quante volte al mese vai a fare la spesa al supermercato?",
+    "unit": "volte al mese"
+  },
+  {
+    "id": "10",
+    "regularQuestion": "Quante ore alla settimana passi guardando serie TV o film sul divano?",
+    "impostorQuestion": "Quante ore alla settimana dedichi allo studio o al lavoro concentrato?",
+    "unit": "ore a settimana"
+  }
+]

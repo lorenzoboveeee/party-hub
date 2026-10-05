@@ -10,7 +10,8 @@ export type GameId =
     | 'impostor_football'
     | 'impostor_people'
     | 'lupus'
-    | 'stima';
+    | 'stima'
+    | 'stima_personal';
 
 export interface GameInfo {
     id: GameId;
@@ -20,7 +21,7 @@ export interface GameInfo {
     minPlayers: number;
     maxPlayers: number;
     accentGradient: string;
-    iconName: 'ghost' | 'trophy' | 'users' | 'moon' | 'target';
+    iconName: 'ghost' | 'trophy' | 'users' | 'moon' | 'target' | 'user-check';
     description: string;
 }
 
@@ -75,10 +76,10 @@ export type LupusPhase = 'setup' | 'pass' | 'table';
 // --- TIPI STIMA AL MILLIMETRO ---
 export interface StimaQuestionItem {
     id: string;
-    regularQuestion: string;   // La domanda che hanno tutti
-    impostorQuestion: string;  // La domanda che ha solo l'impostore (su scala simile ma tema diverso)
-    realAnswer: number;        // Il valore reale (opzionale per curiosità a fine partita)
-    unit?: string;             // es. "km", "anni", "persone"
+    regularQuestion: string;
+    impostorQuestion: string;
+    realAnswer: number;
+    unit?: string;
 }
 
 export interface StimaPlayerAnswer {
@@ -86,6 +87,25 @@ export interface StimaPlayerAnswer {
     isImpostor: boolean;
     question: string;
     answer: number;
+    isEliminated?: boolean;
 }
 
-export type StimaPhase = 'pass' | 'input' | 'board' | 'reveal';
+export type StimaPhase = 'pass' | 'board' | 'voting' | 'reveal';
+
+// --- TIPI STIMA PERSONALE ---
+export interface PersonalQuestionItem {
+    id: string;
+    regularQuestion: string;
+    impostorQuestion: string;
+    unit?: string;
+}
+
+export interface PersonalPlayerAnswer {
+    player: Player;
+    isImpostor: boolean;
+    question: string;
+    answer: number;
+    isEliminated?: boolean;
+}
+
+export type PersonalPhase = 'pass' | 'board' | 'voting' | 'reveal';

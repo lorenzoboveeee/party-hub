@@ -9,6 +9,7 @@ import { ImpostorFootballGame } from './components/ImpostorFootballGame';
 import { ImpostorPeopleGame } from './components/ImpostorPeopleGame';
 import { LupusGame } from './components/LupusGame';
 import { StimaGame } from './components/StimaGame';
+import { StimaPersonalGame } from './components/StimaPersonalGame';
 import { Gamepad2, Users2, Sparkles, AlertCircle, ArrowLeft, Plus, Minus, ShieldAlert } from 'lucide-react';
 
 const AVATAR_COLORS = [
@@ -53,11 +54,8 @@ export const App: React.FC = () => {
     }, [players]);
 
     const activePlayers = players.filter((p) => p.isActive);
-
-    // Limite massimo logico di impostori: almeno la metà dei partecipanti deve essere civile
     const maxPossibleImpostors = Math.max(1, Math.floor((activePlayers.length - 1) / 2)) || 1;
 
-    // Normalizza il contatore impostori se cambia il numero di giocatori
     useEffect(() => {
         if (impostorsCount > maxPossibleImpostors) {
             setImpostorsCount(Math.max(1, maxPossibleImpostors));
@@ -84,13 +82,19 @@ export const App: React.FC = () => {
         );
     };
 
-    const isGameWithImpostors = selectedGame && ['impostor', 'impostor_football', 'impostor_people', 'stima'].includes(selectedGame.id);
+    const isGameWithImpostors = selectedGame && [
+        'impostor',
+        'impostor_football',
+        'impostor_people',
+        'stima',
+        'stima_personal'
+    ].includes(selectedGame.id);
 
     return (
         <div className="w-screen h-screen bg-slate-950 flex items-center justify-center overflow-hidden">
             <main className="w-full max-w-[393px] h-full sm:h-[852px] sm:max-h-[852px] sm:rounded-[48px] bg-slate-950 border border-slate-800/80 shadow-2xl flex flex-col relative overflow-hidden">
 
-                {/* Dynamic Island su desktop */}
+                {/* Dynamic Island simulata su schermi desktop */}
                 <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-28 h-7 bg-black rounded-full z-50 pointer-events-none hidden sm:block border border-slate-900" />
 
                 {!isPlaying && (
@@ -148,6 +152,12 @@ export const App: React.FC = () => {
                                 impostorsCount={impostorsCount}
                                 onExit={() => setIsPlaying(false)}
                             />
+                        ) : selectedGame.id === 'stima_personal' ? (
+                            <StimaPersonalGame
+                                activePlayers={activePlayers}
+                                impostorsCount={impostorsCount}
+                                onExit={() => setIsPlaying(false)}
+                            />
                         ) : (
                             <GamePlaceholderScreen
                                 game={selectedGame}
@@ -172,7 +182,7 @@ export const App: React.FC = () => {
                                 <p className="text-xs text-white/80 mt-1">{selectedGame.description}</p>
                             </div>
 
-                            {/* SELETTORE NUMERO IMPOSTORI */}
+                            {/* CONTATORE IMPOSTORI */}
                             {isGameWithImpostors && (
                                 <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex items-center justify-between">
                                     <div className="flex items-center gap-2.5">

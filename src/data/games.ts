@@ -26,13 +26,13 @@ export const GAMES_LIST: GameInfo[] = [
     {
         id: 'impostor_people',
         title: 'Impostore People',
-        subtitle: 'Amici, conoscenti e VIP noti a tutti',
+        subtitle: 'Amici, conoscenti e comitiva',
         badge: 'Gossip & Friends',
         minPlayers: 3,
         maxPlayers: 16,
         accentGradient: 'from-cyan-500 to-teal-700',
         iconName: 'users',
-        description: 'La parola segreta è una persona della comitiva. L’impostore è al buio e deve improvvisare.'
+        description: 'La parola segreta è una persona del gruppo. L’impostore è al buio completo e deve improvvisare.'
     },
     {
         id: 'lupus',
@@ -48,12 +48,23 @@ export const GAMES_LIST: GameInfo[] = [
     {
         id: 'stima',
         title: 'Stima al Millimetro',
-        subtitle: 'Indovina il numero più vicino al vero',
+        subtitle: 'Indovina il numero e smaschera chi è fuori scala',
         badge: 'Numeri & Trivia',
-        minPlayers: 2,
-        maxPlayers: 12,
+        minPlayers: 3,
+        maxPlayers: 16,
         accentGradient: 'from-blue-700 to-slate-900',
         iconName: 'target',
-        description: 'Chi spara la cifra più vicina al numero reale vince il round.'
+        description: 'Tutti rispondono a una domanda numerica con il tastierino. Chi ha avuto la domanda fake spara cifre sospette!'
+    },
+    {
+        id: 'stima_personal',
+        title: 'Stima Personale',
+        subtitle: 'Abitudini, frequenze e segreti del gruppo',
+        badge: 'Abitudini & Gossip',
+        minPlayers: 3,
+        maxPlayers: 16,
+        accentGradient: 'from-fuchsia-600 to-purple-800',
+        iconName: 'user-check',
+        description: 'Domande personali tipo "Quante volte fai la pipì a settimana?". L’impostore ha una domanda diversa e rischia di sputtanarsi!'
     }
 ];
