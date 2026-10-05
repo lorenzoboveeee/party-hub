@@ -15,10 +15,15 @@ import confetti from 'canvas-confetti';
 
 interface ImpostorPeopleGameProps {
     activePlayers: Player[];
+    impostorsCount: number;
     onExit: () => void;
 }
 
-export const ImpostorPeopleGame: React.FC<ImpostorPeopleGameProps> = ({ activePlayers, onExit }) => {
+export const ImpostorPeopleGame: React.FC<ImpostorPeopleGameProps> = ({
+                                                                          activePlayers,
+                                                                          impostorsCount = 1,
+                                                                          onExit
+                                                                      }) => {
     const [currentWordItem, setCurrentWordItem] = useState<ImpostorWordItem>({ word: '', clue: '' });
     const [roles, setRoles] = useState<ImpostorPlayerRole[]>([]);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -32,9 +37,9 @@ export const ImpostorPeopleGame: React.FC<ImpostorPeopleGameProps> = ({ activePl
         const selectedWord = getNextPeopleWord();
         setCurrentWordItem(selectedWord);
 
-        const impostorsCount = activePlayers.length >= 6 ? 2 : 1;
+        const actualImpostors = Math.min(impostorsCount, Math.max(1, activePlayers.length - 1));
         const shuffled = [...activePlayers].sort(() => 0.5 - Math.random());
-        const impostorIds = new Set(shuffled.slice(0, impostorsCount).map(p => p.id));
+        const impostorIds = new Set(shuffled.slice(0, actualImpostors).map(p => p.id));
 
         const initialRoles: ImpostorPlayerRole[] = activePlayers.map(p => ({
             player: p,
@@ -56,7 +61,7 @@ export const ImpostorPeopleGame: React.FC<ImpostorPeopleGameProps> = ({ activePl
 
     useEffect(() => {
         startNewRound();
-    }, []);
+    }, [impostorsCount]);
 
     const handleConfirmExit = () => {
         if (window.confirm('Vuoi davvero uscire e tornare al menu?')) {
@@ -110,8 +115,8 @@ export const ImpostorPeopleGame: React.FC<ImpostorPeopleGameProps> = ({ activePl
             return;
         }
 
-        if (remainingPlayers.length <= 2) {
-            setWinnerMessage("L'Impostore ha bluffato fino alla fine e vince la partita!");
+        if (remainingPlayers.length <= remainingImpostors.length * 2) {
+            setWinnerMessage("Gli Impostori hanno bluffato fino alla fine e vincono la partita!");
             setPhase('game_over');
             confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
             return;
@@ -331,7 +336,7 @@ export const ImpostorPeopleGame: React.FC<ImpostorPeopleGameProps> = ({ activePl
                 </div>
             )}
 
-            {/* 4. FINE PARTITA (Dynamic Island Safe) */}
+            {/* 4. FINE PARTITA */}
             {phase === 'game_over' && (
                 <div className="flex-1 flex flex-col justify-between p-6 text-center pt-12">
                     <div>

@@ -9,7 +9,7 @@ import { ImpostorFootballGame } from './components/ImpostorFootballGame';
 import { ImpostorPeopleGame } from './components/ImpostorPeopleGame';
 import { LupusGame } from './components/LupusGame';
 import { StimaGame } from './components/StimaGame';
-import { Gamepad2, Users2, Sparkles, AlertCircle, ArrowLeft } from 'lucide-react';
+import { Gamepad2, Users2, Sparkles, AlertCircle, ArrowLeft, Plus, Minus, ShieldAlert } from 'lucide-react';
 
 const AVATAR_COLORS = [
     'bg-blue-600',
@@ -34,6 +34,7 @@ export const App: React.FC = () => {
     const [currentTab, setCurrentTab] = useState<TabType>('games');
     const [selectedGame, setSelectedGame] = useState<GameInfo | null>(null);
     const [isPlaying, setIsPlaying] = useState<boolean>(false);
+    const [impostorsCount, setImpostorsCount] = useState<number>(1);
 
     const [players, setPlayers] = useState<Player[]>(() => {
         try {
@@ -52,6 +53,16 @@ export const App: React.FC = () => {
     }, [players]);
 
     const activePlayers = players.filter((p) => p.isActive);
+
+    // Limite massimo logico di impostori: almeno la metà dei partecipanti deve essere civile
+    const maxPossibleImpostors = Math.max(1, Math.floor((activePlayers.length - 1) / 2)) || 1;
+
+    // Normalizza il contatore impostori se cambia il numero di giocatori
+    useEffect(() => {
+        if (impostorsCount > maxPossibleImpostors) {
+            setImpostorsCount(Math.max(1, maxPossibleImpostors));
+        }
+    }, [activePlayers.length, maxPossibleImpostors]);
 
     const handleAddPlayer = (name: string) => {
         const newPlayer: Player = {
@@ -72,6 +83,8 @@ export const App: React.FC = () => {
             prev.map((p) => (p.id === id ? { ...p, isActive: !p.isActive } : p))
         );
     };
+
+    const isGameWithImpostors = selectedGame && ['impostor', 'impostor_football', 'impostor_people', 'stima'].includes(selectedGame.id);
 
     return (
         <div className="w-screen h-screen bg-slate-950 flex items-center justify-center overflow-hidden">
@@ -109,16 +122,19 @@ export const App: React.FC = () => {
                         selectedGame.id === 'impostor' ? (
                             <ImpostorGame
                                 activePlayers={activePlayers}
+                                impostorsCount={impostorsCount}
                                 onExit={() => setIsPlaying(false)}
                             />
                         ) : selectedGame.id === 'impostor_football' ? (
                             <ImpostorFootballGame
                                 activePlayers={activePlayers}
+                                impostorsCount={impostorsCount}
                                 onExit={() => setIsPlaying(false)}
                             />
                         ) : selectedGame.id === 'impostor_people' ? (
                             <ImpostorPeopleGame
                                 activePlayers={activePlayers}
+                                impostorsCount={impostorsCount}
                                 onExit={() => setIsPlaying(false)}
                             />
                         ) : selectedGame.id === 'lupus' ? (
@@ -129,6 +145,7 @@ export const App: React.FC = () => {
                         ) : selectedGame.id === 'stima' ? (
                             <StimaGame
                                 activePlayers={activePlayers}
+                                impostorsCount={impostorsCount}
                                 onExit={() => setIsPlaying(false)}
                             />
                         ) : (
@@ -139,7 +156,7 @@ export const App: React.FC = () => {
                             />
                         )
                     ) : selectedGame ? (
-                        <div className="p-5 flex flex-col h-full space-y-5">
+                        <div className="p-5 flex flex-col h-full space-y-4">
                             <button
                                 onClick={() => setSelectedGame(null)}
                                 className="self-start flex items-center gap-1.5 text-xs font-semibold text-slate-400 active:text-white"
@@ -147,17 +164,52 @@ export const App: React.FC = () => {
                                 <ArrowLeft size={16} /> Torna ai giochi
                             </button>
 
-                            <div className={`p-6 rounded-3xl bg-gradient-to-br ${selectedGame.accentGradient} text-white shadow-xl`}>
+                            <div className={`p-5 rounded-3xl bg-gradient-to-br ${selectedGame.accentGradient} text-white shadow-xl`}>
                 <span className="text-[10px] uppercase font-bold tracking-widest bg-black/25 px-2.5 py-1 rounded-full">
                   {selectedGame.badge}
                 </span>
-                                <h2 className="text-2xl font-black mt-3 tracking-tight">{selectedGame.title}</h2>
+                                <h2 className="text-2xl font-black mt-2 tracking-tight">{selectedGame.title}</h2>
                                 <p className="text-xs text-white/80 mt-1">{selectedGame.description}</p>
                             </div>
 
+                            {/* SELETTORE NUMERO IMPOSTORI */}
+                            {isGameWithImpostors && (
+                                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex items-center justify-between">
+                                    <div className="flex items-center gap-2.5">
+                                        <div className="w-8 h-8 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+                                            <ShieldAlert size={18} />
+                                        </div>
+                                        <div>
+                                            <h4 className="text-xs font-bold text-white uppercase tracking-wider">Numero Impostori</h4>
+                                            <p className="text-[10px] text-slate-400">Max consigliato: {maxPossibleImpostors}</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                                        <button
+                                            disabled={impostorsCount <= 1}
+                                            onClick={() => setImpostorsCount(prev => Math.max(1, prev - 1))}
+                                            className="w-7 h-7 rounded-lg bg-slate-900 flex items-center justify-center text-slate-300 disabled:opacity-30 active:scale-90"
+                                        >
+                                            <Minus size={14} />
+                                        </button>
+                                        <span className="w-5 text-center text-xs font-mono font-bold text-amber-300">
+                      {impostorsCount}
+                    </span>
+                                        <button
+                                            disabled={impostorsCount >= maxPossibleImpostors}
+                                            onClick={() => setImpostorsCount(prev => Math.min(maxPossibleImpostors, prev + 1))}
+                                            className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white disabled:opacity-30 active:scale-90"
+                                        >
+                                            <Plus size={14} />
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
+
                             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4">
                                 <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Partecipanti al round</h4>
-                                <div className="flex flex-wrap gap-1.5 mb-3">
+                                <div className="flex flex-wrap gap-1.5 mb-2">
                                     {activePlayers.map((player) => (
                                         <span key={player.id} className="text-xs px-2.5 py-1 bg-slate-800 text-slate-200 rounded-lg">
                       {player.name}
@@ -173,7 +225,7 @@ export const App: React.FC = () => {
                                 )}
                             </div>
 
-                            <div className="mt-auto pt-4">
+                            <div className="mt-auto pt-2">
                                 <button
                                     disabled={activePlayers.length < selectedGame.minPlayers || activePlayers.length > selectedGame.maxPlayers}
                                     onClick={() => setIsPlaying(true)}

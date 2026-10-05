@@ -15,10 +15,15 @@ import confetti from 'canvas-confetti';
 
 interface ImpostorFootballGameProps {
     activePlayers: Player[];
+    impostorsCount: number;
     onExit: () => void;
 }
 
-export const ImpostorFootballGame: React.FC<ImpostorFootballGameProps> = ({ activePlayers, onExit }) => {
+export const ImpostorFootballGame: React.FC<ImpostorFootballGameProps> = ({
+                                                                              activePlayers,
+                                                                              impostorsCount = 1,
+                                                                              onExit
+                                                                          }) => {
     const [currentWordItem, setCurrentWordItem] = useState<ImpostorWordItem>({ word: '', clue: '' });
     const [roles, setRoles] = useState<ImpostorPlayerRole[]>([]);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -32,9 +37,9 @@ export const ImpostorFootballGame: React.FC<ImpostorFootballGameProps> = ({ acti
         const selectedWord = getNextFootballWord();
         setCurrentWordItem(selectedWord);
 
-        const impostorsCount = activePlayers.length >= 6 ? 2 : 1;
+        const actualImpostors = Math.min(impostorsCount, Math.max(1, activePlayers.length - 1));
         const shuffled = [...activePlayers].sort(() => 0.5 - Math.random());
-        const impostorIds = new Set(shuffled.slice(0, impostorsCount).map(p => p.id));
+        const impostorIds = new Set(shuffled.slice(0, actualImpostors).map(p => p.id));
 
         const initialRoles: ImpostorPlayerRole[] = activePlayers.map(p => ({
             player: p,
@@ -56,7 +61,7 @@ export const ImpostorFootballGame: React.FC<ImpostorFootballGameProps> = ({ acti
 
     useEffect(() => {
         startNewRound();
-    }, []);
+    }, [impostorsCount]);
 
     const handleConfirmExit = () => {
         if (window.confirm('Vuoi davvero abbandonare il match e tornare al menu?')) {
@@ -110,8 +115,8 @@ export const ImpostorFootballGame: React.FC<ImpostorFootballGameProps> = ({ acti
             return;
         }
 
-        if (remainingPlayers.length <= 2) {
-            setWinnerMessage("L'Impostore ha retto fino ai supplementari e vince la coppa!");
+        if (remainingPlayers.length <= remainingImpostors.length * 2) {
+            setWinnerMessage("Gli Infiltrati hanno retto fino ai supplementari e vincono il match!");
             setPhase('game_over');
             confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
             return;
@@ -334,7 +339,7 @@ export const ImpostorFootballGame: React.FC<ImpostorFootballGameProps> = ({ acti
                 </div>
             )}
 
-            {/* 4. TRIPLICE FISCHIO (Dynamic Island Safe) */}
+            {/* 4. TRIPLICE FISCHIO */}
             {phase === 'game_over' && (
                 <div className="flex-1 flex flex-col justify-between p-6 text-center pt-12">
                     <div>

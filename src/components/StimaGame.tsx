@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useId } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Player, StimaQuestionItem, StimaPlayerAnswer, StimaPhase } from '../types';
 import { getNextStimaQuestion } from '../data/stima';
 import {
@@ -8,77 +8,66 @@ import {
     ArrowRight,
     Target,
     Trophy,
-    Eye
+    Eye,
+    Delete
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 interface StimaGameProps {
     activePlayers: Player[];
+    impostorsCount: number;
     onExit: () => void;
 }
 
-// Scala logaritmica continua: slider da 0 a 1200 corrisponde a 10^0 (1) fino a 10^12 (1 Bilione)
-function sliderToLogValue(val: number): number {
-    if (val <= 0) return 1;
-    const exponent = (val / 1200) * 12; // esponente da 0 a 12
-    const raw = Math.pow(10, exponent);
-
-    if (raw < 20) return Math.round(raw);
-    if (raw < 100) return Math.round(raw / 5) * 5;
-    if (raw < 500) return Math.round(raw / 10) * 10;
-    if (raw < 2000) return Math.round(raw / 50) * 50;
-    if (raw < 10000) return Math.round(raw / 250) * 250;
-    if (raw < 100000) return Math.round(raw / 1000) * 1000;
-    if (raw < 1000000) return Math.round(raw / 10000) * 10000;
-    if (raw < 10000000) return Math.round(raw / 100000) * 10000;
-    if (raw < 100000000) return Math.round(raw / 1000000) * 1000000;
-    if (raw < 1000000000) return Math.round(raw / 10000000) * 10000000;
-    if (raw < 10000000000) return Math.round(raw / 100000000) * 100000000;
-    if (raw < 100000000000) return Math.round(raw / 1000000000) * 1000000000;
-    return Math.round(raw / 10000000000) * 10000000000;
-}
-
 function formatItalianNumber(n: number): string {
+    if (isNaN(n) || n === 0) return '0';
     if (n >= 1000000000000) {
-        const val = (n / 1000000000000).toLocaleString('it-IT', { maximumFractionDigits: 1 });
-        return `${val} ${n === 1000000000000 ? 'Bilione' : 'Bilioni'}`;
+        const val = (n / 1000000000000).toLocaleString('it-IT', { maximumFractionDigits: 2 });
+        return `${val} Bilioni`;
     }
     if (n >= 1000000000) {
-        const val = (n / 1000000000).toLocaleString('it-IT', { maximumFractionDigits: 1 });
-        return `${val} ${n === 1000000000 ? 'Miliardo' : 'Miliardi'}`;
+        const val = (n / 1000000000).toLocaleString('it-IT', { maximumFractionDigits: 2 });
+        return `${val} Miliardi`;
     }
     if (n >= 1000000) {
-        const val = (n / 1000000).toLocaleString('it-IT', { maximumFractionDigits: 1 });
-        return `${val} ${n === 1000000 ? 'Milione' : 'Milioni'}`;
+        const val = (n / 1000000).toLocaleString('it-IT', { maximumFractionDigits: 2 });
+        return `${val} Milioni`;
     }
-    return n.toLocaleString('it-IT');
+    return n.toLocaleString('it-IT', { maximumFractionDigits: 2 });
 }
 
-export const StimaGame: React.FC<StimaGameProps> = ({ activePlayers, onExit }) => {
-    const sliderInputId = useId();
+export const StimaGame: React.FC<StimaGameProps> = ({
+                                                        activePlayers,
+                                                        impostorsCount = 1,
+                                                        onExit
+                                                    }) => {
     const [currentQuestion, setCurrentQuestion] = useState<StimaQuestionItem | null>(null);
     const [answers, setAnswers] = useState<StimaPlayerAnswer[]>([]);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     const [phase, setPhase] = useState<StimaPhase>('pass');
     const [isQuestionRevealed, setIsQuestionRevealed] = useState<boolean>(false);
 
-    // Valore slider (0 -> 1200)
-    const [sliderPos, setSliderPos] = useState<number>(150);
-    const currentValue = sliderToLogValue(sliderPos);
+    // Valore input testuale corrente nel keypad
+    const [inputBuffer, setInputBuffer] = useState<string>('0');
+
+    const parsedCurrentValue = Math.max(0, parseFloat(inputBuffer.replace(',', '.')) || 0);
 
     const startNewRound = () => {
         const q = getNextStimaQuestion();
         setCurrentQuestion(q);
 
-        const impostorIndex = Math.floor(Math.random() * activePlayers.length);
+        // Seleziona gli indici degli impostori
+        const actualImpostors = Math.min(impostorsCount, Math.max(1, activePlayers.length - 1));
+        const shuffledIndexes = [...Array(activePlayers.length).keys()].sort(() => 0.5 - Math.random());
+        const impostorIndexes = new Set(shuffledIndexes.slice(0, actualImpostors));
 
         const initialAnswers: StimaPlayerAnswer[] = activePlayers.map((player, idx) => {
-            const isImp = idx === impostorIndex;
+            const isImp = impostorIndexes.has(idx);
             return {
                 player,
                 isImpostor: isImp,
                 question: isImp ? q.impostorQuestion : q.regularQuestion,
-                answer: 25,
+                answer: 0,
             };
         });
 
@@ -86,12 +75,12 @@ export const StimaGame: React.FC<StimaGameProps> = ({ activePlayers, onExit }) =
         setCurrentIndex(0);
         setPhase('pass');
         setIsQuestionRevealed(false);
-        setSliderPos(150);
+        setInputBuffer('0');
     };
 
     useEffect(() => {
         startNewRound();
-    }, []);
+    }, [impostorsCount]);
 
     const handleConfirmExit = () => {
         if (window.confirm('Vuoi tornare al menu principale?')) {
@@ -108,19 +97,57 @@ export const StimaGame: React.FC<StimaGameProps> = ({ activePlayers, onExit }) =
     const currentTurn = answers[currentIndex];
 
     const handleConfirmAnswer = () => {
+        if (parsedCurrentValue <= 0) {
+            if (!window.confirm('Vuoi davvero confermare 0 come stima?')) return;
+        }
         const updated = [...answers];
-        updated[currentIndex].answer = currentValue;
+        updated[currentIndex].answer = parsedCurrentValue;
         setAnswers(updated);
         setIsQuestionRevealed(false);
 
         if (currentIndex + 1 < answers.length) {
             setCurrentIndex((prev) => prev + 1);
-            setSliderPos(150);
+            setInputBuffer('0');
             setPhase('pass');
         } else {
             setPhase('board');
             confetti({ particleCount: 80, spread: 60, origin: { y: 0.6 } });
         }
+    };
+
+    // Funzioni tastierino
+    const handleDigit = (digit: string) => {
+        setInputBuffer((prev) => {
+            if (prev === '0' && digit !== ',') return digit;
+            if (prev.length >= 15) return prev;
+            return prev + digit;
+        });
+    };
+
+    const handleComma = () => {
+        setInputBuffer((prev) => {
+            if (prev.includes(',')) return prev;
+            return prev + ',';
+        });
+    };
+
+    const handleDelete = () => {
+        setInputBuffer((prev) => {
+            if (prev.length <= 1) return '0';
+            return prev.slice(0, -1);
+        });
+    };
+
+    const handleClear = () => {
+        setInputBuffer('0');
+    };
+
+    const handleMultiplier = (multiplier: number) => {
+        const numeric = parseFloat(inputBuffer.replace(',', '.')) || 0;
+        if (numeric === 0) return;
+        const multiplied = numeric * multiplier;
+        if (multiplied > 1000000000000000) return; // Limite massimo 1 biliardo
+        setInputBuffer(multiplied.toString().replace('.', ','));
     };
 
     return (
@@ -149,15 +176,15 @@ export const StimaGame: React.FC<StimaGameProps> = ({ activePlayers, onExit }) =
                 </button>
             </div>
 
-            {/* 1. PASSAGGIO E INSERIMENTO STIMA */}
+            {/* 1. FASE PASSAGGIO E INSERIMENTO STIMA TRAMITE KEYPAD */}
             {phase === 'pass' && currentTurn && (
-                <div className="flex-1 flex flex-col justify-between p-6">
-                    <div className="text-center pt-2">
-            <span className="text-xs uppercase font-bold tracking-widest text-blue-400 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
+                <div className="flex-1 flex flex-col justify-between p-4 overflow-y-auto no-scrollbar">
+                    <div className="text-center pt-1">
+            <span className="text-[11px] uppercase font-bold tracking-widest text-blue-400 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
               Giocatore {currentIndex + 1} di {answers.length}
             </span>
-                        <h2 className="text-xl font-black mt-3">Passa il telefono a</h2>
-                        <p className="text-2xl font-extrabold text-blue-400 mt-1">{currentTurn.player.name}</p>
+                        <h2 className="text-lg font-black mt-2">Passa il telefono a</h2>
+                        <p className="text-2xl font-extrabold text-blue-400">{currentTurn.player.name}</p>
                     </div>
 
                     <div className="relative w-full flex flex-col items-center my-auto">
@@ -173,49 +200,98 @@ export const StimaGame: React.FC<StimaGameProps> = ({ activePlayers, onExit }) =
                                 <p className="text-xs text-slate-400 mt-1">Non far leggere agli altri!</p>
                             </div>
                         ) : (
-                            <div className="w-full min-h-[320px] rounded-3xl p-6 flex flex-col justify-between text-center shadow-2xl transition-all duration-300 animate-in fade-in zoom-in-95 bg-slate-900 border border-slate-800">
+                            <div className="w-full rounded-3xl p-4 flex flex-col justify-between text-center shadow-2xl transition-all duration-300 animate-in fade-in zoom-in-95 bg-slate-900 border border-slate-800">
                                 <div>
-                  <span className="text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20">
-                    La tua domanda segreta
+                  <span className="text-[10px] uppercase font-bold tracking-wider px-3 py-0.5 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20">
+                    Domanda Segreta
                   </span>
-                                    <h3 className="text-lg font-bold text-white mt-4 leading-snug">
+                                    <h3 className="text-sm font-bold text-white mt-2 leading-snug px-1">
                                         "{currentTurn.question}"
                                     </h3>
-                                    <p className="text-[11px] text-slate-400 mt-2">
-                                        Nessuno sa se questa è la domanda comune o quella dell'impostore.
-                                    </p>
                                 </div>
 
-                                {/* SLIDER LOGARITMICO PULITO (1 -> 1.000 MILIARDI) */}
-                                <div className="mt-6 pt-4 border-t border-slate-800 space-y-4">
-                                    <div className="text-center">
-                                        <span className="text-[11px] text-slate-400 uppercase font-semibold">La tua stima:</span>
-                                        <div className="text-3xl font-black text-amber-300 mt-1 tracking-tight font-mono">
-                                            {formatItalianNumber(currentValue)}
+                                {/* DISPLAY NUMERO */}
+                                <div className="mt-3 py-2 px-3 bg-slate-950 rounded-2xl border border-slate-800 flex items-center justify-between">
+                                    <div className="text-left overflow-hidden">
+                                        <span className="text-[10px] text-slate-500 uppercase font-bold block">Stima Digitata</span>
+                                        <div className="text-xl font-black text-amber-300 font-mono truncate">
+                                            {inputBuffer}
                                         </div>
                                     </div>
+                                    <div className="text-right pl-2">
+                                        <span className="text-[9px] text-slate-400 block font-semibold">Lettura estesa</span>
+                                        <span className="text-xs font-bold text-emerald-400 truncate max-w-[130px] block">
+                      {formatItalianNumber(parsedCurrentValue)}
+                    </span>
+                                    </div>
+                                </div>
 
-                                    <div className="px-1">
-                                        <input
-                                            id={sliderInputId}
-                                            name="stima-log-slider"
-                                            type="range"
-                                            min={0}
-                                            max={1200}
-                                            step={1}
-                                            value={sliderPos}
-                                            onChange={(e) => setSliderPos(Number(e.target.value))}
-                                            aria-label="Regola la tua stima"
-                                            className="w-full h-3 bg-slate-950 rounded-lg appearance-none cursor-pointer accent-blue-500"
-                                        />
-                                        <div className="flex justify-between text-[10px] font-mono text-slate-500 mt-1.5">
-                                            <span>1</span>
-                                            <span>1.000</span>
-                                            <span>1 Mln</span>
-                                            <span>1 Mld</span>
-                                            <span>1 Bilione</span>
-                                        </div>
-                                    </div>
+                                {/* TASTI RAPIDI MOLTIPLICATORI */}
+                                <div className="grid grid-cols-4 gap-1.5 mt-2.5">
+                                    <button
+                                        onClick={() => handleMultiplier(1000)}
+                                        className="py-1.5 rounded-xl bg-slate-800 border border-slate-700 active:bg-blue-600 text-xs font-bold text-blue-300 active:text-white"
+                                    >
+                                        + Mila (k)
+                                    </button>
+                                    <button
+                                        onClick={() => handleMultiplier(1000000)}
+                                        className="py-1.5 rounded-xl bg-slate-800 border border-slate-700 active:bg-blue-600 text-xs font-bold text-blue-300 active:text-white"
+                                    >
+                                        + Mln (M)
+                                    </button>
+                                    <button
+                                        onClick={() => handleMultiplier(1000000000)}
+                                        className="py-1.5 rounded-xl bg-slate-800 border border-slate-700 active:bg-blue-600 text-xs font-bold text-blue-300 active:text-white"
+                                    >
+                                        + Mld (B)
+                                    </button>
+                                    <button
+                                        onClick={() => handleMultiplier(1000000000000)}
+                                        className="py-1.5 rounded-xl bg-slate-800 border border-slate-700 active:bg-blue-600 text-xs font-bold text-blue-300 active:text-white"
+                                    >
+                                        + Bilione
+                                    </button>
+                                </div>
+
+                                {/* TASTIERINO TOUCH (KEYPAD) */}
+                                <div className="grid grid-cols-3 gap-1.5 mt-2.5">
+                                    {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map((digit) => (
+                                        <button
+                                            key={digit}
+                                            onClick={() => handleDigit(digit)}
+                                            className="py-3 rounded-2xl bg-slate-950/80 border border-slate-800 active:bg-slate-800 text-lg font-bold font-mono text-white active:scale-95 transition-transform"
+                                        >
+                                            {digit}
+                                        </button>
+                                    ))}
+                                    <button
+                                        onClick={handleComma}
+                                        className="py-3 rounded-2xl bg-slate-950/80 border border-slate-800 active:bg-slate-800 text-lg font-bold font-mono text-slate-300 active:scale-95"
+                                    >
+                                        ,
+                                    </button>
+                                    <button
+                                        onClick={() => handleDigit('0')}
+                                        className="py-3 rounded-2xl bg-slate-950/80 border border-slate-800 active:bg-slate-800 text-lg font-bold font-mono text-white active:scale-95"
+                                    >
+                                        0
+                                    </button>
+                                    <button
+                                        onClick={handleDelete}
+                                        className="py-3 rounded-2xl bg-rose-500/10 border border-rose-500/20 active:bg-rose-600 text-rose-300 active:text-white flex items-center justify-center active:scale-95"
+                                    >
+                                        <Delete size={20} />
+                                    </button>
+                                </div>
+
+                                <div className="flex justify-end mt-1">
+                                    <button
+                                        onClick={handleClear}
+                                        className="text-[11px] text-slate-500 hover:text-rose-400 font-semibold px-2 py-0.5"
+                                    >
+                                        Azzera Tutto
+                                    </button>
                                 </div>
                             </div>
                         )}
@@ -225,7 +301,7 @@ export const StimaGame: React.FC<StimaGameProps> = ({ activePlayers, onExit }) =
                         {isQuestionRevealed && (
                             <button
                                 onClick={handleConfirmAnswer}
-                                className="w-full py-4 rounded-2xl bg-blue-600 active:scale-95 text-white font-bold text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30 transition-all"
+                                className="w-full py-3.5 rounded-2xl bg-blue-600 active:scale-95 text-white font-bold text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30 transition-all"
                             >
                                 <span>Conferma Stima e Passa</span>
                                 <ArrowRight size={18} />
@@ -244,11 +320,10 @@ export const StimaGame: React.FC<StimaGameProps> = ({ activePlayers, onExit }) =
                             "{currentQuestion.regularQuestion}"
                         </h2>
                         <p className="text-[11px] text-slate-400 mt-1">
-                            Uno di voi aveva una domanda diversa! Confrontate le cifre e trovate l'infiltrato.
+                            Confrontate le risposte: chi ha una stima incompatibile o sospetta?
                         </p>
                     </div>
 
-                    {/* LISTA RISPOSTE */}
                     <div className="space-y-2 flex-1">
                         {answers.map(({ player, answer }) => (
                             <div
@@ -281,7 +356,7 @@ export const StimaGame: React.FC<StimaGameProps> = ({ activePlayers, onExit }) =
                             onClick={() => setPhase('reveal')}
                             className="w-full py-4 rounded-2xl bg-amber-500 active:scale-95 text-slate-950 font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20 transition-all"
                         >
-                            <Eye size={16} /> Rivela chi era l'Impostore
+                            <Eye size={16} /> Rivela gli Impostori
                         </button>
                     </div>
                 </div>
@@ -303,7 +378,7 @@ export const StimaGame: React.FC<StimaGameProps> = ({ activePlayers, onExit }) =
                             <div key={player.id} className="p-4 rounded-2xl bg-rose-500/10 border border-rose-500/30 space-y-1.5">
                                 <div className="flex items-center justify-between">
                   <span className="text-[10px] uppercase font-bold tracking-wider text-rose-400">
-                    L'Impostore era:
+                    Impostore:
                   </span>
                                     <span className="text-xs font-mono font-bold text-amber-300">
                     Ha stimato: {formatItalianNumber(answer)}

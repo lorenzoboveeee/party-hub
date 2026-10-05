@@ -15,10 +15,15 @@ import confetti from 'canvas-confetti';
 
 interface ImpostorGameProps {
     activePlayers: Player[];
+    impostorsCount: number;
     onExit: () => void;
 }
 
-export const ImpostorGame: React.FC<ImpostorGameProps> = ({ activePlayers, onExit }) => {
+export const ImpostorGame: React.FC<ImpostorGameProps> = ({
+                                                              activePlayers,
+                                                              impostorsCount = 1,
+                                                              onExit
+                                                          }) => {
     const [currentWordItem, setCurrentWordItem] = useState<ImpostorWordItem>({ word: '', clue: '' });
     const [roles, setRoles] = useState<ImpostorPlayerRole[]>([]);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -32,9 +37,9 @@ export const ImpostorGame: React.FC<ImpostorGameProps> = ({ activePlayers, onExi
         const selectedWord = getNextImpostorWord();
         setCurrentWordItem(selectedWord);
 
-        const impostorsCount = activePlayers.length >= 6 ? 2 : 1;
+        const actualImpostors = Math.min(impostorsCount, Math.max(1, activePlayers.length - 1));
         const shuffled = [...activePlayers].sort(() => 0.5 - Math.random());
-        const impostorIds = new Set(shuffled.slice(0, impostorsCount).map(p => p.id));
+        const impostorIds = new Set(shuffled.slice(0, actualImpostors).map(p => p.id));
 
         const initialRoles: ImpostorPlayerRole[] = activePlayers.map(p => ({
             player: p,
@@ -56,7 +61,7 @@ export const ImpostorGame: React.FC<ImpostorGameProps> = ({ activePlayers, onExi
 
     useEffect(() => {
         startNewRound();
-    }, []);
+    }, [impostorsCount]);
 
     const handleConfirmExit = () => {
         if (window.confirm('Vuoi davvero tornare al menu principale?')) {
@@ -110,8 +115,8 @@ export const ImpostorGame: React.FC<ImpostorGameProps> = ({ activePlayers, onExi
             return;
         }
 
-        if (remainingPlayers.length <= 2) {
-            setWinnerMessage("L'Impostore ha retto fino alla fine e vince la partita!");
+        if (remainingPlayers.length <= remainingImpostors.length * 2) {
+            setWinnerMessage("Gli Impostori hanno retto fino alla fine e vincono la partita!");
             setPhase('game_over');
             confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
             return;
@@ -127,7 +132,7 @@ export const ImpostorGame: React.FC<ImpostorGameProps> = ({ activePlayers, onExi
     return (
         <div className="flex flex-col h-full bg-slate-950 text-white relative">
 
-            {/* HEADER SAFE AREA PER DYNAMIC ISLAND / NOTCH (Visibile durante il gioco) */}
+            {/* HEADER SAFE AREA PER DYNAMIC ISLAND / NOTCH */}
             {phase !== 'game_over' && (
                 <div className="pt-12 pb-2 px-5 flex items-center justify-between border-b border-slate-900 bg-slate-950/80 backdrop-blur-md z-40">
                     <button
@@ -138,7 +143,6 @@ export const ImpostorGame: React.FC<ImpostorGameProps> = ({ activePlayers, onExi
                         <Home size={18} />
                     </button>
 
-                    {/* Spazio centrale trasparente dedicato alla Dynamic Island */}
                     <div className="flex-1 px-4 text-center">
             <span className="text-[10px] uppercase font-bold tracking-widest text-slate-500">
               L'Impostore
@@ -335,7 +339,7 @@ export const ImpostorGame: React.FC<ImpostorGameProps> = ({ activePlayers, onExi
                 </div>
             )}
 
-            {/* 4. FASE FINE PARTITA (Dynamic Island Safe) */}
+            {/* 4. FASE FINE PARTITA */}
             {phase === 'game_over' && (
                 <div className="flex-1 flex flex-col justify-between p-6 text-center pt-12">
                     <div>
