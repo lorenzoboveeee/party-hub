@@ -131,7 +131,6 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
         }
     };
 
-    // Tastierino numerico pulito (senza migliaia, milioni, miliardi)
     const handleDigit = (digit: string) => {
         setInputBuffer((prev) => {
             if (prev === '0' && digit !== ',') return digit;
@@ -163,7 +162,7 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
 
             {/* HEADER SAFE AREA PER NOTCH / DYNAMIC ISLAND */}
             {phase !== 'reveal' && (
-                <div className="pt-12 pb-2 px-5 flex items-center justify-between border-b border-slate-900 bg-slate-950/80 backdrop-blur-md z-40">
+                <div className="pt-12 pb-2 px-5 flex items-center justify-between border-b border-slate-900 bg-slate-950/80 backdrop-blur-md z-40 shrink-0">
                     <button
                         onClick={handleConfirmExit}
                         className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 active:text-white active:scale-90 transition-all"
@@ -220,7 +219,6 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
                                     </h3>
                                 </div>
 
-                                {/* DISPLAY NUMERO */}
                                 <div className="mt-3 py-3 px-4 bg-slate-950 rounded-2xl border border-slate-800 flex items-center justify-between">
                                     <span className="text-xs text-slate-400 uppercase font-bold">La tua risposta:</span>
                                     <span className="text-3xl font-black text-amber-300 font-mono tracking-tight">
@@ -228,7 +226,7 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
                   </span>
                                 </div>
 
-                                {/* TASTIERINO NORMALE (SENZA MILA/MILIONI/MLD) */}
+                                {/* TASTIERINO NORMALE */}
                                 <div className="grid grid-cols-3 gap-1.5 mt-3">
                                     {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map((digit) => (
                                         <button
@@ -285,38 +283,36 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
                 </div>
             )}
 
-            {/* 2. TABELLONE RISPOSTE (CONFRONTO PERSONALE) */}
+            {/* 2. TABELLONE RISPOSTE (OTTIMIZZATO A SCHERMO INTERO - NUMERI GIGANTI) */}
             {phase === 'board' && currentQuestion && (
-                <div className="flex-1 flex flex-col p-5 overflow-y-auto no-scrollbar space-y-4">
-                    <div className="p-4 rounded-2xl bg-fuchsia-600/10 border border-fuchsia-500/20 text-center">
-                        <span className="text-[10px] uppercase font-bold text-fuchsia-400">Domanda del Gruppo:</span>
-                        <h2 className="text-base font-extrabold text-white mt-1 leading-snug">
+                <div className="flex-1 flex flex-col justify-between p-3.5 overflow-hidden">
+                    <div className="p-3 rounded-2xl bg-fuchsia-600/10 border border-fuchsia-500/20 text-center shrink-0">
+                        <span className="text-[10px] uppercase font-bold text-fuchsia-400 block tracking-wider">Domanda del Gruppo:</span>
+                        <h2 className="text-sm font-extrabold text-white mt-0.5 leading-snug line-clamp-2">
                             "{currentQuestion.regularQuestion}"
                         </h2>
-                        <p className="text-[11px] text-slate-400 mt-1">
-                            Guardate le risposte date: chi ha un'abitudine assurda o ha chiaramente risposto ad altro?
-                        </p>
                     </div>
 
-                    <div className="space-y-2 flex-1">
+                    {/* Griglia/Lista dinamica fluida senza scroll */}
+                    <div className="flex-1 my-2 flex flex-col justify-center gap-1.5 overflow-y-auto no-scrollbar">
                         {answers.map(({ player, answer }) => (
                             <div
                                 key={player.id}
-                                className="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-between"
+                                className="px-3.5 py-2.5 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between shadow-md"
                             >
-                                <div className="flex items-center gap-3">
-                                    <div className={`w-8 h-8 rounded-xl flex items-center justify-center text-xs font-bold text-white ${player.avatarColor}`}>
+                                <div className="flex items-center gap-2.5 min-w-0 pr-2">
+                                    <div className={`w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black text-white shrink-0 ${player.avatarColor}`}>
                                         {player.name.charAt(0).toUpperCase()}
                                     </div>
-                                    <span className="text-sm font-semibold text-white">{player.name}</span>
+                                    <span className="text-sm font-bold text-slate-200 truncate">{player.name}</span>
                                 </div>
 
-                                <div className="text-right">
-                  <span className="text-xl font-black text-amber-300 font-mono">
+                                <div className="text-right shrink-0">
+                  <span className="text-2xl sm:text-3xl font-black text-amber-300 font-mono tracking-tight block">
                     {answer}
                   </span>
                                     {currentQuestion.unit && (
-                                        <span className="text-[10px] text-slate-400 block font-medium">
+                                        <span className="text-[10px] text-slate-400 -mt-1 block font-semibold uppercase">
                       {currentQuestion.unit}
                     </span>
                                     )}
@@ -325,12 +321,12 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
                         ))}
                     </div>
 
-                    <div className="pt-2 border-t border-slate-900">
+                    <div className="pt-2 border-t border-slate-900 shrink-0">
                         <button
                             onClick={() => setPhase('voting')}
-                            className="w-full py-4 rounded-2xl bg-fuchsia-600 active:scale-95 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-fuchsia-600/30 transition-all"
+                            className="w-full py-3.5 rounded-2xl bg-fuchsia-600 active:scale-95 text-white font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-fuchsia-600/30 transition-all"
                         >
-                            <Vote size={16} /> Procedi alla Votazione
+                            <Vote size={17} /> Procedi alla Votazione
                         </button>
                     </div>
                 </div>
@@ -338,20 +334,19 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
 
             {/* 3. FASE VOTAZIONE PROGRESSIVA */}
             {phase === 'voting' && currentQuestion && (
-                <div className="flex-1 flex flex-col p-5 overflow-y-auto no-scrollbar space-y-4">
-                    <div className="flex items-center justify-between border-b border-slate-900 pb-2">
+                <div className="flex-1 flex flex-col p-4 overflow-y-auto no-scrollbar space-y-3">
+                    <div className="flex items-center justify-between border-b border-slate-900 pb-2 shrink-0">
                         <div>
                             <h2 className="text-base font-bold text-white">Votazione Sospettati</h2>
                             <p className="text-xs text-slate-400">Chi sta bluffando sulle sue abitudini?</p>
                         </div>
-                        <span className="text-xs px-2.5 py-1 bg-slate-900 border border-slate-800 rounded-lg text-fuchsia-400 font-mono">
+                        <span className="text-xs px-2.5 py-1 bg-slate-900 border border-slate-800 rounded-lg text-fuchsia-400 font-mono font-bold">
               {answers.filter(a => !a.isEliminated).length} vivi
             </span>
                     </div>
 
-                    {/* Notifica immediata sull'esito dell'ultimo eliminato */}
                     {lastVotedResult && (
-                        <div className={`p-3.5 rounded-2xl border text-xs flex items-center justify-between animate-in fade-in zoom-in-95 ${
+                        <div className={`p-3 rounded-2xl border text-xs flex items-center justify-between animate-in fade-in zoom-in-95 shrink-0 ${
                             lastVotedResult.isImpostor
                                 ? 'bg-rose-500/10 border-rose-500/30 text-rose-300'
                                 : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-300'
@@ -360,28 +355,28 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
                             <span className="font-bold">
                 {lastVotedResult.isImpostor
                     ? "ERA UN IMPOSTORE! 🕵️"
-                    : "NON ERA L'IMPOSTORE! Continuate a votare 🛡️"}
+                    : "NON ERA L'IMPOSTORE! Continuate 🛡️"}
               </span>
                         </div>
                     )}
 
-                    <div className="space-y-2 flex-1">
+                    <div className="space-y-1.5 flex-1">
                         {answers.map((a) => (
                             <div
                                 key={a.player.id}
                                 className={`p-3 rounded-2xl border flex items-center justify-between transition-all ${
                                     a.isEliminated
-                                        ? 'bg-slate-950/40 border-slate-900 text-slate-600 opacity-50'
-                                        : 'bg-slate-900/80 border-slate-800 text-white'
+                                        ? 'bg-slate-950/40 border-slate-900 text-slate-600 opacity-40'
+                                        : 'bg-slate-900/90 border-slate-800 text-white'
                                 }`}
                             >
-                                <div className="flex items-center gap-3">
+                                <div className="flex items-center gap-2.5">
                                     <div className={`w-8 h-8 rounded-xl flex items-center justify-center text-xs font-bold text-white ${a.player.avatarColor}`}>
                                         {a.player.name.charAt(0).toUpperCase()}
                                     </div>
                                     <div>
                                         <span className="text-sm font-semibold block">{a.player.name}</span>
-                                        <span className="text-[11px] font-mono text-amber-300">
+                                        <span className="text-xs font-mono font-bold text-amber-300">
                       Ha dichiarato: {a.answer}
                     </span>
                                     </div>
@@ -400,10 +395,10 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
                         ))}
                     </div>
 
-                    <div className="pt-2 border-t border-slate-900">
+                    <div className="pt-2 border-t border-slate-900 shrink-0">
                         <button
                             onClick={() => {
-                                setWinnerMessage("Partita interrotta dal gruppo.");
+                                setWinnerMessage("Partita conclusa.");
                                 setPhase('reveal');
                             }}
                             className="w-full py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 text-xs font-semibold"
@@ -416,7 +411,7 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
 
             {/* 4. SMASCHERAMENTO FINALE */}
             {phase === 'reveal' && currentQuestion && (
-                <div className="flex-1 flex flex-col justify-between p-6 text-center pt-12">
+                <div className="flex-1 flex flex-col justify-between p-6 text-center pt-12 overflow-y-auto no-scrollbar">
                     <div>
                         <div className="w-16 h-16 mx-auto rounded-3xl bg-fuchsia-600/20 border border-fuchsia-500/30 flex items-center justify-center text-fuchsia-400 mb-3 shadow-lg">
                             <Trophy size={32} />
@@ -427,7 +422,7 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
                         )}
                     </div>
 
-                    <div className="my-auto space-y-3 text-left">
+                    <div className="my-auto space-y-3 text-left py-4">
                         <div className="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 text-xs">
                             <span className="text-[10px] uppercase font-bold text-slate-400">Domanda del Gruppo:</span>
                             <p className="text-sm font-bold text-white mt-0.5">
@@ -454,7 +449,7 @@ export const StimaPersonalGame: React.FC<StimaPersonalGameProps> = ({
                         ))}
                     </div>
 
-                    <div className="space-y-2 pt-2">
+                    <div className="space-y-2 pt-2 shrink-0">
                         <button
                             onClick={startNewRound}
                             className="w-full py-4 rounded-2xl bg-fuchsia-600 active:scale-95 text-white font-bold text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-lg shadow-fuchsia-600/30 transition-all"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { GameInfo } from '../types';
-import { Ghost, Trophy, Users, Moon, Target, ChevronRight } from 'lucide-react';
+import { Ghost, Trophy, Users, Moon, Target, UserCheck, ChevronRight } from 'lucide-react';
 
 interface GameCardProps {
     game: GameInfo;
@@ -11,55 +11,52 @@ interface GameCardProps {
 export const GameCard: React.FC<GameCardProps> = ({ game, activePlayersCount, onSelect }) => {
     const isPlayable = activePlayersCount >= game.minPlayers && activePlayersCount <= game.maxPlayers;
 
-    const renderIcon = () => {
+    const getIcon = () => {
         switch (game.iconName) {
-            case 'ghost': return <Ghost className="w-6 h-6 text-white" />;
-            case 'trophy': return <Trophy className="w-6 h-6 text-white" />;
-            case 'users': return <Users className="w-6 h-6 text-white" />;
-            case 'moon': return <Moon className="w-6 h-6 text-white" />;
-            case 'target': return <Target className="w-6 h-6 text-white" />;
+            case 'ghost':
+                return <Ghost size={26} className="text-white" />;
+            case 'trophy':
+                return <Trophy size={26} className="text-white" />;
+            case 'users':
+                return <Users size={26} className="text-white" />;
+            case 'moon':
+                return <Moon size={26} className="text-white" />;
+            case 'target':
+                return <Target size={26} className="text-white" />;
+            case 'user-check':
+                return <UserCheck size={26} className="text-white" />;
+            default:
+                return <Target size={26} className="text-white" />;
         }
     };
 
     return (
         <div
             onClick={() => onSelect(game)}
-            className="group relative overflow-hidden rounded-3xl p-4 bg-slate-900/90 border border-slate-800/80 active:scale-[0.98] transition-all duration-150 cursor-pointer shadow-lg hover:border-slate-700"
+            className="p-4 rounded-3xl bg-slate-900 border border-slate-800/90 active:scale-[0.98] transition-all cursor-pointer flex items-center justify-between shadow-lg hover:border-slate-700"
         >
-            <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl ${game.accentGradient} opacity-20 blur-2xl pointer-events-none rounded-full`} />
-
-            <div className="flex items-start justify-between">
-                <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${game.accentGradient} flex items-center justify-center shadow-md shadow-blue-950/50`}>
-                    {renderIcon()}
+            <div className="flex items-center gap-3.5">
+                <div className={`w-13 h-13 rounded-2xl bg-gradient-to-br ${game.accentGradient} flex items-center justify-center shadow-md shrink-0`}>
+                    {getIcon()}
                 </div>
-
-                <span className="text-[11px] font-medium tracking-wide px-2.5 py-1 rounded-full bg-slate-800/90 text-slate-300 border border-slate-700/60">
-          {game.badge}
-        </span>
+                <div>
+                    <div className="flex items-center gap-2">
+                        <h3 className="font-extrabold text-base text-white tracking-tight leading-tight">{game.title}</h3>
+                        <span className="text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+              {game.badge}
+            </span>
+                    </div>
+                    <p className="text-xs text-slate-400 mt-0.5 leading-snug line-clamp-1">{game.subtitle}</p>
+                    <div className="flex items-center gap-2 mt-1.5">
+            <span className={`text-[10px] font-semibold ${isPlayable ? 'text-emerald-400' : 'text-slate-500'}`}>
+              {game.minPlayers}-{game.maxPlayers} giocatori
+            </span>
+                    </div>
+                </div>
             </div>
 
-            <div className="mt-4">
-                <h3 className="text-lg font-bold text-white tracking-tight flex items-center justify-between">
-                    <span>{game.title}</span>
-                    <ChevronRight size={18} className="text-slate-500 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all" />
-                </h3>
-                <p className="text-xs text-slate-400 font-medium mt-0.5 line-clamp-1">{game.subtitle}</p>
-            </div>
-
-            <div className="mt-3.5 pt-3 border-t border-slate-800/70 flex items-center justify-between text-xs">
-        <span className="text-slate-400 font-mono text-[11px]">
-          {game.minPlayers}-{game.maxPlayers} giocatori
-        </span>
-
-                {isPlayable ? (
-                    <span className="text-emerald-400 font-medium text-[11px] flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" /> Pronto
-          </span>
-                ) : (
-                    <span className="text-amber-400/80 text-[11px]">
-            {activePlayersCount < game.minPlayers ? `Minimo ${game.minPlayers}` : 'Troppi'}
-          </span>
-                )}
+            <div className="text-slate-600 pl-2">
+                <ChevronRight size={20} />
             </div>
         </div>
     );
